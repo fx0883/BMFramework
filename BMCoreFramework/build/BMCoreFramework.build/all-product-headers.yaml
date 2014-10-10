@@ -1,0 +1,578 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Release-iphonesimulator/BMCoreFramework.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AFAppAPIClient.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Network/AFAppAPIClient.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFAppDotNetAPIClient.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Network/AFAppDotNetAPIClient.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFDownloadRequestOperation.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFDownloadRequestOperation/AFDownloadRequestOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPRequestOperation.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFHTTPRequestOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPRequestOperationManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPSessionManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkReachabilityManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFSecurityPolicy.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLConnectionOperation.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFURLConnectionOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLRequestSerialization.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLResponseSerialization.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLSessionManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/AFNetworking/AFURLSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMActionManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Context/BMActionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMAppManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Controller/BMAppManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseAction.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Controller/BMBaseAction.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseParam.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Param/BMBaseParam.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseTabBarController.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/BMBaseTabBarController.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseTableViewCell.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/BMBaseTableViewCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseTableViewController.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/BMBaseTableViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseView.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/BMBaseView.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseViewController+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Categories/BMBaseViewController+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMBaseViewController.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/BMBaseViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMCmdDefine.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Define/BMCmdDefine.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMContext.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Context/BMContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMControl.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Controller/BMControl.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMCoreFramework-Prefix.pch",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/BMCoreFramework-Prefix.pch"
+        },
+        {
+          'type': 'file',
+          'name': "BMCoreFramework-Swift.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Release-iphonesimulator/BMCoreFramework.framework/Headers/BMCoreFramework-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMCoreFramework.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/BMCoreFramework.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMDefine.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Define/BMDefine.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMDownloadFileInfo.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Network/Download/BMDownloadFileInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMDownloadManager.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Network/Download/BMDownloadManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMSandbox.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/System/foundation/BMSandbox.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMSystemInfo.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/System/foundation/BMSystemInfo.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMUIApplication.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/View/app/BMUIApplication.h"
+        },
+        {
+          'type': 'file',
+          'name': "BMUtilDefine.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/UtilDefine/BMUtilDefine.h"
+        },
+        {
+          'type': 'file',
+          'name': "CoreData+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/CoreData+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "Crayola.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/Crayola.h"
+        },
+        {
+          'type': 'file',
+          'name': "DownloadFileEntity.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Network/Download/DownloadFileEntity.h"
+        },
+        {
+          'type': 'file',
+          'name': "EDColor.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/EDColor.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONAPI.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelNetworking/JSONAPI.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONHTTPClient.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelNetworking/JSONHTTPClient.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONKeyMapper.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelTransformations/JSONKeyMapper.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModel+CoreData.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModel/JSONModel+CoreData.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModel+networking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelNetworking/JSONModel+networking.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModel.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModel/JSONModel.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModelArray.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModel/JSONModelArray.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModelClassProperty.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModel/JSONModelClassProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModelError.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModel/JSONModelError.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONModelLib.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelLib.h"
+        },
+        {
+          'type': 'file',
+          'name': "JSONValueTransformer.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelTransformations/JSONValueTransformer.h"
+        },
+        {
+          'type': 'file',
+          'name': "MBProgressHUD+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Categories/MBProgressHUD+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "MBProgressHUD.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MBProgressHUD/MBProgressHUD.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalImportFunctions.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Actions.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+Actions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+ErrorHandling.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+ErrorHandling.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Options.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+Options.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Setup.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+Setup.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+ShorthandSupport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+ShorthandSupport.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+iCloud.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord+iCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordDeprecated.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecordDeprecated.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordLogging.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecordLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordShorthand.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Core/MagicalRecordShorthand.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSArray+JSONModel.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/JSONModel/JSONModelCategories/NSArray+JSONModel.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributeDescription+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSEntityDescription+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalAggregation.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalFinders.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRequests.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalObserving.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalSaves.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalThreading.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectModel+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableDictionary+XSDic.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Categories/NSMutableDictionary+XSDic.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumber+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+BMNotification.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Categories/NSObject/NSObject+BMNotification.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+BMProperty.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Categories/NSObject/NSObject+BMProperty.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObjectHead.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Common/Head/NSObjectHead.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStore+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStoreCoordinator+MagicalRecord.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSQueue.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/Queue/NSQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSRelationshipDescription+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+MagicalDataImport.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "SVPullToRefresh.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/SVPullToRefresh/SVPullToRefresh.h"
+        },
+        {
+          'type': 'file',
+          'name': "ServiceInspector_Border.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Services/ServicesInspector/ServiceInspector_Border.h"
+        },
+        {
+          'type': 'file',
+          'name': "ServiceInspector_Indicator.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Services/ServicesInspector/ServiceInspector_Indicator.h"
+        },
+        {
+          'type': 'file',
+          'name': "ServiceInspector_WindowHook.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMCoreFramework/Services/ServicesInspector/ServiceInspector_WindowHook.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIActivityIndicatorView+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIAlertView+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+CIELAB.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+CIELAB.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+Crayola.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+Crayola.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+HSB.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+HSB.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+HSL.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+HSL.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+Hex.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+Hex.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+iOS7.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/EDColor/EDColor/UIColor+iOS7.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIKit+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UILabel+ContentSize.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Categories/UILabel+ContentSize.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIProgressView+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIRefreshControl+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIScrollView+SVInfiniteScrolling.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/SVPullToRefresh/UIScrollView+SVInfiniteScrolling.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIScrollView+SVPullToRefresh.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/SVPullToRefresh/UIScrollView+SVPullToRefresh.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+Effect.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/Categories/UIView+Effect.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIWebView+AFNetworking.h",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/BMUtilFramework/ThirdParty/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Release-iphonesimulator/BMCoreFramework.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Release-iphonesimulator/BMCoreFramework.framework/Modules/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

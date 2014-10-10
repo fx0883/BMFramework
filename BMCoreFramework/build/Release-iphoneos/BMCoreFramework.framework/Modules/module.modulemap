@@ -1,0 +1,6 @@
+framework module BMCoreFramework {
+  umbrella header "BMCoreFramework.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,51 @@
+//
+//  Class Hierarchy.swift
+//  SwiftFactory
+//
+//  Created by Joshua Smith on 6/4/14.
+//  Copyright (c) 2014 iJoshSmith. All rights reserved.
+//
+
+import Foundation
+
+// Subclass NSObject to enable factory creation.
+public class Person : NSObject
+{
+    override init()    { self.name = "?"  }
+    init(name: String)
+    
+    {
+        
+        self.name = name
+    
+    
+    }
+    
+    var name: String
+    
+//    public func testFunc()
+//    {
+//        println("testFunc")
+//    }
+}
+
+public class Friend : Person
+{
+    var nickname : String?
+    
+    public func testFunc(n:String)
+    {
+        println(n)
+    }
+}
+
+public class Stranger : Person
+{
+    // Ooh, how misanthropic!
+    var seemsFriendly = false
+    
+    public func testFunc(n:String)
+    {
+        println("testFunc")
+    }
+}
