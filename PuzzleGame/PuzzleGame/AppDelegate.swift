@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.copyDefaultStoreIfNecessary()
         MagicalRecord.setLoggingLevel(MagicalRecordLoggingLevel.Verbose)
         MagicalRecord.setupCoreDataStackWithStoreNamed(kPuzzleDBName)
+        
+        self.loadData()
         return true
     }
     
@@ -48,15 +50,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                let aryImageCategory:NSArray = bundle?.pathsForResourcesOfType("", inDirectory subpath: "ImageCategory") as NSArray
         
         
-        let aryImageCategory:NSArray = bundle!.pathsForResourcesOfType("", inDirectory: "") as NSArray
+        let aryImageCategory:NSArray = bundle!.pathsForResourcesOfType("", inDirectory: "ImageCategory") as NSArray
         
         for imageCategoryitem in aryImageCategory
         {
             let item:ImageCategory = ImageCategory.MR_createEntity()
             item.name=imageCategoryitem as NSString;
+            item.id = NSUUID.UUID().UUIDString;
             
+            item.name = item.name.lastPathComponent
+            
+            let strSubDirctory:String = "ImageCategory/"+item.name
+            
+            println("\(strSubDirctory)")
+            
+            let aryImageInfo:NSArray = bundle!.pathsForResourcesOfType("png", inDirectory: strSubDirctory) as NSArray
+            
+            for imageInfoitem in aryImageInfo
+            {
+                let itemImageInfo:ImageInfo = ImageInfo.MR_createEntity()
+                itemImageInfo.id = item.id
+                itemImageInfo.path = imageInfoitem as NSString
+            }
             
         }
+        
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
 //        NSArray *ary = [bundle pathsForResourcesOfType:@"" inDirectory:@"ImageCategory"];
 //        for (NSObject *obj in ary)
 //            
