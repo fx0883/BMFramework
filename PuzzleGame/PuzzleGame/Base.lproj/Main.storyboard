@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0af-W8-qkR">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -25,44 +26,56 @@
             <objects>
                 <viewController id="j1d-3S-tDy" customClass="MainController" customModule="PuzzleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xr5-y3-It8"/>
-                        <viewControllerLayoutGuide type="bottom" id="5IY-px-VWn"/>
+                        <viewControllerLayoutGuide type="top" id="Lk1-VY-ZmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="9QF-iA-Uu8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="26J-iK-2ki">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CyH-4H-Rnx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ECa-GN-c2p">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c0l-AF-eOJ">
-                                    <size key="itemSize" width="50" height="50"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ECa-GN-c2p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="5" id="UxK-9E-9DY">
+                                    <size key="itemSize" width="75" height="83"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="j1d-3S-tDy" id="4oW-Jb-HBg"/>
+                                    <outlet property="delegate" destination="j1d-3S-tDy" id="Djp-n1-9xn"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="leading" secondItem="ECa-GN-c2p" secondAttribute="leading" id="8i8-ct-9xT"/>
-                            <constraint firstItem="5IY-px-VWn" firstAttribute="top" secondItem="CyH-4H-Rnx" secondAttribute="bottom" id="CLU-JD-4eA"/>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="centerX" secondItem="ECa-GN-c2p" secondAttribute="centerX" id="Qee-ek-KWR"/>
-                            <constraint firstAttribute="trailing" secondItem="CyH-4H-Rnx" secondAttribute="trailing" id="VuK-WJ-HsX"/>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="top" secondItem="ECa-GN-c2p" secondAttribute="top" id="Wwr-vv-gfc"/>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="top" secondItem="26J-iK-2ki" secondAttribute="top" id="l7Z-uh-qvy"/>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="centerY" secondItem="ECa-GN-c2p" secondAttribute="centerY" id="qP8-VP-IAo"/>
-                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="leading" secondItem="26J-iK-2ki" secondAttribute="leading" id="vdo-bW-5c3"/>
+                            <constraint firstAttribute="centerX" secondItem="ECa-GN-c2p" secondAttribute="centerX" id="40p-tX-MlE"/>
+                            <constraint firstAttribute="centerY" secondItem="CyH-4H-Rnx" secondAttribute="centerY" id="G04-Jj-N66"/>
+                            <constraint firstAttribute="centerX" secondItem="CyH-4H-Rnx" secondAttribute="centerX" id="G1a-Ox-yF0"/>
+                            <constraint firstItem="ECa-GN-c2p" firstAttribute="leading" secondItem="CyH-4H-Rnx" secondAttribute="leading" id="HRs-nc-A9X"/>
+                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="top" secondItem="26J-iK-2ki" secondAttribute="top" id="MsO-hL-Zjm"/>
+                            <constraint firstAttribute="trailing" secondItem="CyH-4H-Rnx" secondAttribute="trailing" id="Svn-Kr-aUd"/>
+                            <constraint firstAttribute="centerY" secondItem="ECa-GN-c2p" secondAttribute="centerY" id="aX4-mE-uFe"/>
+                            <constraint firstItem="ECa-GN-c2p" firstAttribute="top" secondItem="CyH-4H-Rnx" secondAttribute="top" id="fY3-Ez-m3r"/>
+                            <constraint firstItem="9QF-iA-Uu8" firstAttribute="top" secondItem="CyH-4H-Rnx" secondAttribute="bottom" id="tlQ-0s-3Aw"/>
+                            <constraint firstItem="CyH-4H-Rnx" firstAttribute="leading" secondItem="26J-iK-2ki" secondAttribute="leading" id="xrY-Ao-3uO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WY1-qd-37X"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bgImv" destination="CyH-4H-Rnx" id="uwT-4V-LRu"/>
+                        <outlet property="mainCV" destination="ECa-GN-c2p" id="3DI-EL-YAm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5F-DY-T66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="90"/>
+            <point key="canvasLocation" x="419" y="82"/>
         </scene>
     </scenes>
 </document>

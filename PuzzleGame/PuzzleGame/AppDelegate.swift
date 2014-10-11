@@ -30,19 +30,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func loadData()
     {
+        
+        let bundlePath:NSString? = NSBundle.mainBundle().pathForResource(COREBUNDLENAME, ofType: "bundle")
+        
+        
+        let bundle:NSBundle? = NSBundle(path:bundlePath!)
+        BMContext.sharedInstance().setContextDic(bundle, forKey: COREBUNDLENAME)
         let ary:NSArray = ImageCategory.MR_findAll()
         let intCount:Int = ary.count
         if(intCount > 0)
         {
-            return
+            //return
         }
         
 //        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:COREBUNDLENAME ofType:@"bundle"];
 //        NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
         
-        let bundlePath:NSString? = NSBundle.mainBundle().pathForResource(COREBUNDLENAME, ofType: "bundle")
+
         
-        let bundle:NSBundle? = NSBundle(path:bundlePath!)
+
         
         
 //        let aryImageCategory:NSArray = bundle.pathsForResourcesOfType("", inDirectory: "ImageCategory")
@@ -70,12 +76,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             {
                 let itemImageInfo:ImageInfo = ImageInfo.MR_createEntity()
                 itemImageInfo.id = item.id
+                
                 itemImageInfo.path = imageInfoitem as NSString
+                
+                println("\(imageInfoitem)")
+                
+                let im:UIImage = UIImage(named: itemImageInfo.path)
+                
+                itemImageInfo.path = itemImageInfo.path.lastPathComponent
+                
+                itemImageInfo.path = strSubDirctory+"/"+itemImageInfo.path
+                
+                println("\(itemImageInfo.path)")
             }
             
         }
         
-        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+//        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        
+        
 //        NSArray *ary = [bundle pathsForResourcesOfType:@"" inDirectory:@"ImageCategory"];
 //        for (NSObject *obj in ary)
 //            

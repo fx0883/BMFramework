@@ -8,3 +8,5 @@
 #import "ImageInfo.h"
 #import "ImageCategory.h"
 
+#import "CommonalityFunction.h"
+

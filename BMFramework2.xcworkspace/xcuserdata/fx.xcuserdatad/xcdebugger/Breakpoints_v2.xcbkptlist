@@ -6,32 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PuzzleGame/PuzzleGame/AppDelegate.swift"
-            timestampString = "434634404.316661"
+            filePath = "PuzzleGame/Views/ImageCategoryCollectionViewCell.swift"
+            timestampString = "434710055.643641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "loadData()"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "setimagecategory(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PuzzleGame/PuzzleGame/AppDelegate.swift"
-            timestampString = "434635246.972139"
+            filePath = "PuzzleGame/Views/ImageCategoryCollectionViewCell.swift"
+            timestampString = "434710055.643641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "loadData()"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "setimagecategory(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
