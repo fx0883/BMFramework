@@ -13,31 +13,31 @@
 //#import "AFAppAPIClient.h"
 @implementation ExampleAction
 
-
--(void)excute:(NSMutableDictionary*)dicparam
-{
-    NSString* strCmd=[dicparam getCmd];
-    
-     if ([strCmd isEqualToString:DEF_CMD_GETWEATHER])
-    {
-        id obj = [dicparam getParam];
-        if ([obj isKindOfClass:[BMBaseParam class]]) {
-            BMBaseParam* baseparam=(BMBaseParam*)obj;
-            [self getWeather:baseparam];
-        }
-        
-    }
-//    else if ([strCmd isEqualToString:cmdGetPaiPaiDetail])
+//
+//-(void)excute:(NSMutableDictionary*)dicparam
+//{
+//    NSString* strCmd=[dicparam getCmd];
+//    
+//     if ([strCmd isEqualToString:DEF_CMD_GETWEATHER])
 //    {
 //        id obj = [dicparam getParam];
-//        if ([obj isKindOfClass:[XSBaseParam class]]) {
-//    /Users/fx/Desktop/BMFrameworkDemo/BMFrameworkDemo/Example/View/ExampleViewController.h        XSBaseParam* baseparam=(XSBaseParam*)obj;
-//            [self getPaiPaiDetail:baseparam];
+//        if ([obj isKindOfClass:[BMBaseParam class]]) {
+//            BMBaseParam* baseparam=(BMBaseParam*)obj;
+//            [self getWeather:baseparam];
 //        }
 //        
 //    }
-
-}
+////    else if ([strCmd isEqualToString:cmdGetPaiPaiDetail])
+////    {
+////        id obj = [dicparam getParam];
+////        if ([obj isKindOfClass:[XSBaseParam class]]) {
+////    /Users/fx/Desktop/BMFrameworkDemo/BMFrameworkDemo/Example/View/ExampleViewController.h        XSBaseParam* baseparam=(XSBaseParam*)obj;
+////            [self getPaiPaiDetail:baseparam];
+////        }
+////        
+////    }
+//
+//}
 
 
 -(void)getWeather:(BMBaseParam*)baseParam
@@ -47,7 +47,7 @@
     
     NSString* strurl=[NSString stringWithFormat:@"%@%@.html",DEF_API_GETWEATHER,strCityCode];
     
-    baseParam.paramObject = [[AFAppDotNetAPIClient sharedClient3] GET:strurl parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
+    baseParam.paramObject = [[AFAppDotNetAPIClient sharedClient] GET:strurl parameters:nil success:^(NSURLSessionDataTask *task, id responseObject)
     {
         
         NSLog(@"%@",responseObject);

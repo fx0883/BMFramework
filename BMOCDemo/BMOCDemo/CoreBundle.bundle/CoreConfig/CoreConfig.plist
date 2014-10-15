@@ -11,7 +11,7 @@
 	<key>BaseUrl</key>
 	<string>http://www.weather.com.cn</string>
 	<key>ShowTouchEventUI</key>
-	<true/>
+	<false/>
 	<key>ShowActionLog</key>
 	<true/>
 </dict>
