@@ -11,6 +11,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CoreDocument.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>CoreFramework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,6 +24,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E717776C19EBB3C700F32BF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E717777119EBB86600F32BF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E77C8D7D19E627060086609D</key>
 		<dict>
 			<key>primary</key>

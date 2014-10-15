@@ -11,7 +11,9 @@
 @implementation BMBaseParam
 
 
-
+/*!
+ This is a comment about FunctionName1.
+ */
 -(id)init
 {
     self=[super init];
@@ -20,7 +22,9 @@
     }
     return self;
 }
-
+/*!
+ This is a comment about FunctionName.
+ */
 -(void)initData
 {
     self.paramArray=[NSMutableArray new];
