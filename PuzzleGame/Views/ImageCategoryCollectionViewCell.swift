@@ -17,6 +17,7 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
 
 
     
+    @IBOutlet weak var footLabel: UILabel!
     @IBOutlet weak var imvMain: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -78,7 +79,8 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
               println("\(imvMain.image)")
         
-        
+        titleLabel.text = "Hot"
+        footLabel.text = imagecategory.name
 //        imvMain.image = UIImage(named: "ImageCategory/电影/img2.png", inBundle: bundle1, compatibleWithTraitCollection:   nil  )
     }
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PuzzleGame/Views/ImageCategoryCollectionViewCell.swift"
-            timestampString = "435570529.765577"
+            timestampString = "435586133.15405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "setimagecategory(_:)"
             landmarkType = "5">
          </BreakpointContent>

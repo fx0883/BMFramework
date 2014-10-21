@@ -41,6 +41,16 @@ class MainController: UIViewController {
         
         self.mainCV.registerNib(nib, forCellWithReuseIdentifier: kCollectionCell)
         
+        
+//        [self.collectionView  registerClass:[TimeLineCollectionReusableView class]
+//            forSupplementaryViewOfKind:kTimeLine
+//            withReuseIdentifier:DEFTIMELINE];
+        
+//        self.mainCV.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier :"123")
+        
+        
+//        self.mainCV.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind: "12", withReuseIdentifier: "23")
+        
 //        self.mainCV.allowsMultipleSelection = true
 //        
 //        self.mainCV.allowsSelection=true
@@ -106,27 +116,28 @@ class MainController: UIViewController {
         return cell
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int
-    {
-       return 1
-    }
+//        func dequeueReusableSupplementaryViewOfKind(elementKind: String, withReuseIdentifier identifier: String, forIndexPath indexPath: NSIndexPath!) -> AnyObject
     
-  //  设置元素的的大小框
-//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+//    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int
 //    {
-//        UIEdgeInsets top = {5,10,15,5};
-//        return top;
+//       return 1
 //    }
-//    
     
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
-        return UIEdgeInsetsMake(10, 15, 10, 15);
+        return UIEdgeInsetsMake(10, 15, 20, 15);
     }
     
 //    func collectionView(collectionView:UICollectionView 
     
     // The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
-//    optional func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+    {
+        
+        println("===============")
+        return UICollectionReusableView()
+    }
+    
+    
 
 }
 
