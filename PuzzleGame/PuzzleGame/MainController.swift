@@ -30,7 +30,7 @@ class MainController: UIViewController {
     {
 //        header-bg-big
         
-        self.navigationController?.navigationBar .setBackgroundImage(UIImage(named: "header-bg-big"), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "header-bg-big"), forBarMetrics: UIBarMetrics.Default)
         
 //        self.mainCV.registerClass(ImageCategoryCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionCell)
         
@@ -89,7 +89,7 @@ class MainController: UIViewController {
         }
         
         
-        return 7
+        return intNumber
  
     }
     
@@ -98,10 +98,10 @@ class MainController: UIViewController {
     {
         let cell:ImageCategoryCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCollectionCell, forIndexPath: indexPath) as ImageCategoryCollectionViewCell
         
-//        let imagecategoryitem : ImageCategory = imageCategoryAry!.objectAtIndex(indexPath.row) as ImageCategory
+        let imagecategoryitem : ImageCategory = imageCategoryAry!.objectAtIndex(indexPath.row) as ImageCategory
 //        
-        cell.backgroundColor = UIColor.redColor()
-//        cell.setimagecategory(imagecategoryitem)
+//        cell.backgroundColor = UIColor.redColor()
+        cell.setimagecategory(imagecategoryitem)
 //        cell.sizeToFit()
         return cell
     }
@@ -111,14 +111,19 @@ class MainController: UIViewController {
        return 1
     }
     
-    //设置元素的的大小框
-//    -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+  //  设置元素的的大小框
+//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 //    {
 //        UIEdgeInsets top = {5,10,15,5};
 //        return top;
 //    }
+//    
     
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, insetForSectionAtIndex section: Int) -> UIEdgeInsets{
+        return UIEdgeInsetsMake(10, 15, 10, 15);
+    }
     
+//    func collectionView(collectionView:UICollectionView 
     
     // The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
 //    optional func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView

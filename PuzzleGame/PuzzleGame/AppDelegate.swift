@@ -35,12 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let bundle:NSBundle? = NSBundle(path:bundlePath!)
-        BMContext.sharedInstance().setContextDic(bundle, forKey: COREBUNDLENAME)
+        BMContext.sharedInstance().setContextDic(bundlePath, forKey: COREBUNDLENAME)
         let ary:NSArray = ImageCategory.MR_findAll()
         let intCount:Int = ary.count
         if(intCount > 0)
         {
-            //return
+            return
         }
         
 //        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:COREBUNDLENAME ofType:@"bundle"];

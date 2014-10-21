@@ -427,6 +427,7 @@
 		E73BE34E19E76F9800BCF63D /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		E73BE34F19E76F9800BCF63D /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		E73BE35119E76F9800BCF63D /* BMUtilDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUtilDefine.h; sourceTree = "<group>"; };
+		E74F8DD419F5FAFF00173386 /* headerDoc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = headerDoc.txt; sourceTree = "<group>"; };
 		E77C8D7E19E627060086609D /* BMCoreFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMCoreFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77C8D8219E627060086609D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77C8D8319E627060086609D /* BMCoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMCoreFramework.h; sourceTree = "<group>"; };
@@ -884,9 +885,18 @@
 			path = UtilDefine;
 			sourceTree = "<group>";
 		};
+		E74F8DD319F5FAFF00173386 /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				E74F8DD419F5FAFF00173386 /* headerDoc.txt */,
+			);
+			path = Doc;
+			sourceTree = "<group>";
+		};
 		E77C8D7419E627060086609D = {
 			isa = PBXGroup;
 			children = (
+				E74F8DD319F5FAFF00173386 /* Doc */,
 				E73BE28919E76F9700BCF63D /* BMUtilFramework */,
 				E77C8D8019E627060086609D /* BMCoreFramework */,
 				E77C8D7F19E627060086609D /* Products */,

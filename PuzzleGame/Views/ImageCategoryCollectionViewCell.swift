@@ -24,16 +24,18 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
     func setimagecategory(imagecategory:ImageCategory)
     {
         _imagecategory = imagecategory
-        
+//        let bundle1:NSBundle = BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as NSBundle
         var path:String?=nil
-//        if(imagecategory.imagepath == nil)
-//        {
-//            path = "defultImageCategory"
-//        }
-//        else
-//        {
-//            path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + imagecategory.imagepath
-//        }
+        if(imagecategory.imagepath == nil)
+        {
+            path = "defultImageCategory.png"
+        }
+        else
+        {
+            path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + imagecategory.imagepath
+//             path = bundle1.pathForResource("img2", ofType: "png", inDirectory: "ImageCategory/卡通")! as String
+            
+        }
         println("\(path)")
         
         
@@ -41,7 +43,7 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
 //        
 //        let bundle1:NSBundle? = NSBundle(path:bundlePath!)
         
-        let bundle1:NSBundle = BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as NSBundle
+
 //
 //        imvMain.image = UIImage(named: "ImageCategory/电影/img5.png", inBundle: bundle1, compatibleWithTraitCollection: nil)
      //   imvMain.image = CommonalityFunction.loadImage(path!)
@@ -51,11 +53,11 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         
 //                    let aryImageInfo:NSArray = bundle1!.pathsForResourcesOfType("png", inDirectory: "1") as NSArray
         
-        let strre:String = bundle1.pathForResource("img2", ofType: "png", inDirectory: "ImageCategory/卡通")! as String
+//        let strre:String = bundle1.pathForResource("img2", ofType: "png", inDirectory: "ImageCategory/卡通")! as String
+//        
+//        println("\(strre)")
         
-        println("\(strre)")
-        
-        let image123:UIImage = UIImage(named: strre)
+  //      let image123:UIImage = UIImage(named: strre)
 //        imvMain.image = UIImage(contentsOfFile: strre)
 //        imvMain.image = CommonalityFunction.loadImage(strre)
 //        imvMain.image = UIImage(contentsOfFile: strre)
@@ -68,9 +70,9 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
 //        
 //        
 //        
-  //     imvMain.image = UIImage(contentsOfFile: path!)
+       imvMain.image = UIImage(named: path!)
         
-        
+        println("\(imvMain.image)")
 
         
 //        imvMain.image = UIImage(named: "ImageCategory/电影/img2.png", inBundle: bundle1, compatibleWithTraitCollection:   nil  )
