@@ -72,6 +72,10 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
 //        
        imvMain.image = UIImage(named: path!)
         
+       // -(void)applyEffectRoundRectSilverBorder:(UIColor*) color
+        
+        imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
+        
         println("\(imvMain.image)")
 
         
