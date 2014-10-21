@@ -1,1 +1,0 @@
- const unsigned char BMCoreFrameworkVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:BMCoreFramework  PROJECT:BMCoreFramework-1" "\n"; const double BMCoreFrameworkVersionNumber __attribute__ ((used)) = (double)1.;

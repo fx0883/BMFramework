@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         {
             let item:ImageCategory = ImageCategory.MR_createEntity()
             item.name=imageCategoryitem as NSString;
-            item.id = NSUUID.UUID().UUIDString;
+            item.id = NSUUID().UUIDString;
             
             item.name = item.name.lastPathComponent
             
@@ -77,15 +77,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let itemImageInfo:ImageInfo = ImageInfo.MR_createEntity()
                 itemImageInfo.id = item.id
                 
-                itemImageInfo.path = imageInfoitem as NSString
+                var strPath:NSString = imageInfoitem as NSString
                 
-                println("\(imageInfoitem)")
+                itemImageInfo.path = strPath
                 
-                let im:UIImage = UIImage(named: itemImageInfo.path)
+//                println("\(itemImageInfo.path)")
                 
-                itemImageInfo.path = itemImageInfo.path.lastPathComponent
+//                let im:UIImage = UIImage(named: itemImageInfo.path)!
                 
-                itemImageInfo.path = strSubDirctory+"/"+itemImageInfo.path
+                strPath = strPath.lastPathComponent
+//                println("\(itemImageInfo.path)")
+                
+                itemImageInfo.path = strSubDirctory+"/"+strPath
                 
                 println("\(itemImageInfo.path)")
             }

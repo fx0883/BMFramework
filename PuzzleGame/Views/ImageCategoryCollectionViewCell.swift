@@ -30,7 +30,7 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         var path:String?=nil
         if(imagecategory.imagepath == nil)
         {
-            path = "defultImageCategory.png"
+            path = "defultImageCategory"
         }
         else
         {
@@ -72,7 +72,7 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
 //        
 //        
 //        
-       imvMain.image = UIImage(named: path!)
+       imvMain.image = UIImage(contentsOfFile: path!)
         
        // -(void)applyEffectRoundRectSilverBorder:(UIColor*) color
         

@@ -21,8 +21,25 @@
 		E77C8FE819E62EC00086609D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C8FDB19E62EC00086609D /* MainViewController.m */; };
 		E77C947319E654370086609D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C947219E654370086609D /* main.m */; };
 		E77C947519E654500086609D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E77C947419E654500086609D /* Default-568h@2x.png */; };
-		E7DB1AE019E6E2B7006EEA79 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DB1ADF19E6E2B7006EEA79 /* BMCoreFramework.framework */; };
+		E7F48D6419F6A80A00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
+		E7F48D6519F6A81300E57A5B /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
+		E7F48D6619F6A87A00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
+		E7F48D6719F6A87A00E57A5B /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7F48D6819F6A87A00E57A5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E7F48D6719F6A87A00E57A5B /* BMCoreFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E77C8DCC19E629130086609D /* BMOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +68,7 @@
 		E77C8FDB19E62EC00086609D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E77C947219E654370086609D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E77C947419E654500086609D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E7DB1ADF19E6E2B7006EEA79 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../Library/Developer/Xcode/DerivedData/BMFramework2-bacgdggapyvbplcldrldbcywqvct/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
+		E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMCoreFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7DB1AE019E6E2B7006EEA79 /* BMCoreFramework.framework in Frameworks */,
+				E7F48D6419F6A80A00E57A5B /* BMCoreFramework.framework in Frameworks */,
+				E7F48D6619F6A87A00E57A5B /* BMCoreFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +87,7 @@
 		E77C8DC319E629130086609D = {
 			isa = PBXGroup;
 			children = (
-				E7DB1ADF19E6E2B7006EEA79 /* BMCoreFramework.framework */,
+				E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */,
 				E77C947419E654500086609D /* Default-568h@2x.png */,
 				E77C8FC919E62EC00086609D /* CoreBundle.bundle */,
 				E77C8DCE19E629130086609D /* BMOCDemo */,
@@ -181,6 +199,7 @@
 				E77C8DC819E629130086609D /* Sources */,
 				E77C8DC919E629130086609D /* Frameworks */,
 				E77C8DCA19E629130086609D /* Resources */,
+				E7F48D6819F6A87A00E57A5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F48D6519F6A81300E57A5B /* BMCoreFramework.framework in Resources */,
 				E77C8DDD19E629130086609D /* Images.xcassets in Resources */,
 				E77C8FE519E62EC00086609D /* DownloadViewController.xib in Resources */,
 				E77C8FE019E62EC00086609D /* CoreBundle.bundle in Resources */,
@@ -348,10 +368,11 @@
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-bacgdggapyvbplcldrldbcywqvct/Build/Products/Release-iphoneos",
 					"/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos",
 				);
 				GCC_PREFIX_HEADER = "BMOCDemo/BMOCDemo-Prefix.pch";
 				INFOPLIST_FILE = BMOCDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,10 +390,11 @@
 					"$(PROJECT_DIR)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-bacgdggapyvbplcldrldbcywqvct/Build/Products/Release-iphoneos",
 					"/Users/fx/Desktop/BMFramework/BMCoreFramework/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos",
 				);
 				GCC_PREFIX_HEADER = "BMOCDemo/BMOCDemo-Prefix.pch";
 				INFOPLIST_FILE = BMOCDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

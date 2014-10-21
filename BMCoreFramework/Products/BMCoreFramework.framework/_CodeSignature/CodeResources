@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		8elBFEAaWmAmkJTtwIvajrQtmYw=
+		lC1UPSbhD1+BfDA3LKWr8M6Tk7k=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/BMBaseViewController+AFNetworking.h</key>
 		<data>
-		qf1rNMWKxwi5HCvJvaTgGUufpL4=
+		cioRkiYo9gPobItMLZlvV4mAtq8=
 		</data>
 		<key>Headers/BMBaseViewController.h</key>
 		<data>
@@ -444,9 +444,13 @@
 		<data>
 		1aiyIakkAlhw+lXiXY0aVJ3JozI=
 		</data>
+		<key>Info.plist</key>
+		<data>
+		OSPwrjfGCcjYGHVUMeU/mm9Z1hk=
+		</data>
 		<key>LICENSE</key>
 		<data>
-		ACny4WFZT2n092ayQ0LzNrJjOSs=
+		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -533,7 +537,7 @@
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		8elBFEAaWmAmkJTtwIvajrQtmYw=
+		lC1UPSbhD1+BfDA3LKWr8M6Tk7k=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -553,7 +557,7 @@
 		</data>
 		<key>Headers/BMBaseViewController+AFNetworking.h</key>
 		<data>
-		qf1rNMWKxwi5HCvJvaTgGUufpL4=
+		cioRkiYo9gPobItMLZlvV4mAtq8=
 		</data>
 		<key>Headers/BMBaseViewController.h</key>
 		<data>
@@ -905,7 +909,7 @@
 		</data>
 		<key>LICENSE</key>
 		<data>
-		ACny4WFZT2n092ayQ0LzNrJjOSs=
+		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -922,54 +926,97 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>.*</key>
+		<key>^</key>
 		<true/>
-		<key>^Info.plist$</key>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
-			<real>10</real>
+			<real>1100</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
-		<dict>
-			<key>omit</key>
-			<true/>
-			<key>weight</key>
-			<real>100</real>
-		</dict>
+		<key>^version.plist$</key>
+		<true/>
 	</dict>
 	<key>rules2</key>
 	<dict>
-		<key>.*</key>
-		<true/>
-		<key>^(Frameworks|SharedFrameworks|Plugins|Plug-ins|XPCServices|Helpers|MacOS)/</key>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
 		<dict>
 			<key>nested</key>
 			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>10</real>
 		</dict>
-		<key>^Info.plist$</key>
+		<key>^.*</key>
+		<true/>
+		<key>^.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^.*\.lproj/locversion.plist$</key>
 		<dict>
 			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
 			<true/>
 			<key>weight</key>
 			<real>10</real>
 		</dict>
-		<key>^ResourceRules.plist$</key>
+		<key>^embedded\.provisionprofile$</key>
 		<dict>
-			<key>omit</key>
-			<true/>
 			<key>weight</key>
-			<real>100</real>
+			<real>20</real>
 		</dict>
-		<key>^[^/]+$</key>
+		<key>^version\.plist$</key>
 		<dict>
-			<key>top</key>
-			<true/>
 			<key>weight</key>
-			<real>0.0</real>
+			<real>20</real>
 		</dict>
 	</dict>
 </dict>
