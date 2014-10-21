@@ -15,10 +15,11 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
-    @IBOutlet weak var btnTitle: UIButton!
+
     
     @IBOutlet weak var imvMain: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
     var _imagecategory:ImageCategory?
     
     func setimagecategory(imagecategory:ImageCategory)
@@ -75,9 +76,8 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
        // -(void)applyEffectRoundRectSilverBorder:(UIColor*) color
         
         imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
+              println("\(imvMain.image)")
         
-        println("\(imvMain.image)")
-
         
 //        imvMain.image = UIImage(named: "ImageCategory/电影/img2.png", inBundle: bundle1, compatibleWithTraitCollection:   nil  )
     }
