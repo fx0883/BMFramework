@@ -13,9 +13,9 @@
 
 #pragma mark -
 
-@implementation BeeSystemInfo
+@implementation BMSystemInfo
 
-DEF_SINGLETON( BeeSystemInfo );
+DEF_SINGLETON( BMSystemInfo );
 
 + (NSString *)OSVersion
 {
@@ -244,7 +244,7 @@ static const char * __jb_app = NULL;
 	}
 	else
 	{
-		return [BeeSystemInfo isScreenSize:CGSizeMake(320, 480)];
+		return [BMSystemInfo isScreenSize:CGSizeMake(320, 480)];
 	}
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return NO;
@@ -265,7 +265,7 @@ static const char * __jb_app = NULL;
 	}
 	else
 	{
-		return [BeeSystemInfo isScreenSize:CGSizeMake(640, 960)];
+		return [BMSystemInfo isScreenSize:CGSizeMake(640, 960)];
 	}
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return NO;
@@ -281,7 +281,7 @@ static const char * __jb_app = NULL;
 	}
 	else
 	{
-		return [BeeSystemInfo isScreenSize:CGSizeMake(640, 1136)];
+		return [BMSystemInfo isScreenSize:CGSizeMake(640, 1136)];
 	}
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return NO;
@@ -291,7 +291,7 @@ static const char * __jb_app = NULL;
 + (BOOL)isPad
 {
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-	return [BeeSystemInfo isScreenSize:CGSizeMake(768, 1024)];
+	return [BMSystemInfo isScreenSize:CGSizeMake(768, 1024)];
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return NO;
 #endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
@@ -300,7 +300,7 @@ static const char * __jb_app = NULL;
 + (BOOL)isPadRetina
 {
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-	return [BeeSystemInfo isScreenSize:CGSizeMake(1536, 2048)];
+	return [BMSystemInfo isScreenSize:CGSizeMake(1536, 2048)];
 #else	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 	return NO;
 #endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)

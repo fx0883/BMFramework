@@ -20,4 +20,6 @@
 #import "BMUtilDefine.h"
 #import "CoreData+MagicalRecord.h"
 #import "NSQueue.h"
+
+#import "BMCoreFramework.h"
 #endif

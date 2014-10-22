@@ -1,4 +1,9 @@
-
+/*!
+ @header NSObject+BMProperty
+ @abstract 主要定义PROPERTY
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 
 #pragma mark -
 

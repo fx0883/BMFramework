@@ -1,7 +1,9 @@
+
 /*!
- @header  BMBaseParam头文件
- @abstract
- @discussion ...
+ @header BMBaseParam
+ @abstract BMBaseParam 的头文件
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
  */
 #import <Foundation/Foundation.h>
 
@@ -66,10 +68,7 @@ typedef void (^WithResultObjectBlock)(int,NSString*,id);
 @property (nonatomic,strong) WithResultObjectBlock withresultobjectblock;
 
 
-/*!
- *  12312
- */
--(void)testFunc;
+
     
     
 

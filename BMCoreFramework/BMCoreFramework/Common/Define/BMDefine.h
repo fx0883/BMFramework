@@ -1,15 +1,18 @@
-
-//  BMDefine.h
-//  HaixinProject
-//
-//  Created by fx on 14-7-22.
-//  Copyright (c) 2014年 bluemobi. All rights reserved.
-//
-
+/*!
+ @header BMDefine
+ @abstract 一些宏定义
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 #ifndef HaixinProject_BMDefine_h
 #define HaixinProject_BMDefine_h
 
 // 判断是否为IPAD
+
+
+/*!
+ *  判断是否为IPAD
+ */
 #define ISIPADDEVICE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define IS_WIDESCREEN (fabs((double)[[UIScreen mainScreen]bounds].size.height - (double)568) < DBL_EPSILON)

@@ -1,7 +1,9 @@
+
 /*!
- @header  BMBaseParam头文件
- @abstract
- @discussion ...
+ @header BMBaseParam
+ @abstract BMBaseParam 的头文件
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
  */
 #import <Foundation/Foundation.h>
 
@@ -13,10 +15,19 @@
  */
 typedef void (^BaseBlock)(int,NSString*);
 
+
+/*!
+ *  定义参数类的block
+ *
+ *  @param int       错误代码 如果错误代码为 0 就是正确的
+ *  @param NSString 提示消息
+ *  @param id
+ */
 typedef void (^WithResultObjectBlock)(int,NSString*,id);
 
 /*!
- *  调用Action的传入参数
+ @class
+ @abstract 调用Action的传入参数
  */
 @interface BMBaseParam : NSObject
 
@@ -66,10 +77,7 @@ typedef void (^WithResultObjectBlock)(int,NSString*,id);
 @property (nonatomic,strong) WithResultObjectBlock withresultobjectblock;
 
 
-/*!
- *  12312
- */
--(void)testFunc;
+
     
     
 

@@ -1,27 +1,25 @@
-/*********************************************************************
- * 版权所有 (C)2014 蓝色互动 *
- * 文件名称: // XBaseAction
- * 内容摘要: // 所有Action的父类
- * 其它说明: //
- * 作 者: // fx
- * 完成日期: // 2014-7-16
- * 修改记录 1:// 修改历史记录,包括修改日期、修改者及修改内容
- * 修改日期 :
- * 修改人:
- * 修改内容://修改原因以及修改内容说明
- * 修改记录 2:... 
- **********************************************************************/
+/*!
+ @header BMBaseAction
+ @abstract BMBaseAction 基础的Action类，所有的Action都要继承BMBaseAction
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 
 #import <Foundation/Foundation.h>
-
+/*!
+ @class
+ @abstract 基础的Action类，所有的Action都要继承BMBaseAction
+ */
 @interface BMBaseAction : NSObject
 
-/***********************************************************************
- * 功能描述: // 所有Action的入口方法
- * 输入参数: // NSMutableDictionary Action标准参数
- * 返 回 值: // 无
- * 其它说明: // 其它说明 
- ***********************************************************************/
+
+
+
+/*!
+ *  Action入口调用函数
+ *
+ *  @param dicparam 传入传出参数 NSMutableDictionary Action标准参数
+ */
 -(void)excute:(NSMutableDictionary*)dicparam;
 
 @end

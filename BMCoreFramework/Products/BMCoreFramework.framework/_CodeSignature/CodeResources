@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/BMActionManager.h</key>
 		<data>
-		YM9xW0QFHJw3pAYKCEW7zG3wLjE=
+		gfHMQ2mS+lclpQJth0krzweLEwo=
 		</data>
 		<key>Headers/BMAppManager.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		lC1UPSbhD1+BfDA3LKWr8M6Tk7k=
+		5kUeCIUjLXnIZzG0Yq3yNeK1jSc=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>Headers/BMCmdDefine.h</key>
 		<data>
-		YP2oajRsiVVL6LPolEXiHaCFdqE=
+		NFH8Dazn1hYMUw9/lKwnOHLZ/LY=
 		</data>
 		<key>Headers/BMContext.h</key>
 		<data>
-		QxvmPgf5JcWcEyIZNWmxPnYWvx0=
+		I3IYBG0h/eVSPkjwENHG58Eh37o=
 		</data>
 		<key>Headers/BMControl.h</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Headers/BMDefine.h</key>
 		<data>
-		paNcbhVYszDEUFWvm1wFx+MmRSE=
+		BeLkA7GQRd/vBvpG4BHo9sA7564=
 		</data>
 		<key>Headers/BMDownloadFileInfo.h</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Headers/NSMutableDictionary+XSDic.h</key>
 		<data>
-		64KrH3KYyxeKFWwlaLbpbp25DxE=
+		bJhNsfEWVxX9KgT2LCOb6k8yQio=
 		</data>
 		<key>Headers/NSNumber+MagicalDataImport.h</key>
 		<data>
@@ -322,11 +322,11 @@
 		</data>
 		<key>Headers/NSObject+BMNotification.h</key>
 		<data>
-		GaP/6D/QYWfb4dkEQFyD+Oyvb34=
+		3NNPRyEgKVI8/LBEaOyp/oUc/qM=
 		</data>
 		<key>Headers/NSObject+BMProperty.h</key>
 		<data>
-		A3oIZVq9Rg/KEwCtMmmapQQQmY4=
+		O2X66ybU0sL5+F3kSHT2/mgiu8w=
 		</data>
 		<key>Headers/NSObject+MagicalDataImport.h</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Headers/NSObjectHead.h</key>
 		<data>
-		5SmsU+8KnmZxUvK0WTplD/UCPcA=
+		NYY3seN3QBFXy36prs2M75+Jw2E=
 		</data>
 		<key>Headers/NSPersistentStore+MagicalRecord.h</key>
 		<data>
@@ -450,7 +450,7 @@
 		</data>
 		<key>LICENSE</key>
 		<data>
-		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
+		ACny4WFZT2n092ayQ0LzNrJjOSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -525,7 +525,7 @@
 		</data>
 		<key>Headers/BMActionManager.h</key>
 		<data>
-		YM9xW0QFHJw3pAYKCEW7zG3wLjE=
+		gfHMQ2mS+lclpQJth0krzweLEwo=
 		</data>
 		<key>Headers/BMAppManager.h</key>
 		<data>
@@ -537,7 +537,7 @@
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		lC1UPSbhD1+BfDA3LKWr8M6Tk7k=
+		5kUeCIUjLXnIZzG0Yq3yNeK1jSc=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -565,11 +565,11 @@
 		</data>
 		<key>Headers/BMCmdDefine.h</key>
 		<data>
-		YP2oajRsiVVL6LPolEXiHaCFdqE=
+		NFH8Dazn1hYMUw9/lKwnOHLZ/LY=
 		</data>
 		<key>Headers/BMContext.h</key>
 		<data>
-		QxvmPgf5JcWcEyIZNWmxPnYWvx0=
+		I3IYBG0h/eVSPkjwENHG58Eh37o=
 		</data>
 		<key>Headers/BMControl.h</key>
 		<data>
@@ -585,7 +585,7 @@
 		</data>
 		<key>Headers/BMDefine.h</key>
 		<data>
-		paNcbhVYszDEUFWvm1wFx+MmRSE=
+		BeLkA7GQRd/vBvpG4BHo9sA7564=
 		</data>
 		<key>Headers/BMDownloadFileInfo.h</key>
 		<data>
@@ -777,7 +777,7 @@
 		</data>
 		<key>Headers/NSMutableDictionary+XSDic.h</key>
 		<data>
-		64KrH3KYyxeKFWwlaLbpbp25DxE=
+		bJhNsfEWVxX9KgT2LCOb6k8yQio=
 		</data>
 		<key>Headers/NSNumber+MagicalDataImport.h</key>
 		<data>
@@ -785,11 +785,11 @@
 		</data>
 		<key>Headers/NSObject+BMNotification.h</key>
 		<data>
-		GaP/6D/QYWfb4dkEQFyD+Oyvb34=
+		3NNPRyEgKVI8/LBEaOyp/oUc/qM=
 		</data>
 		<key>Headers/NSObject+BMProperty.h</key>
 		<data>
-		A3oIZVq9Rg/KEwCtMmmapQQQmY4=
+		O2X66ybU0sL5+F3kSHT2/mgiu8w=
 		</data>
 		<key>Headers/NSObject+MagicalDataImport.h</key>
 		<data>
@@ -797,7 +797,7 @@
 		</data>
 		<key>Headers/NSObjectHead.h</key>
 		<data>
-		5SmsU+8KnmZxUvK0WTplD/UCPcA=
+		NYY3seN3QBFXy36prs2M75+Jw2E=
 		</data>
 		<key>Headers/NSPersistentStore+MagicalRecord.h</key>
 		<data>
@@ -909,7 +909,7 @@
 		</data>
 		<key>LICENSE</key>
 		<data>
-		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
+		ACny4WFZT2n092ayQ0LzNrJjOSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

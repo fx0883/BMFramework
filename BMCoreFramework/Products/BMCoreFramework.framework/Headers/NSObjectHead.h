@@ -1,10 +1,9 @@
-//
-//  NSObjectHead.h
-//  BMCoreFramework
-//
-//  Created by fx on 14-8-28.
-//  Copyright (c) 2014年 bluemobi. All rights reserved.
-//
+/*!
+ @header NSObjectHead
+ @abstract include所有NSObject的category
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 
 #ifndef BMCoreFramework_NSObjectHead_h
 #define BMCoreFramework_NSObjectHead_h

@@ -5,8 +5,8 @@
 /*!
 @header 这里的信息应该与该源代码文件的名字一致
 @abstract 关于这个源代码文件的一些基本描述
-@author Kevin Wu (作者信息)
-@version 1.00 2012/01/20 Creation (此文档的版本信息)
+@author FS (作者信息)
+@version 1.00 2014/10/12 Creation (此文档的版本信息)
 */
 ■ class: 类信息。此注释用在类声明的开头。
 例如:
@@ -64,3 +64,6 @@ HelloDocEnumDocDemoTagNumberOKButton,
 @discussion 具体描述信息可以写在这里
 */
 @protocol HelloDocDelegate ＜NSObject＞
+
+
+
