@@ -29,7 +29,7 @@ class MainController: UIViewController {
     func initView()
     {
 //        header-bg-big
-        
+        mainCV.alwaysBounceVertical = true;
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "header-bg-big"), forBarMetrics: UIBarMetrics.Default)
         
 //        self.mainCV.registerClass(ImageCategoryCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionCell)
