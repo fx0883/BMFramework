@@ -2,7 +2,7 @@
 //  ImageInfo.m
 //  PuzzleGame
 //
-//  Created by fx on 14-10-10.
+//  Created by fx on 14/10/23.
 //  Copyright (c) 2014年 FS. All rights reserved.
 //
 
@@ -11,9 +11,10 @@
 
 @implementation ImageInfo
 
-@dynamic id;
 @dynamic categoryid;
+@dynamic id;
 @dynamic name;
 @dynamic path;
+@dynamic isfinished;
 
 @end

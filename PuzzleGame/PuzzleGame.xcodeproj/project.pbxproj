@@ -11,6 +11,11 @@
 		E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */; };
 		E75D6EDB19E8FFD300A1F6C9 /* CommonalityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDA19E8FFD300A1F6C9 /* CommonalityFunction.m */; };
 		E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDD19E909B700A1F6C9 /* PuzzleContext.swift */; };
+		E7BE2C5619F899EC009225F1 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */; };
+		E7BE2C5719F899EC009225F1 /* ImageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */; };
+		E7BE2C5A19F89C7B009225F1 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */; };
+		E7BE2C5B19F89C7B009225F1 /* ImageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2C5919F89C7B009225F1 /* ImageListCell.xib */; };
+		E7BE2C5E19F89EE6009225F1 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2C5D19F89EE6009225F1 /* ImageInfo.m */; };
 		E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */; };
 		E7E30E5D19E7C9CF00DFB777 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5C19E7C9CF00DFB777 /* MainController.swift */; };
 		E7E30E6019E7C9CF00DFB777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E5E19E7C9CF00DFB777 /* Main.storyboard */; };
@@ -19,7 +24,6 @@
 		E7E30E7B19E7C9F300DFB777 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E7A19E7C9F300DFB777 /* Default-568h@2x.png */; };
 		E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E8019E7CB0900DFB777 /* PuzzleImage.xcdatamodeld */; };
 		E7E30E8619E7CDB800DFB777 /* ImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E8519E7CDB800DFB777 /* ImageCategory.m */; };
-		E7E30E8919E7CDB800DFB777 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E8819E7CDB800DFB777 /* ImageInfo.m */; };
 		E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E8B19E7DFE000DFB777 /* CoreBundle.bundle */; };
 		E7F48D6A19F6A90D00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; };
 		E7F48D6E19F6AA7D00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; };
@@ -56,6 +60,12 @@
 		E75D6ED919E8FFD300A1F6C9 /* CommonalityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonalityFunction.h; sourceTree = "<group>"; };
 		E75D6EDA19E8FFD300A1F6C9 /* CommonalityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonalityFunction.m; sourceTree = "<group>"; };
 		E75D6EDD19E909B700A1F6C9 /* PuzzleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleContext.swift; sourceTree = "<group>"; };
+		E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
+		E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageListViewController.xib; sourceTree = "<group>"; };
+		E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
+		E7BE2C5919F89C7B009225F1 /* ImageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageListCell.xib; sourceTree = "<group>"; };
+		E7BE2C5C19F89EE6009225F1 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		E7BE2C5D19F89EE6009225F1 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E7E30E5519E7C9CE00DFB777 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E30E5919E7C9CF00DFB777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +81,6 @@
 		E7E30E8319E7CDB700DFB777 /* PuzzleGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PuzzleGame-Bridging-Header.h"; path = "../DataModel/PuzzleGame-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7E30E8419E7CDB800DFB777 /* ImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCategory.h; sourceTree = "<group>"; };
 		E7E30E8519E7CDB800DFB777 /* ImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCategory.m; sourceTree = "<group>"; };
-		E7E30E8719E7CDB800DFB777 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
-		E7E30E8819E7CDB800DFB777 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E7E30E8B19E7DFE000DFB777 /* CoreBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreBundle.bundle; sourceTree = "<group>"; };
 		E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +110,10 @@
 			children = (
 				E75D6ED419E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift */,
 				E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */,
+				E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */,
+				E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */,
+				E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */,
+				E7BE2C5919F89C7B009225F1 /* ImageListCell.xib */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
@@ -191,10 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				E7E30E8019E7CB0900DFB777 /* PuzzleImage.xcdatamodeld */,
-				E7E30E8719E7CDB800DFB777 /* ImageInfo.h */,
-				E7E30E8819E7CDB800DFB777 /* ImageInfo.m */,
 				E7E30E8419E7CDB800DFB777 /* ImageCategory.h */,
 				E7E30E8519E7CDB800DFB777 /* ImageCategory.m */,
+				E7BE2C5C19F89EE6009225F1 /* ImageInfo.h */,
+				E7BE2C5D19F89EE6009225F1 /* ImageInfo.m */,
 			);
 			path = DataModel;
 			sourceTree = SOURCE_ROOT;
@@ -280,8 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BE2C5B19F89C7B009225F1 /* ImageListCell.xib in Resources */,
 				E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */,
 				E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */,
+				E7BE2C5719F899EC009225F1 /* ImageListViewController.xib in Resources */,
 				E7E30E6019E7C9CF00DFB777 /* Main.storyboard in Resources */,
 				E7E30E7B19E7C9F300DFB777 /* Default-568h@2x.png in Resources */,
 				E7E30E6219E7C9CF00DFB777 /* Images.xcassets in Resources */,
@@ -303,11 +317,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7E30E5D19E7C9CF00DFB777 /* MainController.swift in Sources */,
-				E7E30E8919E7CDB800DFB777 /* ImageInfo.m in Sources */,
+				E7BE2C5E19F89EE6009225F1 /* ImageInfo.m in Sources */,
+				E7BE2C5A19F89C7B009225F1 /* ImageListCell.swift in Sources */,
 				E75D6ED619E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift in Sources */,
 				E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */,
 				E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */,
 				E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */,
+				E7BE2C5619F899EC009225F1 /* ImageListViewController.swift in Sources */,
 				E75D6EDB19E8FFD300A1F6C9 /* CommonalityFunction.m in Sources */,
 				E7E30E8619E7CDB800DFB777 /* ImageCategory.m in Sources */,
 			);

@@ -26,7 +26,6 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
     func setimagecategory(imagecategory:ImageCategory)
     {
         _imagecategory = imagecategory
-//        let bundle1:NSBundle = BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as NSBundle
         var path:String?=nil
         if(imagecategory.imagepath == nil)
         {
@@ -41,37 +40,6 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         println("\(path)")
         
         
-//        let bundlePath:NSString? = NSBundle.mainBundle().pathForResource(COREBUNDLENAME, ofType: "bundle")
-//        
-//        let bundle1:NSBundle? = NSBundle(path:bundlePath!)
-        
-
-//
-//        imvMain.image = UIImage(named: "ImageCategory/电影/img5.png", inBundle: bundle1, compatibleWithTraitCollection: nil)
-     //   imvMain.image = CommonalityFunction.loadImage(path!)
-        
-//        let strrr:String  = bundle1!.pathForResource("img5", ofType: "png", inDirectory: "ImageCategory/电影/") as String
-        
-        
-//                    let aryImageInfo:NSArray = bundle1!.pathsForResourcesOfType("png", inDirectory: "1") as NSArray
-        
-//        let strre:String = bundle1.pathForResource("img2", ofType: "png", inDirectory: "ImageCategory/卡通")! as String
-//        
-//        println("\(strre)")
-        
-  //      let image123:UIImage = UIImage(named: strre)
-//        imvMain.image = UIImage(contentsOfFile: strre)
-//        imvMain.image = CommonalityFunction.loadImage(strre)
-//        imvMain.image = UIImage(contentsOfFile: strre)
-        
-//        self.imvMain.image = image123
-//        println("\(imvMain.image)")
-//
-//        
-////            init(named name: String, inBundle bundle: NSBundle?, compatibleWithTraitCollection traitCollection: UITraitCollection?) -> UIImage
-//        
-//        
-//        
        imvMain.image = UIImage(contentsOfFile: path!)
         
        // -(void)applyEffectRoundRectSilverBorder:(UIColor*) color

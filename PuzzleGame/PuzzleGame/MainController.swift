@@ -130,13 +130,21 @@ class MainController: UIViewController {
 //    func collectionView(collectionView:UICollectionView 
     
     // The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+//    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView
+//    {
+//        
+//        println("===============")
+//        return UICollectionReusableView()
+//    }
+    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath)
     {
+        let imagecategoryitem : ImageCategory = imageCategoryAry!.objectAtIndex(indexPath.row) as ImageCategory
         
-        println("===============")
-        return UICollectionReusableView()
+        let imageListVC:ImageListViewController = ImageListViewController(imgCategory: imagecategoryitem)
+        
+        self.navigationController?.pushViewController(imageListVC, animated: false)
+        
     }
-    
     
 
 }

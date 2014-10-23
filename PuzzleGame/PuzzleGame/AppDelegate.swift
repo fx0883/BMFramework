@@ -75,7 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             for imageInfoitem in aryImageInfo
             {
                 let itemImageInfo:ImageInfo = ImageInfo.MR_createEntity()
-                itemImageInfo.id = item.id
+                itemImageInfo.id = NSUUID().UUIDString;
+                itemImageInfo.categoryid = item.id
                 
                 var strPath:NSString = imageInfoitem as NSString
                 

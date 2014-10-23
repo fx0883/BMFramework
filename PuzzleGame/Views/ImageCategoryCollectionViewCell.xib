@@ -81,7 +81,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="defultImageCategory" width="416" height="416"/>
+        <image name="defultImageCategory" width="350" height="350"/>
         <image name="stack" width="115" height="6"/>
     </resources>
 </document>
