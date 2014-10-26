@@ -48,7 +48,7 @@ class MainTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("listFuncCell", forIndexPath: indexPath) as UITableViewCell
         
                 // Configure the cell...
-        cell.textLabel?.text=listAry.objectAtIndex(indexPath.row) as NSString;
+        cell.textLabel.text=listAry.objectAtIndex(indexPath.row) as NSString;
         
         
         return cell

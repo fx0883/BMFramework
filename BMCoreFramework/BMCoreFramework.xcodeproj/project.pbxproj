@@ -203,6 +203,12 @@
 		E73BE3FA19E76F9D00BCF63D /* UIScrollView+SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = E73BE34E19E76F9800BCF63D /* UIScrollView+SVPullToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E73BE3FB19E76F9E00BCF63D /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E73BE34F19E76F9800BCF63D /* UIScrollView+SVPullToRefresh.m */; };
 		E73BE3FC19E76F9E00BCF63D /* BMUtilDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = E73BE35119E76F9800BCF63D /* BMUtilDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76D61FB19FA2F7000D8E812 /* AFAppSoapClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E76D61F919FA2F7000D8E812 /* AFAppSoapClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76D61FC19FA2F7000D8E812 /* AFAppSoapClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D61FA19FA2F7000D8E812 /* AFAppSoapClient.m */; };
+		E76D620019FA2FAB00D8E812 /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E76D61FE19FA2FAB00D8E812 /* XMLDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76D620119FA2FAB00D8E812 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D61FF19FA2FAB00D8E812 /* XMLDictionary.m */; };
+		E76D620A19FA568D00D8E812 /* SoapHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E76D620819FA568D00D8E812 /* SoapHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E76D620B19FA568D00D8E812 /* SoapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D620919FA568D00D8E812 /* SoapHelper.m */; };
 		E77C8D8419E627060086609D /* BMCoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E77C8D8319E627060086609D /* BMCoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E77C8E2B19E629F70086609D /* BMCoreFramework-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E77C8DF519E629F70086609D /* BMCoreFramework-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		E77C8E2C19E629F70086609D /* NSMutableDictionary+XSDic.h in Headers */ = {isa = PBXBuildFile; fileRef = E77C8DF819E629F70086609D /* NSMutableDictionary+XSDic.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -428,6 +434,14 @@
 		E73BE34F19E76F9800BCF63D /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
 		E73BE35119E76F9800BCF63D /* BMUtilDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMUtilDefine.h; sourceTree = "<group>"; };
 		E74F8DD419F5FAFF00173386 /* headerDoc.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = headerDoc.txt; sourceTree = "<group>"; };
+		E76D61F319F9E87100D8E812 /* BMFramework.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = BMFramework.pptx; sourceTree = "<group>"; };
+		E76D61F419F9E95900D8E812 /* BMframework文档.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BMframework文档.docx"; sourceTree = "<group>"; };
+		E76D61F919FA2F7000D8E812 /* AFAppSoapClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppSoapClient.h; sourceTree = "<group>"; };
+		E76D61FA19FA2F7000D8E812 /* AFAppSoapClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppSoapClient.m; sourceTree = "<group>"; };
+		E76D61FE19FA2FAB00D8E812 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		E76D61FF19FA2FAB00D8E812 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		E76D620819FA568D00D8E812 /* SoapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapHelper.h; sourceTree = "<group>"; };
+		E76D620919FA568D00D8E812 /* SoapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapHelper.m; sourceTree = "<group>"; };
 		E77C8D7E19E627060086609D /* BMCoreFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMCoreFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77C8D8219E627060086609D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77C8D8319E627060086609D /* BMCoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMCoreFramework.h; sourceTree = "<group>"; };
@@ -523,6 +537,8 @@
 		E73BE29719E76F9700BCF63D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E76D61F919FA2F7000D8E812 /* AFAppSoapClient.h */,
+				E76D61FA19FA2F7000D8E812 /* AFAppSoapClient.m */,
 				E73BE29819E76F9700BCF63D /* AFAppAPIClient.h */,
 				E73BE29919E76F9700BCF63D /* AFAppAPIClient.m */,
 				E73BE29A19E76F9700BCF63D /* AFAppDotNetAPIClient.h */,
@@ -567,6 +583,8 @@
 		E73BE2A919E76F9700BCF63D /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				E76D620719FA568D00D8E812 /* SoapHelper */,
+				E76D61FD19FA2FAB00D8E812 /* XMLDictionary */,
 				E73BE2AA19E76F9700BCF63D /* AFDownloadRequestOperation */,
 				E73BE2AD19E76F9700BCF63D /* AFNetworking */,
 				E73BE2D619E76F9700BCF63D /* EDColor */,
@@ -888,9 +906,29 @@
 		E74F8DD319F5FAFF00173386 /* Doc */ = {
 			isa = PBXGroup;
 			children = (
+				E76D61F419F9E95900D8E812 /* BMframework文档.docx */,
+				E76D61F319F9E87100D8E812 /* BMFramework.pptx */,
 				E74F8DD419F5FAFF00173386 /* headerDoc.txt */,
 			);
 			path = Doc;
+			sourceTree = "<group>";
+		};
+		E76D61FD19FA2FAB00D8E812 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				E76D61FE19FA2FAB00D8E812 /* XMLDictionary.h */,
+				E76D61FF19FA2FAB00D8E812 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		E76D620719FA568D00D8E812 /* SoapHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E76D620819FA568D00D8E812 /* SoapHelper.h */,
+				E76D620919FA568D00D8E812 /* SoapHelper.m */,
+			);
+			path = SoapHelper;
 			sourceTree = "<group>";
 		};
 		E77C8D7419E627060086609D = {
@@ -1099,6 +1137,8 @@
 				E73BE3C119E76F9A00BCF63D /* NSObject+MagicalDataImport.h in Headers */,
 				E73BE3F719E76F9D00BCF63D /* SVPullToRefresh.h in Headers */,
 				E73BE37519E76F9800BCF63D /* AFSecurityPolicy.h in Headers */,
+				E76D61FB19FA2F7000D8E812 /* AFAppSoapClient.h in Headers */,
+				E76D620019FA2FAB00D8E812 /* XMLDictionary.h in Headers */,
 				E73BE39C19E76F9900BCF63D /* UIColor+HSL.h in Headers */,
 				E73BE39419E76F9800BCF63D /* UIColor+CIELAB.h in Headers */,
 				E73BE3A419E76F9900BCF63D /* JSONModel.h in Headers */,
@@ -1195,6 +1235,7 @@
 				E77C8E4D19E629F70086609D /* BMBaseTableViewController.h in Headers */,
 				E77C8E3919E629F70086609D /* BMContext.h in Headers */,
 				E77C8E4519E629F70086609D /* ServiceInspector_WindowHook.h in Headers */,
+				E76D620A19FA568D00D8E812 /* SoapHelper.h in Headers */,
 				E77C8E3B19E629F70086609D /* BMAppManager.h in Headers */,
 				E77C8D8419E627060086609D /* BMCoreFramework.h in Headers */,
 			);
@@ -1334,8 +1375,10 @@
 				E73BE36319E76F9800BCF63D /* BMDownloadManager.m in Sources */,
 				E77C8E5019E629F70086609D /* BMBaseView.m in Sources */,
 				E73BE38619E76F9800BCF63D /* UIAlertView+AFNetworking.m in Sources */,
+				E76D620119FA2FAB00D8E812 /* XMLDictionary.m in Sources */,
 				E73BE38A19E76F9800BCF63D /* UIImageView+AFNetworking.m in Sources */,
 				E73BE35F19E76F9800BCF63D /* AFAppDotNetAPIClient.m in Sources */,
+				E76D620B19FA568D00D8E812 /* SoapHelper.m in Sources */,
 				E73BE36F19E76F9800BCF63D /* AFHTTPRequestOperationManager.m in Sources */,
 				E73BE36119E76F9800BCF63D /* BMDownloadFileInfo.m in Sources */,
 				E73BE3DC19E76F9B00BCF63D /* NSPersistentStore+MagicalRecord.m in Sources */,
@@ -1415,6 +1458,7 @@
 				E73BE3B419E76F9A00BCF63D /* JSONModel+networking.m in Sources */,
 				E73BE3D819E76F9B00BCF63D /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				E73BE3C219E76F9A00BCF63D /* NSObject+MagicalDataImport.m in Sources */,
+				E76D61FC19FA2F7000D8E812 /* AFAppSoapClient.m in Sources */,
 				E77C8E4219E629F70086609D /* ServiceInspector_Border.m in Sources */,
 				E73BE38019E76F9800BCF63D /* README.md in Sources */,
 				E73BE3A919E76F9900BCF63D /* JSONModelClassProperty.m in Sources */,

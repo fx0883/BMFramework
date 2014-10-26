@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E76D620519FA44E300D8E812 /* SoapInvokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E76D620319FA44E300D8E812 /* SoapInvokeViewController.m */; };
+		E76D620619FA44E300D8E812 /* SoapInvokeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76D620419FA44E300D8E812 /* SoapInvokeViewController.xib */; };
 		E77C8DDD19E629130086609D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77C8DDC19E629130086609D /* Images.xcassets */; };
 		E77C8FDD19E62EC00086609D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C8FC119E62EC00086609D /* AppDelegate.m */; };
 		E77C8FDF19E62EC00086609D /* BMActionManager+FrameworkDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E77C8FC819E62EC00086609D /* BMActionManager+FrameworkDemo.m */; };
@@ -23,7 +25,6 @@
 		E77C947519E654500086609D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E77C947419E654500086609D /* Default-568h@2x.png */; };
 		E7F48D6419F6A80A00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
 		E7F48D6519F6A81300E57A5B /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
-		E7F48D6619F6A87A00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; };
 		E7F48D6719F6A87A00E57A5B /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E76D620219FA44E300D8E812 /* SoapInvokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapInvokeViewController.h; sourceTree = "<group>"; };
+		E76D620319FA44E300D8E812 /* SoapInvokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapInvokeViewController.m; sourceTree = "<group>"; };
+		E76D620419FA44E300D8E812 /* SoapInvokeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoapInvokeViewController.xib; sourceTree = "<group>"; };
 		E77C8DCC19E629130086609D /* BMOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77C8DD019E629130086609D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77C8DDC19E629130086609D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -77,7 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F48D6419F6A80A00E57A5B /* BMCoreFramework.framework in Frameworks */,
-				E7F48D6619F6A87A00E57A5B /* BMCoreFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +90,9 @@
 		E77C8DC319E629130086609D = {
 			isa = PBXGroup;
 			children = (
+				E77C8FC919E62EC00086609D /* CoreBundle.bundle */,
 				E7F48D6319F6A80A00E57A5B /* BMCoreFramework.framework */,
 				E77C947419E654500086609D /* Default-568h@2x.png */,
-				E77C8FC919E62EC00086609D /* CoreBundle.bundle */,
 				E77C8DCE19E629130086609D /* BMOCDemo */,
 				E77C8DCD19E629130086609D /* Products */,
 			);
@@ -185,6 +188,9 @@
 				E77C8FD919E62EC00086609D /* ExampleViewController.xib */,
 				E77C8FDA19E62EC00086609D /* MainViewController.h */,
 				E77C8FDB19E62EC00086609D /* MainViewController.m */,
+				E76D620219FA44E300D8E812 /* SoapInvokeViewController.h */,
+				E76D620319FA44E300D8E812 /* SoapInvokeViewController.m */,
+				E76D620419FA44E300D8E812 /* SoapInvokeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				E77C8DDD19E629130086609D /* Images.xcassets in Resources */,
 				E77C8FE519E62EC00086609D /* DownloadViewController.xib in Resources */,
 				E77C8FE019E62EC00086609D /* CoreBundle.bundle in Resources */,
+				E76D620619FA44E300D8E812 /* SoapInvokeViewController.xib in Resources */,
 				E77C947519E654500086609D /* Default-568h@2x.png in Resources */,
 				E77C8FE719E62EC00086609D /* ExampleViewController.xib in Resources */,
 			);
@@ -268,6 +275,7 @@
 				E77C8FE219E62EC00086609D /* WeatherModel.m in Sources */,
 				E77C8FDD19E62EC00086609D /* AppDelegate.m in Sources */,
 				E77C8FE819E62EC00086609D /* MainViewController.m in Sources */,
+				E76D620519FA44E300D8E812 /* SoapInvokeViewController.m in Sources */,
 				E77C8FE319E62EC00086609D /* WeatherResultModel.m in Sources */,
 				E77C8FE619E62EC00086609D /* ExampleViewController.m in Sources */,
 				E77C947319E654370086609D /* main.m in Sources */,

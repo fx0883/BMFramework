@@ -10,3 +10,8 @@
 
 #import "CommonalityFunction.h"
 
+#import "SourceImageVC.h"
+#import "Card.h"
+#import "Config.h"
+#import "GameView.h"
+

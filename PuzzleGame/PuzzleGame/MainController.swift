@@ -142,7 +142,7 @@ class MainController: UIViewController {
         
         let imageListVC:ImageListViewController = ImageListViewController(imgCategory: imagecategoryitem)
         
-        self.navigationController?.pushViewController(imageListVC, animated: false)
+        self.navigationController?.pushViewController(imageListVC, animated: true)
         
     }
     

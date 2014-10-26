@@ -14,6 +14,7 @@
 //---所有命令的调用
 #define DEF_CMD_GETWEATHER @"getWeather:"
 
+#define DEF_CMD_GETSOAP @"getSoap:"
 
 //所有命令
 #define DEF_ACTIONID_EAMPLE @"ExampleAction"

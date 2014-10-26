@@ -25,6 +25,11 @@
 		E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E8019E7CB0900DFB777 /* PuzzleImage.xcdatamodeld */; };
 		E7E30E8619E7CDB800DFB777 /* ImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E8519E7CDB800DFB777 /* ImageCategory.m */; };
 		E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E8B19E7DFE000DFB777 /* CoreBundle.bundle */; };
+		E7EED53319FCF16C003B27BA /* SourceImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EED52D19FCF16C003B27BA /* SourceImageVC.m */; };
+		E7EED53419FCF16C003B27BA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EED52F19FCF16C003B27BA /* Card.m */; };
+		E7EED53519FCF16C003B27BA /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53219FCF16C003B27BA /* GameView.m */; };
+		E7EED53819FCF261003B27BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53619FCF261003B27BA /* GameViewController.swift */; };
+		E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EED53719FCF261003B27BA /* GameViewController.xib */; };
 		E7F48D6A19F6A90D00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; };
 		E7F48D6E19F6AA7D00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; };
 		E7F48D6F19F6AA7D00E57A5B /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -82,6 +87,15 @@
 		E7E30E8419E7CDB800DFB777 /* ImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCategory.h; sourceTree = "<group>"; };
 		E7E30E8519E7CDB800DFB777 /* ImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCategory.m; sourceTree = "<group>"; };
 		E7E30E8B19E7DFE000DFB777 /* CoreBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreBundle.bundle; sourceTree = "<group>"; };
+		E7EED52C19FCF16C003B27BA /* SourceImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceImageVC.h; sourceTree = "<group>"; };
+		E7EED52D19FCF16C003B27BA /* SourceImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceImageVC.m; sourceTree = "<group>"; };
+		E7EED52E19FCF16C003B27BA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		E7EED52F19FCF16C003B27BA /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		E7EED53019FCF16C003B27BA /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		E7EED53119FCF16C003B27BA /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		E7EED53219FCF16C003B27BA /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		E7EED53619FCF261003B27BA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E7EED53719FCF261003B27BA /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,12 +122,21 @@
 		E75D6ED319E8C26700A1F6C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E7EED52C19FCF16C003B27BA /* SourceImageVC.h */,
+				E7EED52D19FCF16C003B27BA /* SourceImageVC.m */,
+				E7EED52E19FCF16C003B27BA /* Card.h */,
+				E7EED52F19FCF16C003B27BA /* Card.m */,
+				E7EED53019FCF16C003B27BA /* Config.h */,
+				E7EED53119FCF16C003B27BA /* GameView.h */,
+				E7EED53219FCF16C003B27BA /* GameView.m */,
 				E75D6ED419E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift */,
 				E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */,
 				E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */,
 				E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */,
 				E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */,
 				E7BE2C5919F89C7B009225F1 /* ImageListCell.xib */,
+				E7EED53619FCF261003B27BA /* GameViewController.swift */,
+				E7EED53719FCF261003B27BA /* GameViewController.xib */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
@@ -292,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */,
 				E7BE2C5B19F89C7B009225F1 /* ImageListCell.xib in Resources */,
 				E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */,
 				E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */,
@@ -316,9 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EED53819FCF261003B27BA /* GameViewController.swift in Sources */,
 				E7E30E5D19E7C9CF00DFB777 /* MainController.swift in Sources */,
 				E7BE2C5E19F89EE6009225F1 /* ImageInfo.m in Sources */,
+				E7EED53319FCF16C003B27BA /* SourceImageVC.m in Sources */,
 				E7BE2C5A19F89C7B009225F1 /* ImageListCell.swift in Sources */,
+				E7EED53519FCF16C003B27BA /* GameView.m in Sources */,
 				E75D6ED619E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift in Sources */,
 				E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */,
 				E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */,
@@ -326,6 +353,7 @@
 				E7BE2C5619F899EC009225F1 /* ImageListViewController.swift in Sources */,
 				E75D6EDB19E8FFD300A1F6C9 /* CommonalityFunction.m in Sources */,
 				E7E30E8619E7CDB800DFB777 /* ImageCategory.m in Sources */,
+				E7EED53419FCF16C003B27BA /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

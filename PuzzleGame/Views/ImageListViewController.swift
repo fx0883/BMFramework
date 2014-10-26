@@ -252,7 +252,20 @@ class ImageListViewController: UIViewController {
         return UIEdgeInsetsMake(10, 15, 20, 15);
     }
 
-    
+    //    {
+    //
+    //        println("===============")
+    //        return UICollectionReusableView()
+    //    }
+    func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath)
+    {
+        let imageInfoItem : ImageInfo = imageListArray!.objectAtIndex(indexPath.row) as ImageInfo
+        
+        let gameVC:GameViewController = GameViewController(imageInfo: imageInfoItem)
+        
+        self.navigationController?.pushViewController(gameVC, animated: true)
+        
+    }
     
     
     

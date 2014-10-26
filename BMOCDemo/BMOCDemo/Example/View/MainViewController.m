@@ -11,11 +11,13 @@
 #import "MainViewController.h"
 #import "ExampleViewController.h"
 #import "DownloadViewController.h"
+#import "SoapInvokeViewController.h"
 
 enum LISTFUNCTIONENUM
 {
     WeatherNotice= 0,
-    DownloadFile
+    DownloadFile,
+    SOAPINVOKE
     
 };
 
@@ -40,7 +42,7 @@ enum LISTFUNCTIONENUM
 
 -(void)loadData
 {
-    _listFunction=[NSArray arrayWithObjects:@"天气预告",@"断点下载",nil];
+    _listFunction=[NSArray arrayWithObjects:@"天气预告",@"断点下载",@"soap调用",nil];
 
 }
 
@@ -112,6 +114,14 @@ enum LISTFUNCTIONENUM
             [self.navigationController pushViewController:downloadviewcontroller animated:YES];
             }
  
+            break;
+            
+        case SOAPINVOKE:
+        {
+            SoapInvokeViewController *soapinvokeviewcontroller = [SoapInvokeViewController new];
+            [self.navigationController pushViewController:soapinvokeviewcontroller animated:YES];
+        }
+            
             break;
         default:
             break;

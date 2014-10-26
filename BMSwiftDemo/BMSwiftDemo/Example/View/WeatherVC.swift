@@ -137,7 +137,7 @@ class WeatherVC: UITableViewController {
         }
         
         println("\(strMsg)")
-        cell!.textLabel!.text=strMsg
+        cell!.textLabel.text=strMsg
 //        cell!.textLabel!.textAlignment = NSTextAlignment.Center
 
         return cell!
