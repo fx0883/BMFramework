@@ -10,6 +10,12 @@
 #import "Config.h"
 #import "Card.h"
 
+@protocol GameViewDelegate <NSObject>
+
+-(void)finishedGame;
+
+@end
+
 @interface GameView : UIView{
     NSMutableArray * picsArr;
 
@@ -27,7 +33,7 @@
     Dir lastDir;
 }
 
-
+@property id<GameViewDelegate> delegate;
 -(void)startBreak;
 -(void)stopBreak;
 -(Dir)getDir:(Card*)touchedCard;

@@ -1,5 +1,5 @@
 //
-//  GameViewController.swift
+//  OriginalPicViewController.swift
 //  PuzzleGame
 //
 //  Created by fx on 14/10/26.
@@ -8,28 +8,23 @@
 
 import UIKit
 
-class GameViewController: UIViewController,GameViewDelegate {
+class OriginalPicViewController: UIViewController {
 
-    @IBOutlet weak var gameview: GameView!
-    @IBOutlet weak var disorganizeButton: UIButton!
-    @IBOutlet weak var originalPicButton: UIButton!
+    @IBOutlet weak var originalView: UIImageView!
+    
     var curImageInfo:ImageInfo? = nil
-    var breakBtnStatus:Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.initView()
         // Do any additional setup after loading the view.
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: "GameViewController", bundle: nibBundleOrNil)
-        // Custom initialization
-    }
+
     
-    func finishedGame()
-    {
-        self.curImageInfo?.isfinished = NSNumber(bool: true)
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: "OriginalPicViewController", bundle: nibBundleOrNil)
+        // Custom initialization
     }
     
     init(imageInfo imageinfo: ImageInfo)
@@ -41,47 +36,6 @@ class GameViewController: UIViewController,GameViewDelegate {
     required init(coder aDecoder: NSCoder) {
         super.init()
         fatalError("init(coder:) has not been implemented")
-        
-    }
-    
-    func initView()
-    {
-//            [gameView setGameImage:[[UIImage imageNamed:[Data nextInnerImg]] CGImage]];
-        self.edgesForExtendedLayout = UIRectEdge.None
-        var path:String?=nil
-        if(self.curImageInfo?.path != nil)
-        {
- 
-            path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + self.curImageInfo!.path
-            
-            let image:UIImage = UIImage(contentsOfFile: path!)!
-            
-            gameview.setGameImage2(image.CGImage)
-            
-            gameview.layer.borderColor = UIColor.whiteColor().CGColor
-            gameview.layer.borderWidth = 1.0
-        }
-        
-        
-        self.navigationItem.hidesBackButton = true
-
-        UIImage(named: "bclose")
-        
-        let rightButton:UIButton = UIButton(frame: CGRectMake(0, 0, 40, 40))
-        rightButton.setBackgroundImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
-        rightButton.addTarget(self, action: "closeBtnClick:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        let nItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightButton)
-        
-        //將tilte 文字設成白色粗體
-        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
-        ];
-        
-        
-        self.navigationItem.rightBarButtonItem = nItemRight
-
-        
-        gameview.delegate = self
     }
     
 
@@ -90,50 +44,49 @@ class GameViewController: UIViewController,GameViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-
-    @IBAction func originalPicButton(sender: UIButton) {
+    
+    func initView()
+    {
+        //            [gameView setGameImage:[[UIImage imageNamed:[Data nextInnerImg]] CGImage]];
+        self.edgesForExtendedLayout = UIRectEdge.None
+        var path:String?=nil
+        if(self.curImageInfo?.path != nil)
+        {
+            
+            path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + self.curImageInfo!.path
+            
+            let image:UIImage = UIImage(contentsOfFile: path!)!
+            
+            originalView.image = image;
+            originalView.layer.borderColor = UIColor.whiteColor().CGColor
+            originalView.layer.borderWidth = 1.0
+        }
         
-        let originalpicviewcontroller:OriginalPicViewController = OriginalPicViewController(imageInfo: self.curImageInfo!)
+        self.navigationItem.hidesBackButton = true
         
-        self.navigationController!.pushViewController(originalpicviewcontroller, animated: true)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UIImage(named: "bclose")
         
         
+        
+        
+        let rightButton:UIButton = UIButton(frame: CGRectMake(0, 0, 40, 40))
+        rightButton.setBackgroundImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+        rightButton.addTarget(self, action: "closeBtnClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        let nItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightButton)
+        //將tilte 文字設成白色粗體
+        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
+        ];
+        
+        
+        self.navigationItem.rightBarButtonItem = nItemRight
     }
+
     func closeBtnClick(sender:UIButton!)
     {
-        self.navigationController!.popViewControllerAnimated(false)
+        self.navigationController!.popViewControllerAnimated(true)
     }
-    
-    @IBAction func disorganizeButton(sender: UIButton) {
-        switch self.breakBtnStatus
-        {
-        case 1:
-            breakBtnStatus=2;
-//            [breakBtn setTitle:@"停止" forState:UIControlStateNormal];
-            
-            disorganizeButton.setTitle("停止", forState: UIControlState.Normal)
-//            showSourceBtn.hidden=YES;
-//            changeImageBtn.hidden=YES;
-            gameview.startBreak();
-            break;
-        case 2:
-            breakBtnStatus=1;
-            disorganizeButton.setTitle("打乱", forState: UIControlState.Normal)
-            
-//            showSourceBtn.hidden=NO;
-//            changeImageBtn.hidden=NO;
-            
-            gameview.stopBreak();
-            break;
-        default:
-            break;
-        }
-
-        
-    }
-    
-    
     /*
     // MARK: - Navigation
 

@@ -25,6 +25,12 @@ class ImageListViewController: UIViewController {
         self.initView()
     }
 
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        self.mainCV.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -62,37 +68,7 @@ class ImageListViewController: UIViewController {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UIImage(named: "bclose")
         
-//        UINavigationBar.appearance().titleTextAttributes = NSDictionary(
-        
-//        let dic:NSDictionary = NSDictionary.dictionaryWithValuesForKeys(UIColor.whiteColor(), UITextAttributeTextColor,shadow,NSShadowAttributeName,UIFont(name: "HelveticaNeue-CondensedBlack", size: 21.0),NSFontAttributeName,nil)
-        
-//        let dic:NSDictionary = {  UITextAttributeFont : UIFont(name: "HelveticaNeue-CondensedBlack", size: 21.0),
-//            UITextAttributeTextColor: [UIColor whiteColor],
-//            UITextAttributeTextShadowColor: [UIColor grayColor],
-            //UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero}
-       
-//        let dic:NSDictionary =
-//NSDictionary.dictionaryWithValuesForKeys(UIFont(name: "HelveticaNeue-CondensedBlack", size: 21.0),UITextAttributeFont,UIColor.whiteColor(),UITextAttributeTextColor,nil)
-//        UINavigationBar.appearance().titleTextAttributes = dic
-        
-//        [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-//            [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
-//            shadow, NSShadowAttributeName,
-//            [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
-        
-        
-//           init(image: UIImage?, style: UIBarButtonItemStyle, target: AnyObject?, action: Selector)
-        
-        
-        
-//        UIButton *searchbutton = [UIButton buttonWithType:UIButtonTypeCustom];
-//        
-//        [searchbutton setBackgroundImage:[UIImage imageNamed:@"sousuodi.png"] forState:UIControlEventTouchUpInside];
-//        
-//        [searchbutton addTarget:self action:@selector(queryAllCode) forControlEvents:UIControlEventTouchUpInside];
-//        
-//        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:searchbutton];
-//        self.navigationItem.rightBarButtonItem = item;
+
         
         
         let rightButton:UIButton = UIButton(frame: CGRectMake(0, 0, 40, 40))
@@ -101,61 +77,11 @@ class ImageListViewController: UIViewController {
         
         let nItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightButton)
         
-//        let nItemRight:UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "bclose"), style: UIBarButtonItemStyle.Bordered, target: self, action: "closeBtnClick:")
-        
-        
-//        textAttributes = @{
-//            NSFontAttributeName : SharedFont.fontLargeMedium,
-//            NSForegroundColorAttributeName : [UIColor whiteColor],
-//            NSShadowAttributeName : shadow,
-//            //UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(1, 1)]
-//        };
-//        let dic:NSDictionary = [
-//            NSFontAttributeName : UIFont(name: "HelveticaNeue-CondensedBlack",size: 21),
-//            NSForegroundColorAttributeName :UIColor.whiteColor,
-//            NSShadowAttributeName : shadow,nil
-//            //UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(1, 1)]
-//        ]
-//        
-        
-        
-        
-        
-        
-//        -(NSDictionary *)naviBarAttributes {
-//            
-//            NSDictionary *textAttributes = nil;
-//            NSShadow *shadow = [NSShadow new];
-//            shadow.shadowColor = [UIColor grayColor];
-//            
-//            if ([[[UIDevice currentDevice] systemVersion] integerValue] >= 7.0) {
-//                textAttributes = @{
-//                    NSFontAttributeName : SharedFont.fontLargeMedium,
-//                    NSForegroundColorAttributeName : [UIColor whiteColor],
-//                    NSShadowAttributeName : shadow,
-//                    //UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(1, 1)]
-//                };
-//            } else {
-//                #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
-//                    textAttributes = @{
-//                    UITextAttributeFont: SharedFont.fontLargeMedium,
-//                    UITextAttributeTextColor: [UIColor whiteColor],
-//                    UITextAttributeTextShadowColor: [UIColor grayColor],
-//                    //UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero]
-//                    };
-//                #endif
-//            }
-        
-
         //將tilte 文字設成白色粗體
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
         ];
         
-        
-//        let dic:NSDictionary = NSDictionary.dictionaryWithValuesForKeys(UIColor.whiteColor(),NSForegroundColorAttributeName,shadow,NSShadowAttributeName,nil)
-//        self.navigationController.navigationBar.titleTextAttributes =[NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
-//        ];
-
+    
         self.navigationItem.rightBarButtonItem = nItemRight
         
         let nib:UINib = UINib(nibName: "ImageListCell", bundle: nil)

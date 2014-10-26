@@ -84,6 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 var strPath:NSString = imageInfoitem as NSString
                 
                 itemImageInfo.path = strPath
+                itemImageInfo.isfinished = NSNumber(bool: false)
                 
 //                println("\(itemImageInfo.path)")
                 
@@ -99,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
-//        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         
         
 //        NSArray *ary = [bundle pathsForResourcesOfType:@"" inDirectory:@"ImageCategory"];
@@ -204,6 +205,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {

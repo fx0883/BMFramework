@@ -16,20 +16,37 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="weJ-vA-vpr">
                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="completed" translatesAutoresizingMaskIntoConstraints="NO" id="8W7-1C-5TP">
+                        <rect key="frame" x="103" y="3" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="UN9-nV-stC"/>
+                            <constraint firstAttribute="height" constant="44" id="hjs-k6-fyf"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="8W7-1C-5TP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="5Ia-S9-nhH"/>
                 <constraint firstItem="weJ-vA-vpr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="691-Bw-ZA0"/>
                 <constraint firstAttribute="bottom" secondItem="weJ-vA-vpr" secondAttribute="bottom" id="DiY-cN-Uc4"/>
+                <constraint firstItem="weJ-vA-vpr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EfA-Zz-Po8"/>
+                <constraint firstItem="weJ-vA-vpr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GCw-nA-yBz"/>
+                <constraint firstAttribute="bottom" secondItem="weJ-vA-vpr" secondAttribute="bottom" id="JyP-uw-3vL"/>
                 <constraint firstItem="weJ-vA-vpr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OkQ-Mk-Fd1"/>
+                <constraint firstAttribute="trailing" secondItem="8W7-1C-5TP" secondAttribute="trailing" constant="3" id="ZgU-YN-189"/>
                 <constraint firstAttribute="trailing" secondItem="weJ-vA-vpr" secondAttribute="trailing" id="ZoV-pP-lrr"/>
+                <constraint firstAttribute="trailing" secondItem="weJ-vA-vpr" secondAttribute="trailing" id="tAc-5m-Anw"/>
             </constraints>
             <size key="customSize" width="168" height="151"/>
             <connections>
+                <outlet property="imvComplete" destination="8W7-1C-5TP" id="d5H-tZ-mbX"/>
                 <outlet property="imvMain" destination="weJ-vA-vpr" id="JOl-JP-Dxq"/>
             </connections>
-            <point key="canvasLocation" x="289" y="273.5"/>
+            <point key="canvasLocation" x="289" y="273"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="completed" width="32" height="34"/>
+    </resources>
 </document>

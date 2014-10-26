@@ -10,6 +10,7 @@ import UIKit
 
 class ImageListCell: UICollectionViewCell {
 
+    @IBOutlet weak var imvComplete: UIImageView!
     var curImageInfo:ImageInfo? = nil
     @IBOutlet weak var imvMain: UIImageView!
     override func awakeFromNib() {
@@ -27,7 +28,9 @@ class ImageListCell: UICollectionViewCell {
             imvMain.image = UIImage(contentsOfFile: path!)
         }
               imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
+  
+//        Bool flagIsHidden = curImageInfo!.isfinished.boolValue
         
-               
+        imvComplete.hidden = !curImageInfo!.isfinished.boolValue
     }
 }

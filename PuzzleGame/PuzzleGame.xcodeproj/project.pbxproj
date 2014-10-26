@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71F5A9219FD28F6000BD3D2 /* OriginalPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F5A9019FD28F6000BD3D2 /* OriginalPicViewController.swift */; };
+		E71F5A9319FD28F6000BD3D2 /* OriginalPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F5A9119FD28F6000BD3D2 /* OriginalPicViewController.xib */; };
 		E75D6ED619E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D6ED419E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift */; };
 		E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */; };
 		E75D6EDB19E8FFD300A1F6C9 /* CommonalityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDA19E8FFD300A1F6C9 /* CommonalityFunction.m */; };
@@ -60,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E71F5A9019FD28F6000BD3D2 /* OriginalPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalPicViewController.swift; sourceTree = "<group>"; };
+		E71F5A9119FD28F6000BD3D2 /* OriginalPicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OriginalPicViewController.xib; sourceTree = "<group>"; };
 		E75D6ED419E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		E75D6ED919E8FFD300A1F6C9 /* CommonalityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonalityFunction.h; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				E7BE2C5919F89C7B009225F1 /* ImageListCell.xib */,
 				E7EED53619FCF261003B27BA /* GameViewController.swift */,
 				E7EED53719FCF261003B27BA /* GameViewController.xib */,
+				E71F5A9019FD28F6000BD3D2 /* OriginalPicViewController.swift */,
+				E71F5A9119FD28F6000BD3D2 /* OriginalPicViewController.xib */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
@@ -323,6 +329,7 @@
 				E7E30E6019E7C9CF00DFB777 /* Main.storyboard in Resources */,
 				E7E30E7B19E7C9F300DFB777 /* Default-568h@2x.png in Resources */,
 				E7E30E6219E7C9CF00DFB777 /* Images.xcassets in Resources */,
+				E71F5A9319FD28F6000BD3D2 /* OriginalPicViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 				E7BE2C5E19F89EE6009225F1 /* ImageInfo.m in Sources */,
 				E7EED53319FCF16C003B27BA /* SourceImageVC.m in Sources */,
 				E7BE2C5A19F89C7B009225F1 /* ImageListCell.swift in Sources */,
+				E71F5A9219FD28F6000BD3D2 /* OriginalPicViewController.swift in Sources */,
 				E7EED53519FCF16C003B27BA /* GameView.m in Sources */,
 				E75D6ED619E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift in Sources */,
 				E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */,

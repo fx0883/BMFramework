@@ -164,6 +164,12 @@
 
 -(void)checkToShowDialog{
     if ([self checkSuccess]) {
+    
+        if ([self.delegate respondsToSelector: @selector(finishedGame)]) {
+            [self.delegate finishedGame];
+        }
+
+        
         [[[UIAlertView alloc] initWithTitle:@"恭喜您" message:@"拼图成功" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
     }
 }
