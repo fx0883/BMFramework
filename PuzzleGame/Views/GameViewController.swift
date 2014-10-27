@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameViewController: UIViewController,GameViewDelegate {
+class GameViewController: BaseViewController,GameViewDelegate {
 
     @IBOutlet weak var gameview: GameView!
     @IBOutlet weak var disorganizeButton: UIButton!
@@ -19,6 +19,8 @@ class GameViewController: UIViewController,GameViewDelegate {
         super.viewDidLoad()
 
         self.initView()
+        
+        
         // Do any additional setup after loading the view.
     }
     
