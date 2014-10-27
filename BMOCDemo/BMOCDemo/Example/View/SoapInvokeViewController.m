@@ -17,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self testSoap];
+   // [self testSoap];
+    
+    [self testLogin];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -60,6 +62,38 @@
     
     [SharedControl excute:dicParam];
 
+}
+
+
+-(void)testLogin
+{
+    //实例化一个传入传出参数
+    BMBaseParam* baseparam=[BMBaseParam new];
+    
+    //参数
+    //    baseparam.paramString=self.cityCodeStr;
+    
+    [baseparam.paramDic setObject:@"id" forKey:@"234"];
+    
+    __weak SoapInvokeViewController *weakSelf=self;
+    baseparam.withresultobjectblock=^(int intError,NSString* strMsg,id obj)
+    {
+        if (intError == 0)
+        {
+            
+            self.msgLabel.text = (NSString*)obj;
+        }
+        else
+        {
+            NSLog(@"获取数据失败");
+        }
+    };
+    NSMutableDictionary* dicParam=[NSMutableDictionary createParamDic];
+    [dicParam setActionID:DEF_ACTIONID_EAMPLE strcmd:@"login:"];
+    [dicParam setParam:baseparam];
+    
+    [SharedControl excute:dicParam];
+    
 }
 
 /*

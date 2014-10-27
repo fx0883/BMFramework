@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>WebServiceNameSpace</key>
-	<string>http://WebXml.com.cn/</string>
+	<string>http://tempuri.org/</string>
 	<key>BaseSoapUrl</key>
-	<string>http://webservice.webxml.com.cn</string>
+	<string>http://10.58.174.94:8001</string>
 	<key>BaseUrl3</key>
 	<string>http://www.weather.com.cn</string>
 	<key>BaseUrl2</key>
