@@ -9,6 +9,7 @@
 import UIKit
 let kPuzzleDBName:String = "PuzzleImageDb.sqlite"
 let COREBUNDLENAME:String = "CoreBundle"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -31,6 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        AdmobManager.sharedInstance();
         
 //        CommonUtil.giveMeRate()
+        
+//        ShareSDK.registerApp(ShareSdkAppKey);
+//            [ShareSDK registerApp:@"api20"];
+        ShareSDKManager.sharedInstance().registSDKkey();
         
         return true
     }

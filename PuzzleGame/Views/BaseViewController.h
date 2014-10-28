@@ -22,4 +22,19 @@
  *  插屏广告
  */
 -(void)startInterstitialView;
+
+
+/*!
+ *  右边按钮
+ *
+ *  @param strImageName
+ */
+-(void)addNavRightButton:(NSString*)strImageName;
+
+/*!
+ *  左边按钮
+ *
+ *  @param strImageName
+ */
+-(void)addNavLeftButton:(NSString*)strImageName;
 @end

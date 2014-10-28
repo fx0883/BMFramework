@@ -20,4 +20,7 @@
 #import "Appirater.h"
 #import "CommonUtil.h"
 
+#import <ShareSDK/ShareSDK.h>
+#import "ShareSDKManager.h"
+
 

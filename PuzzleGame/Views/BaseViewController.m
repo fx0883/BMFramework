@@ -95,7 +95,41 @@
      }];
 }
 
+-(void)addNavRightButton:(NSString*)strImageName
+{
 
+    UIButton *rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [rightButton setBackgroundImage:[UIImage imageNamed:strImageName] forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(rightBarButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *rItemRight = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    
+    self.navigationItem.rightBarButtonItem = rItemRight;
+}
+
+
+-(void)addNavLeftButton:(NSString*)strImageName
+{
+    
+    UIButton *leftButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [leftButton setBackgroundImage:[UIImage imageNamed:strImageName] forState:UIControlStateNormal];
+    [leftButton addTarget:self action:@selector(leftBarButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *lItemRight = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+    
+    self.navigationItem.leftBarButtonItem = lItemRight;
+}
+
+
+-(void)rightBarButtonItemClick:(UIButton*)sender
+{
+    
+}
+
+-(void)leftBarButtonItemClick:(UIButton*)sender
+{
+    
+}
 
 -(void)viewDidAppear:(BOOL)animated
 {

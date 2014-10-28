@@ -40,24 +40,27 @@ class MainController: BaseViewController {
         
         
         self.mainCV.registerNib(nib, forCellWithReuseIdentifier: kCollectionCell)
-        
-        
-//        [self.collectionView  registerClass:[TimeLineCollectionReusableView class]
-//            forSupplementaryViewOfKind:kTimeLine
-//            withReuseIdentifier:DEFTIMELINE];
-        
-//        self.mainCV.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier :"123")
-        
-        
-//        self.mainCV.registerClass(UICollectionReusableView.self, forSupplementaryViewOfKind: "12", withReuseIdentifier: "23")
-        
-//        self.mainCV.allowsMultipleSelection = true
-//        
-//        self.mainCV.allowsSelection=true
-        
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
         self.edgesForExtendedLayout = UIRectEdge.None
+        
+        
+        self.addNavRightButton("bclose")
+        self.addNavLeftButton("bclose")
+        
     }
+    
+    func rightBarButtonItemClick(sender:UIButton)
+    {
+       println("right")
+        //-(void)customShareMenuClickHandler:(UIButton *)sender;
+        
+        ShareSDKManager.sharedInstance().noneUIShareAllButtonClickHandler(sender)
+    }
+    
+    func leftBarButtonItemClick(sender:UIButton)
+    {
+        println("left")
+    }
+    
     
     func loadData()
     {
