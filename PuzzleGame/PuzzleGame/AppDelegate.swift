@@ -28,11 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         
+//        AdmobManager.sharedInstance();
+        
         return true
     }
     
     func loadData()
     {
+        
         
         let bundlePath:NSString? = NSBundle.mainBundle().pathForResource(COREBUNDLENAME, ofType: "bundle")
         

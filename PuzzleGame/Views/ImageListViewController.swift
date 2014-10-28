@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageListViewController: UIViewController {
+class ImageListViewController: BaseViewController {
 
     
     @IBOutlet weak var mainCV: UICollectionView!

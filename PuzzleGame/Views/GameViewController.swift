@@ -14,6 +14,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
     @IBOutlet weak var disorganizeButton: UIButton!
     @IBOutlet weak var originalPicButton: UIButton!
     var curImageInfo:ImageInfo? = nil
+    var bIsFinishedGame:Bool = false
     var breakBtnStatus:Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,8 @@ class GameViewController: BaseViewController,GameViewDelegate {
     func finishedGame()
     {
         self.curImageInfo?.isfinished = NSNumber(bool: true)
+        self.bIsFinishedGame = true;
+        self.startAnimateBannerView()
     }
     
     init(imageInfo imageinfo: ImageInfo)
@@ -102,9 +105,18 @@ class GameViewController: BaseViewController,GameViewDelegate {
         
         
     }
+    
+    
+    
     func closeBtnClick(sender:UIButton!)
     {
-        self.navigationController!.popViewControllerAnimated(false)
+        if(self.bIsFinishedGame)
+        {
+            self.startInterstitialView()
+        }
+        self.navigationController!.popViewControllerAnimated(true)
+
+        
     }
     
     @IBAction func disorganizeButton(sender: UIButton) {

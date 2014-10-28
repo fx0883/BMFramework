@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "GADBannerView.h"
 #import "GADRequest.h"
+#import "AdmobManager.h"
 @interface BaseViewController()<GADBannerViewDelegate>
 {
     CGFloat _floatBannerHeight;
@@ -40,20 +41,7 @@
 
 -(void)loadBanner
 {
-    self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
-    
-    
-    
-    // Replace this ad unit ID with your own ad unit ID.
-    self.bannerView.adUnitID = @"ca-app-pub-5934917937656240/2225227611";
-    self.bannerView.rootViewController = self;
-    self.bannerView.delegate = self;
-    
-    GADRequest *request = [GADRequest request];
-    // Requests test ads on devices you specify. Your test device ID is printed to the console when
-    // an ad request is made.
-    request.testDevices = @[ GAD_SIMULATOR_ID, @"MY_TEST_DEVICE_ID" ];
-    [self.bannerView loadRequest:request];
+    self.bannerView = [AdmobManager sharedInstance].bannerView;
     
     [self.view addSubview:self.bannerView];
     
@@ -84,15 +72,7 @@
 }
 */
 
-#pragma mark- Ad Request Lifecycle Notifications
 
-/// Called when an ad request loaded an ad. This is a good opportunity to add this view to the
-/// hierarchy if it has not been added yet. If the ad was received as a part of the server-side auto
-/// refreshing, you can examine the hasAutoRefreshed property of the view.
-- (void)adViewDidReceiveAd:(GADBannerView *)view
-{
-    [self startAnimateBannerView];
-}
 
 -(void)startAnimateBannerView
 {
@@ -114,51 +94,25 @@
          [self.bannerView setFrame:CGRectMake(0, -_floatBannerHeight, _floatBannerWidth, _floatBannerHeight)];
      }];
 }
-/// Called when an ad request failed. Normally this is because no network connection was available
-/// or no ads were available (i.e. no fill). If the error was received as a part of the server-side
-/// auto refreshing, you can examine the hasAutoRefreshed property of the view.
-- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error
+
+
+
+-(void)viewDidAppear:(BOOL)animated
 {
-    
+    [super viewDidAppear:animated];
+    [AdmobManager sharedInstance].curControlView = self;
 }
 
-#pragma mark- Click-Time Lifecycle Notifications
-
-/// Called just before presenting the user a full screen view, such as a browser, in response to
-/// clicking on an ad. Use this opportunity to stop animations, time sensitive interactions, etc.
-///
-/// Normally the user looks at the ad, dismisses it, and control returns to your application by
-/// calling adViewDidDismissScreen:. However if the user hits the Home button or clicks on an App
-/// Store link your application will end. On iOS 4.0+ the next method called will be
-/// applicationWillResignActive: of your UIViewController
-/// (UIApplicationWillResignActiveNotification). Immediately after that adViewWillLeaveApplication:
-/// is called.
-- (void)adViewWillPresentScreen:(GADBannerView *)adView
+-(void)viewDidDisappear:(BOOL)animated
 {
-    
+    [super viewDidDisappear:animated];
+    [AdmobManager sharedInstance].curControlView = nil;
 }
 
-/// Called just before dismissing a full screen view.
-- (void)adViewWillDismissScreen:(GADBannerView *)adView
-{
-    
-}
 
-/// Called just after dismissing a full screen view. Use this opportunity to restart anything you
-/// may have stopped as part of adViewWillPresentScreen:.
-- (void)adViewDidDismissScreen:(GADBannerView *)adView
+-(void)startInterstitialView
 {
-    
+    [[AdmobManager sharedInstance] startInterstitialView];
 }
-
-/// Called just before the application will background or terminate because the user clicked on an
-/// ad that will launch another application (such as the App Store). The normal
-/// UIApplicationDelegate methods, like applicationDidEnterBackground:, will be called immediately
-/// before this.
-- (void)adViewWillLeaveApplication:(GADBannerView *)adView
-{
-    
-}
-
 
 @end

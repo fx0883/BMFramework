@@ -10,13 +10,33 @@
 #import <BMCoreFramework/BMCoreFramework.h>
 #import "GADBannerView.h"
 #import "GADRequest.h"
-@interface AdmobManager : NSObject<GADBannerViewDelegate>
+#import <StoreKit/StoreKit.h>
+#import "GADInterstitial.h"
+
+@interface AdmobManager : NSObject<GADBannerViewDelegate,GADInterstitialDelegate>
+{
+
+}
+
+
 /*!
  *  单例宏的调用
  */
 AS_SINGLETON(AdmobManager)
 
 @property(nonatomic, strong) GADBannerView *bannerView;
-@property(nonatomic, weak) UIViewController *rootViewController;
+@property(nonatomic, strong) UIViewController *rootViewController;
+@property(readwrite) BOOL bIsBannerViewReady;
 
+@property (nonatomic, weak) GADInterstitial *adInterstitial;
+@property(nonatomic,strong) UIViewController *curControlView;
+@property(readwrite) BOOL bIsFirstGADInterstitial;
+
+@property (readwrite) CGFloat floatBannerWidth;
+@property (readwrite) CGFloat floatBannerHeight;
+
+//CGFloat _floatBannerHeight;
+//CGFloat _floatBannerWidth;
+-(instancetype)initWithViewController:(UIViewController*)rootViewController;
+-(void)startInterstitialView;
 @end

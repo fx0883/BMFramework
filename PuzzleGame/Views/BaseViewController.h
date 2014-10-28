@@ -12,5 +12,14 @@
 @interface BaseViewController : UIViewController
 
 @property(nonatomic, strong) GADBannerView *bannerView;
+
+/*!
+ *  广告动画
+ */
 -(void)startAnimateBannerView;
+
+/*!
+ *  插屏广告
+ */
+-(void)startInterstitialView;
 @end
