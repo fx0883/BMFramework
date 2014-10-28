@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainController: UIViewController {
+class MainController: BaseViewController {
 
     @IBOutlet weak var mainCV: UICollectionView!
     @IBOutlet weak var bgImv: UIImageView!

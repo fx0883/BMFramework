@@ -28,7 +28,7 @@ AS_SINGLETON(AdmobManager)
 @property(nonatomic, strong) UIViewController *rootViewController;
 @property(readwrite) BOOL bIsBannerViewReady;
 
-@property (nonatomic, weak) GADInterstitial *adInterstitial;
+@property (nonatomic, strong) GADInterstitial *adInterstitial;
 @property(nonatomic,strong) UIViewController *curControlView;
 @property(readwrite) BOOL bIsFirstGADInterstitial;
 

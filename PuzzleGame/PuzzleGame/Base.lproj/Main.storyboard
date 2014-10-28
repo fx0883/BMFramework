@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0af-W8-qkR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fFO-rA-ovB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
+        <!--SplashVC-->
+        <scene sceneID="ryq-al-cpr">
+            <objects>
+                <viewController id="fFO-rA-ovB" customClass="FSSplashVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1mR-n7-Arp"/>
+                        <viewControllerLayoutGuide type="bottom" id="wKf-7C-cbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EgO-sc-gTL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txU-Fc-0ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1012" y="106"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yKa-VR-Ghc">
             <objects>
-                <navigationController id="0af-W8-qkR" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="MainNav" storyboardIdentifier="MainNav" id="0af-W8-qkR" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xfX-EG-xMR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,7 +42,7 @@
         <!--Main Controller-->
         <scene sceneID="fEn-Dz-fuh">
             <objects>
-                <viewController id="j1d-3S-tDy" customClass="MainController" customModule="PuzzleGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="j1d-3S-tDy" customClass="MainController" customModule="PuzzleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lk1-VY-ZmS"/>
                         <viewControllerLayoutGuide type="bottom" id="9QF-iA-Uu8"/>

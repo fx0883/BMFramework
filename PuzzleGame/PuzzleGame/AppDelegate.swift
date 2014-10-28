@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        AdmobManager.sharedInstance();
         
+//        CommonUtil.giveMeRate()
+        
         return true
     }
     
@@ -213,6 +215,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
+        Appirater.appEnteredForeground(true)
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
@@ -222,6 +226,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+//    func giveMeRate()
+//    {
+//    Appirater.setAppId("909949742")
+//    Appirater.setDaysUntilPrompt(5)
+//    Appirater.setUsesUntilPrompt(0)
+//    Appirater.setSignificantEventsUntilPrompt(-1)
+//    Appirater.setTimeBeforeReminding(2)
+//    Appirater.setDebug(true)
+//    }
 
 
 }

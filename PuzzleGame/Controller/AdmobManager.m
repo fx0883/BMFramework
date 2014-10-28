@@ -48,13 +48,13 @@ DEF_SINGLETON(AdmobManager)
 {
     self.rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     self.curControlView = [UIApplication sharedApplication].keyWindow.rootViewController;
-    if (self.curControlView == nil) {
-        self.curControlView = [UIViewController new];
-        UIWindow *window =[UIApplication sharedApplication].keyWindow;
-        
-        int k=0;
-        k++;
-    }
+//    if (self.curControlView == nil) {
+//        self.curControlView = [UIViewController new];
+//        UIWindow *window =[UIApplication sharedApplication].keyWindow;
+//        
+//        int k=0;
+//        k++;
+//    }
     self.bIsBannerViewReady = NO;
     self.bIsFirstGADInterstitial = YES;
 }
@@ -223,6 +223,19 @@ DEF_SINGLETON(AdmobManager)
     if (_adInterstitial.isReady) {
         [_adInterstitial presentFromRootViewController:viewController];
     }
+}
+
+-(void)giveMeRate
+{
+//    [Appirater setAppId:@"909949742"];
+//    [Appirater setDaysUntilPrompt:5];
+//    [Appirater setUsesUntilPrompt:0];
+//    [Appirater setSignificantEventsUntilPrompt:-1];
+//    [Appirater setTimeBeforeReminding:2];
+//    [Appirater setDebug:YES];
+//    [Appirater appLaunched:YES];
+    
+    
 }
 
 @end
