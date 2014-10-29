@@ -12,10 +12,21 @@ class GameViewController: BaseViewController,GameViewDelegate {
 
     @IBOutlet weak var gameview: GameView!
     @IBOutlet weak var disorganizeButton: UIButton!
-    @IBOutlet weak var originalPicButton: UIButton!
+//    @IBOutlet weak var originalPicButton: UIButton!
+    
+    @IBOutlet weak var difficultyLabel: UILabel!
+    
+    @IBOutlet weak var difficultySlider: UISlider!
+    
+    @IBAction func difficultyChanged(sender: AnyObject) {
+        
+        let sider:UISlider = sender as UISlider
+        difficultyLabel.text = NSString(format: "%d", Int(sider.value))
+    }
     var curImageInfo:ImageInfo? = nil
     var bIsFinishedGame:Bool = false
     var breakBtnStatus:Int = 1
+    var timer:NSTimer? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -97,7 +108,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
     
 
 
-    @IBAction func originalPicButton(sender: UIButton) {
+    func originalPicButton() {
         
         let originalpicviewcontroller:OriginalPicViewController = OriginalPicViewController(imageInfo: self.curImageInfo!)
         
@@ -123,27 +134,57 @@ class GameViewController: BaseViewController,GameViewDelegate {
         switch self.breakBtnStatus
         {
         case 1:
+            
+            
             breakBtnStatus=2;
 //            [breakBtn setTitle:@"停止" forState:UIControlStateNormal];
             
-            disorganizeButton.setTitle("停止", forState: UIControlState.Normal)
+            disorganizeButton.setTitle("原图", forState: UIControlState.Normal)
+            let  timeinterval = NSTimeInterval(self.difficultySlider.value/10)
+            self.difficultySlider.enabled = false
+            
+            self.startBreakByTimer(timeinterval)
 //            showSourceBtn.hidden=YES;
 //            changeImageBtn.hidden=YES;
-            gameview.startBreak();
+//            gameview.startBreak();
             break;
         case 2:
-            breakBtnStatus=1;
-            disorganizeButton.setTitle("打乱", forState: UIControlState.Normal)
+//            breakBtnStatus=1;
+//            disorganizeButton.setTitle("原图", forState: UIControlState.Normal)
             
 //            showSourceBtn.hidden=NO;
 //            changeImageBtn.hidden=NO;
             
-            gameview.stopBreak();
+//            gameview.stopBreak();
+            self.originalPicButton()
             break;
         default:
             break;
         }
 
+        
+    }
+    
+    func startBreakByTimer(timeinterval:NSTimeInterval)
+    {
+        gameview.startBreak();
+//        timer=NSTimer(timeInterval: 2, target: self, selector:"timeTick", userInfo: nil, repeats: true)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(timeinterval, target: self, selector: "timeTick", userInfo: nil, repeats:false);
+        
+        
+//            init(fireDate date: NSDate, interval ti: NSTimeInterval, target t: AnyObject, selector s: Selector, userInfo ui: AnyObject?, repeats rep: Bool)
+        
+//        timer = NSTimer(fireDate: NSDate.date, interval: <#NSTimeInterval#>, target: <#AnyObject#>, selector: <#Selector#>, userInfo: <#AnyObject?#>, repeats: <#Bool#>)
+//        
+      //  timer!.fire();
+        
+        
+    }
+    
+    func timeTick()
+    {
+        gameview.stopBreak()
         
     }
     

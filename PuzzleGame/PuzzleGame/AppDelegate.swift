@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             println("\(strSubDirctory)")
             
-            let aryImageInfo:NSArray = bundle!.pathsForResourcesOfType("png", inDirectory: strSubDirctory) as NSArray
+            let aryImageInfo:NSArray = bundle!.pathsForResourcesOfType("jpg", inDirectory: strSubDirctory) as NSArray
             
             for imageInfoitem in aryImageInfo
             {

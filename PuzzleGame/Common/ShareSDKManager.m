@@ -440,12 +440,23 @@ DEF_SINGLETON(ShareSDKManager)
                                     fileData:nil
                                 emoticonData:nil];
     
+//    //定制QQ分享信息
+//    [publishContent addQQUnitWithType:INHERIT_VALUE
+//                              content:INHERIT_VALUE
+//                                title:@"Hello QQ!"
+//                                  url:INHERIT_VALUE
+//                                image:INHERIT_VALUE];
+    
+    
+//    http://i2.mhimg.com/kl688file/2014-8/2014081310355938337.jpg
+    
+    
     //定制QQ分享信息
     [publishContent addQQUnitWithType:INHERIT_VALUE
                               content:INHERIT_VALUE
-                                title:@"Hello QQ!"
+                                title:@"很厉害的游戏"
                                   url:INHERIT_VALUE
-                                image:INHERIT_VALUE];
+                                image:[ShareSDK imageWithUrl:@"http://i2.mhimg.com/kl688file/2014-8/2014081310355938337.jpg"]];
     
     //定制邮件信息
     [publishContent addMailUnitWithSubject:@"Hello Mail"

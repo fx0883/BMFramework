@@ -48,7 +48,7 @@
             cardsMap[indexI-1][indexJ]=card;
             card.indexI=indexI-1;
             card.indexJ=indexJ;
-            [card moveToPositionByIndexIJ:nil target:nil];
+            [card moveToPositionByIndexIJ2:nil target:nil];
             
             [self checkToShowDialog];
             break;
@@ -59,7 +59,7 @@
             cardsMap[indexI][indexJ-1]=card;
             card.indexI=indexI;
             card.indexJ=indexJ-1;
-            [card moveToPositionByIndexIJ:nil target:nil];
+            [card moveToPositionByIndexIJ2:nil target:nil];
             
             [self checkToShowDialog];
             break;
@@ -70,7 +70,7 @@
             cardsMap[indexI+1][indexJ]=card;
             card.indexI=indexI+1;
             card.indexJ=indexJ;
-            [card moveToPositionByIndexIJ:nil target:nil];
+            [card moveToPositionByIndexIJ2:nil target:nil];
             
             [self checkToShowDialog];
             break;
@@ -81,7 +81,7 @@
             cardsMap[indexI][indexJ+1]=card;
             card.indexI=indexI;
             card.indexJ=indexJ+1;
-            [card moveToPositionByIndexIJ:nil target:nil];
+            [card moveToPositionByIndexIJ2:nil target:nil];
             
             [self checkToShowDialog];
             break;

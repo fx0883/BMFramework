@@ -9,6 +9,12 @@
 #import "Card.h"
 #import "Config.h"
 
+@interface Card()
+{
+    NSTimeInterval _cardMove;
+}
+@end
+
 @implementation Card
 
 
@@ -26,6 +32,23 @@
 
 -(void)moveToPositionByIndexIJ:(SEL)moveEnd target:(id)target{
     
+    //这里改变移动速度
+    [UIView animateWithDuration:0.01f animations:^{
+        CGRect f = self.frame;
+        f.origin.x = indexI*CARD_WIDTH;
+        f.origin.y = indexJ*CARD_HEIGHT;
+        self.frame=f;
+    } completion:^(BOOL finished) {
+        if (target) {
+            [target performSelector:moveEnd];
+        }
+    }];
+}
+
+
+-(void)moveToPositionByIndexIJ2:(SEL)moveEnd target:(id)target{
+    
+    //这里改变移动速度
     [UIView animateWithDuration:0.2f animations:^{
         CGRect f = self.frame;
         f.origin.x = indexI*CARD_WIDTH;
@@ -37,6 +60,7 @@
         }
     }];
 }
+
 
 
 

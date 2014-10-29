@@ -34,6 +34,7 @@
 }
 
 @property id<GameViewDelegate> delegate;
+
 -(void)startBreak;
 -(void)stopBreak;
 -(Dir)getDir:(Card*)touchedCard;

@@ -13,6 +13,7 @@
 
 -(void)resetPositionByIndexIJ;
 -(void)moveToPositionByIndexIJ:(SEL)moveEnd target:(id)target;
+-(void)moveToPositionByIndexIJ2:(SEL)moveEnd target:(id)target;
 
 -(BOOL)onRightPlace;
 
