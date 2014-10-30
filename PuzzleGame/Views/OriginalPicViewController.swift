@@ -8,18 +8,20 @@
 
 import UIKit
 
-class OriginalPicViewController: UIViewController {
+class OriginalPicViewController: BaseViewController {
 
     @IBOutlet weak var originalView: UIImageView!
     
     var curImageInfo:ImageInfo? = nil
     
+    @IBOutlet weak var backButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initView()
         // Do any additional setup after loading the view.
     }
     
+
 
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -38,17 +40,32 @@ class OriginalPicViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+//    override func viewDidDisappear(animated: Bool) {
+//        
+//        self.navigationController!.setNavigationBarHidden(false, animated: false)
+//        super.viewDidDisappear(animated)
+//
+//    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backButtonClick(sender: AnyObject) {
+        
+        
+//        self.navigationController!.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+    }
     
     func initView()
     {
         //            [gameView setGameImage:[[UIImage imageNamed:[Data nextInnerImg]] CGImage]];
-        self.edgesForExtendedLayout = UIRectEdge.None
+//        self.edgesForExtendedLayout = UIRectEdge.None
         var path:String?=nil
         if(self.curImageInfo?.path != nil)
         {
@@ -62,31 +79,35 @@ class OriginalPicViewController: UIViewController {
             originalView.layer.borderWidth = 1.0
         }
         
-        self.navigationItem.hidesBackButton = true
+//        self.navigationItem.hidesBackButton = true
+//        
+//        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+//        UIImage(named: "bclose")
+//        
+//        
+//        
+//        
+////        let rightButton:UIButton = UIButton(frame: CGRectMake(0, 0, 40, 40))
+////        rightButton.setBackgroundImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+////        rightButton.addTarget(self, action: "closeBtnClick:", forControlEvents: UIControlEvents.TouchUpInside)
+//        
+////        let nItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightButton)
+//        //將tilte 文字設成白色粗體
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
+//        ];
+//        
+////        self.navigationController!.setNavigationBarHidden(true, animated: false)
         
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        UIImage(named: "bclose")
         
+        self.addBannerViewAtBottom()
         
-        
-        
-        let rightButton:UIButton = UIButton(frame: CGRectMake(0, 0, 40, 40))
-        rightButton.setBackgroundImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
-        rightButton.addTarget(self, action: "closeBtnClick:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        let nItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightButton)
-        //將tilte 文字設成白色粗體
-        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline),NSForegroundColorAttributeName: UIColor(red:1, green:1, blue:1, alpha:1)
-        ];
-        
-        
-        self.navigationItem.rightBarButtonItem = nItemRight
+//        self.navigationItem.rightBarButtonItem = nItemRight
     }
 
-    func closeBtnClick(sender:UIButton!)
-    {
-        self.navigationController!.popViewControllerAnimated(true)
-    }
+//    func closeBtnClick(sender:UIButton!)
+//    {
+//        self.navigationController!.popViewControllerAnimated(true)
+//    }
     /*
     // MARK: - Navigation
 

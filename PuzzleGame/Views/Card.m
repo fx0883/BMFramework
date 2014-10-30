@@ -33,7 +33,7 @@
 -(void)moveToPositionByIndexIJ:(SEL)moveEnd target:(id)target{
     
     //这里改变移动速度
-    [UIView animateWithDuration:0.01f animations:^{
+    [UIView animateWithDuration:0.1f animations:^{
         CGRect f = self.frame;
         f.origin.x = indexI*CARD_WIDTH;
         f.origin.y = indexJ*CARD_HEIGHT;

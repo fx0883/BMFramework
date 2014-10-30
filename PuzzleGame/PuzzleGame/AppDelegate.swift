@@ -90,6 +90,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let itemImageInfo:ImageInfo = ImageInfo.MR_createEntity()
                 itemImageInfo.id = NSUUID().UUIDString;
                 itemImageInfo.categoryid = item.id
+                itemImageInfo.fastesttime=nil
                 
                 var strPath:NSString = imageInfoitem as NSString
                 

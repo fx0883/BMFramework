@@ -2,7 +2,7 @@
 //  ImageInfo.h
 //  PuzzleGame
 //
-//  Created by fx on 14/10/23.
+//  Created by fx on 14/10/30.
 //  Copyright (c) 2014年 FS. All rights reserved.
 //
 
@@ -14,8 +14,9 @@
 
 @property (nonatomic, retain) NSString * categoryid;
 @property (nonatomic, retain) NSString * id;
+@property (nonatomic, retain) NSNumber * isfinished;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * path;
-@property (nonatomic, retain) NSNumber * isfinished;
+@property (nonatomic, retain) NSNumber * fastesttime;
 
 @end

@@ -7,6 +7,7 @@
     </entity>
     <entity name="ImageInfo" representedClassName="ImageInfo" syncable="YES">
         <attribute name="categoryid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fastesttime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isfinished" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,6 +15,6 @@
     </entity>
     <elements>
         <element name="ImageCategory" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="ImageInfo" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="ImageInfo" positionX="-54" positionY="18" width="128" height="135"/>
     </elements>
 </model>

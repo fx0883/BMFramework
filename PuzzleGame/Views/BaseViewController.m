@@ -30,6 +30,13 @@
 }
 
 
+-(void)addBannerViewAtBottom
+{
+    
+    NSLog(@"%f",[UIScreen mainScreen].bounds.size.height);
+        [self.bannerView setFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height-_floatBannerHeight, _floatBannerWidth, _floatBannerHeight)];
+}
+
 
 -(void)loadViewConfig
 {
@@ -71,6 +78,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 
 

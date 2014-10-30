@@ -27,6 +27,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
     var bIsFinishedGame:Bool = false
     var breakBtnStatus:Int = 1
     var timer:NSTimer? = nil
+    var gameBeginTime:NSTimeInterval?=nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,6 +47,30 @@ class GameViewController: BaseViewController,GameViewDelegate {
         self.curImageInfo?.isfinished = NSNumber(bool: true)
         self.bIsFinishedGame = true;
         self.startAnimateBannerView()
+        
+        if(self.gameBeginTime != nil)
+        {
+            //完成游戏时间
+            var finishedGame:Int =  Int(NSDate.timeIntervalSinceReferenceDate() - self.gameBeginTime!)
+            
+            var strMsg:NSString = NSString(format: "拼图成功,用时%d秒", finishedGame)
+            if(self.curImageInfo?.fastesttime == nil)
+            {
+                self.curImageInfo!.fastesttime = NSNumber(integer:finishedGame)
+                self.navigationItem.title = self.getTitle()
+            }
+            
+            else if(self.curImageInfo?.fastesttime.integerValue > finishedGame)
+            {
+                self.curImageInfo!.fastesttime = NSNumber(integer:finishedGame)
+                self.navigationItem.title = self.getTitle()
+            }
+            
+            
+            //[[[UIAlertView alloc] initWithTitle:@"恭喜您" message:@"拼图成功" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
+            
+            UIAlertView(title: "恭喜您", message: strMsg, delegate: self, cancelButtonTitle: "关闭").show()
+        }
     }
     
     init(imageInfo imageinfo: ImageInfo)
@@ -98,6 +123,8 @@ class GameViewController: BaseViewController,GameViewDelegate {
 
         
         gameview.delegate = self
+        
+        self.navigationItem.title = self.getTitle()
     }
     
 
@@ -112,10 +139,36 @@ class GameViewController: BaseViewController,GameViewDelegate {
         
         let originalpicviewcontroller:OriginalPicViewController = OriginalPicViewController(imageInfo: self.curImageInfo!)
         
-        self.navigationController!.pushViewController(originalpicviewcontroller, animated: true)
+//        
+//        [self presentViewController:storeProductViewContorller animated:YES completion:^{
+//            
+//            }
+        
+        self.presentViewController(originalpicviewcontroller, animated: true) { () -> Void in
+            
+        }
+
         
         
     }
+    
+    func getTitle() ->NSString
+    {
+        var title:NSString = ""
+        if(self.curImageInfo!.fastesttime==nil)
+        {
+           title = "这关还没有玩过哦！"
+        }
+        else
+        {
+           title = NSString(format: "最快%d秒",self.curImageInfo!.fastesttime.integerValue)
+        }
+        
+        
+        
+        return title
+    }
+    
     
     
     
@@ -185,6 +238,9 @@ class GameViewController: BaseViewController,GameViewDelegate {
     func timeTick()
     {
         gameview.stopBreak()
+        
+        //开始game记时间
+        gameBeginTime = NSDate.timeIntervalSinceReferenceDate()
         
     }
     

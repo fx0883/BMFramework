@@ -37,4 +37,6 @@
  *  @param strImageName
  */
 -(void)addNavLeftButton:(NSString*)strImageName;
+
+-(void)addBannerViewAtBottom;
 @end

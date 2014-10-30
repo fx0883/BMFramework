@@ -23,14 +23,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZ1-wa-Kqd" customClass="GameView">
-                    <rect key="frame" x="20" y="50" width="280" height="280"/>
+                    <rect key="frame" x="20" y="10" width="280" height="280"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="Gah-Zb-Nd0"/>
                         <constraint firstAttribute="height" constant="280" id="Ozz-os-Faf"/>
                     </constraints>
                 </view>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zdu-wL-Idg">
-                    <rect key="frame" x="37" y="383" width="236" height="31"/>
+                    <rect key="frame" x="37" y="329" width="236" height="31"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="4bj-8p-o5r"/>
                         <constraint firstAttribute="width" constant="232" id="ruI-1S-jbY"/>
@@ -40,7 +40,7 @@
                     </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="难度:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-RQ-5tS">
-                    <rect key="frame" x="108" y="354" width="42" height="21"/>
+                    <rect key="frame" x="108" y="300" width="42" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="42" id="Pd8-DM-pmR"/>
                         <constraint firstAttribute="height" constant="21" id="qqm-Ky-qop"/>
@@ -50,7 +50,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vy-Sx-M2I">
-                    <rect key="frame" x="165" y="354" width="42" height="21"/>
+                    <rect key="frame" x="165" y="300" width="42" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="aui-5G-tFi"/>
                         <constraint firstAttribute="width" constant="42" id="i5d-7V-gJg"/>
@@ -60,12 +60,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svP-lB-OSo">
-                    <rect key="frame" x="90" y="421" width="130" height="30"/>
+                    <rect key="frame" x="90" y="367" width="130" height="36"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="130" id="H7G-22-GDP"/>
-                        <constraint firstAttribute="height" constant="30" id="Vj8-ah-eDR"/>
+                        <constraint firstAttribute="height" constant="36" id="Vj8-ah-eDR"/>
                     </constraints>
-                    <state key="normal" title="开玩">
+                    <state key="normal" title="开玩" backgroundImage="b-green">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -76,11 +76,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="FZ1-wa-Kqd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="8JN-tl-yeu"/>
+                <constraint firstItem="FZ1-wa-Kqd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="8JN-tl-yeu"/>
                 <constraint firstItem="Zdu-wL-Idg" firstAttribute="top" secondItem="0Vy-Sx-M2I" secondAttribute="bottom" constant="8" id="8Ub-Rg-uKA"/>
-                <constraint firstItem="ELi-RQ-5tS" firstAttribute="top" secondItem="FZ1-wa-Kqd" secondAttribute="bottom" constant="24" id="8t3-bB-bXx"/>
+                <constraint firstItem="ELi-RQ-5tS" firstAttribute="top" secondItem="FZ1-wa-Kqd" secondAttribute="bottom" constant="10" id="8t3-bB-bXx"/>
                 <constraint firstItem="ELi-RQ-5tS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="108" id="HAI-Aa-3bg"/>
-                <constraint firstItem="0Vy-Sx-M2I" firstAttribute="top" secondItem="FZ1-wa-Kqd" secondAttribute="bottom" constant="24" id="Myi-yb-gGa"/>
+                <constraint firstItem="0Vy-Sx-M2I" firstAttribute="top" secondItem="FZ1-wa-Kqd" secondAttribute="bottom" constant="10" id="Myi-yb-gGa"/>
                 <constraint firstItem="svP-lB-OSo" firstAttribute="top" secondItem="Zdu-wL-Idg" secondAttribute="bottom" constant="8" id="VBU-1g-YgP"/>
                 <constraint firstAttribute="centerX" secondItem="FZ1-wa-Kqd" secondAttribute="centerX" id="i7t-Gy-j9L"/>
                 <constraint firstAttribute="centerX" secondItem="svP-lB-OSo" secondAttribute="centerX" constant="5" id="kO9-Cq-s1g"/>
@@ -92,6 +92,7 @@
         </view>
     </objects>
     <resources>
+        <image name="b-green" width="152" height="46"/>
         <image name="bg" width="320" height="568"/>
     </resources>
 </document>
