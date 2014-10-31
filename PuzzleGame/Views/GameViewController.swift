@@ -192,7 +192,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
         self.popupView =  NSBundle.mainBundle().loadNibNamed("ShareGameView", owner: self, options: nil).last as? ShareGameView
         
 //        popupView = ShareGameView(
-        self.popupView!.frame = CGRectMake(0, 0, 280, 200)
+        self.popupView!.frame = CGRectMake(0, 0, 280, 180)
         
 //        [LotteryInvestigationView *lotteryInvestigationView=[[[NSBundle mainBundle] loadNibNamed:@"LotteryInvestigationView" owner:self options:nil] lastObject];
 //        [lotteryInvestigationView setFrame:frame];
