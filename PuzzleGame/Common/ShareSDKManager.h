@@ -17,11 +17,12 @@ AS_SINGLETON(ShareSDKManager)
 
 -(void)customShareMenuClickHandler:(UIButton *)sender;
 -(void)registSDKkey;
-/**
- *	@brief
- *
- *	@param 	sender 	事件对象
- */
-- (void)noneUIShareAllButtonClickHandler:(id)sender;
+
+- (void)noneUIShareAllButtonClickHandler:(id)sender
+                                   title:(NSString*)strTitle
+                                 content:(NSString*)strContent
+                             description:(NSString*)strDescription
+                            imagecontent:(UIImage*)imagecontent
+                                     url:(NSString*)strUrl;
 @property (nonatomic,readonly) AGViewDelegate *viewDelegate;
 @end

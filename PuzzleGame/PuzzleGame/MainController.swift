@@ -14,6 +14,21 @@ class MainController: BaseViewController {
     @IBOutlet weak var bgImv: UIImageView!
     let kCollectionCell:String = "ImageCategoryCell"
     var imageCategoryAry:NSArray? = nil
+    
+    
+//    title:(NSString*)strTitle
+//    content:(NSString*)strContent
+//    description:(NSString*)strDescription
+//    imagecontent:(UIImage*)imagecontent
+//    url:(NSString*)strUrl
+    
+    let strTitle:NSString = "拼图游戏"
+    let strContent:NSString = "这个游戏玩得让人疯掉了 https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/921615471"
+    let strDescription:NSString = "愉快地游戏"
+    let imageContent:UIImage = UIImage(named: "logo")!
+    let strUrl:NSString = "https://itunes.apple.com/us/app/puzzle-crazy/id921615471?l=zh&ls=1&mt=8"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,23 +58,54 @@ class MainController: BaseViewController {
         self.edgesForExtendedLayout = UIRectEdge.None
         
         
-        self.addNavRightButton("bclose")
-        self.addNavLeftButton("bclose")
+//        self.addNavRightButton("bclose")
+//        self.addNavLeftButton("bclose")
+        
+//        UIView *rightView = UIView
+        
+        let rightView:UIView = UIView(frame: CGRectMake(0, 0, 100, 44))
+        let btnGift:UIButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
+        let sharedGift:UIButton = UIButton(frame: CGRectMake(50, 0, 44, 44))
+        
+        btnGift.setImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+        btnGift.addTarget(self, action: "btnGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        rightView.addSubview(btnGift)
+        
+        sharedGift.setImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+        sharedGift.addTarget(self, action: "sharedGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        rightView.addSubview(sharedGift)
+        
+        let rItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightView)
+        self.navigationItem.rightBarButtonItem = rItemRight
         
     }
     
-    func rightBarButtonItemClick(sender:UIButton)
+    func btnGiftClick(sender:UIButton)
     {
-       println("right")
-        //-(void)customShareMenuClickHandler:(UIButton *)sender;
-        
-        ShareSDKManager.sharedInstance().noneUIShareAllButtonClickHandler(sender)
+        self.startInterstitialView()
     }
     
-    func leftBarButtonItemClick(sender:UIButton)
+    func sharedGiftClick(sender:UIButton)
     {
-        println("left")
+        ShareSDKManager.sharedInstance().noneUIShareAllButtonClickHandler(sender, title: strTitle, content: strContent, description: strDescription, imagecontent: imageContent, url: strUrl)
     }
+    
+//    -(void)addNavLeftButton:(NSString*)strImageName
+//    {
+//    
+//    UIButton *leftButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+//    [leftButton setBackgroundImage:[UIImage imageNamed:strImageName] forState:UIControlStateNormal];
+//    [leftButton addTarget:self action:@selector(leftBarButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    UIBarButtonItem *lItemRight = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
+//    
+//    self.navigationItem.leftBarButtonItem = lItemRight;
+//    }
+    
+
+    
+
+
     
     
     func loadData()

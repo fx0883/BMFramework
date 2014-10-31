@@ -43,6 +43,10 @@
 		E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDD19E909B700A1F6C9 /* PuzzleContext.swift */; };
 		E786A3791A01E88200EC0A94 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E786A3781A01E88200EC0A94 /* ImageInfo.m */; };
 		E78AF6FE19FFCB2600E4F18C /* AGViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */; };
+		E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22D61A035FA900CAF0FA /* ShareGameView.m */; };
+		E79B22DD1A0360CD00CAF0FA /* ShareGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E79B22DC1A0360CD00CAF0FA /* ShareGameView.xib */; };
+		E79B22E31A0366BB00CAF0FA /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22E01A0366BB00CAF0FA /* ASDepthModalViewController.m */; };
+		E79B22E41A0366BB00CAF0FA /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22E21A0366BB00CAF0FA /* UIImage+Blur.m */; };
 		E7BE2C5619F899EC009225F1 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */; };
 		E7BE2C5719F899EC009225F1 /* ImageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */; };
 		E7BE2C5A19F89C7B009225F1 /* ImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */; };
@@ -231,6 +235,13 @@
 		E786A3781A01E88200EC0A94 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E78AF6FC19FFCB2600E4F18C /* AGViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGViewDelegate.h; sourceTree = "<group>"; };
 		E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGViewDelegate.m; sourceTree = "<group>"; };
+		E79B22D51A035FA900CAF0FA /* ShareGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareGameView.h; sourceTree = "<group>"; };
+		E79B22D61A035FA900CAF0FA /* ShareGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareGameView.m; sourceTree = "<group>"; };
+		E79B22DC1A0360CD00CAF0FA /* ShareGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareGameView.xib; sourceTree = "<group>"; };
+		E79B22DF1A0366BB00CAF0FA /* ASDepthModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDepthModalViewController.h; sourceTree = "<group>"; };
+		E79B22E01A0366BB00CAF0FA /* ASDepthModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDepthModalViewController.m; sourceTree = "<group>"; };
+		E79B22E11A0366BB00CAF0FA /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		E79B22E21A0366BB00CAF0FA /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
 		E7BE2C5419F899EC009225F1 /* ImageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		E7BE2C5519F899EC009225F1 /* ImageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageListViewController.xib; sourceTree = "<group>"; };
 		E7BE2C5819F89C7B009225F1 /* ImageListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListCell.swift; sourceTree = "<group>"; };
@@ -368,6 +379,7 @@
 		E711458819FF4C1E00809550 /* vender */ = {
 			isa = PBXGroup;
 			children = (
+				E79B22DE1A0366BB00CAF0FA /* ASDepthModal */,
 				E7C7495819FF98D700B24716 /* ShareSDK */,
 				E71145E319FF718A00809550 /* appirater */,
 				E71145D419FF687900809550 /* FLKAutoLayout */,
@@ -519,6 +531,9 @@
 				E7EED53719FCF261003B27BA /* GameViewController.xib */,
 				E71F5A9019FD28F6000BD3D2 /* OriginalPicViewController.swift */,
 				E71F5A9119FD28F6000BD3D2 /* OriginalPicViewController.xib */,
+				E79B22D51A035FA900CAF0FA /* ShareGameView.h */,
+				E79B22D61A035FA900CAF0FA /* ShareGameView.m */,
+				E79B22DC1A0360CD00CAF0FA /* ShareGameView.xib */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
@@ -541,6 +556,17 @@
 			);
 			path = Controller;
 			sourceTree = SOURCE_ROOT;
+		};
+		E79B22DE1A0366BB00CAF0FA /* ASDepthModal */ = {
+			isa = PBXGroup;
+			children = (
+				E79B22DF1A0366BB00CAF0FA /* ASDepthModalViewController.h */,
+				E79B22E01A0366BB00CAF0FA /* ASDepthModalViewController.m */,
+				E79B22E11A0366BB00CAF0FA /* UIImage+Blur.h */,
+				E79B22E21A0366BB00CAF0FA /* UIImage+Blur.m */,
+			);
+			path = ASDepthModal;
+			sourceTree = "<group>";
 		};
 		E7C7495819FF98D700B24716 /* ShareSDK */ = {
 			isa = PBXGroup;
@@ -859,6 +885,7 @@
 				E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */,
 				E7BE2C5B19F89C7B009225F1 /* ImageListCell.xib in Resources */,
 				E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */,
+				E79B22DD1A0360CD00CAF0FA /* ShareGameView.xib in Resources */,
 				E7C7499019FF98D700B24716 /* WeiboSDK.bundle in Resources */,
 				E711460E19FF718A00809550 /* Appirater.podspec.json in Resources */,
 				E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */,
@@ -901,12 +928,15 @@
 				E7EED53519FCF16C003B27BA /* GameView.m in Sources */,
 				E75D6ED619E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.swift in Sources */,
 				E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */,
+				E79B22E31A0366BB00CAF0FA /* ASDepthModalViewController.m in Sources */,
 				E7C2EEA019FE64C6006BB38A /* BaseViewController.m in Sources */,
 				E71146C619FF916700809550 /* ShareSDKManager.m in Sources */,
 				E711461119FF718A00809550 /* README.md in Sources */,
 				E711460D19FF718A00809550 /* Appirater.m in Sources */,
 				E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */,
 				E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */,
+				E79B22E41A0366BB00CAF0FA /* UIImage+Blur.m in Sources */,
+				E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */,
 				E7BE2C5619F899EC009225F1 /* ImageListViewController.swift in Sources */,
 				E71145D319FF67CD00809550 /* FSSplashVC.m in Sources */,
 				E71145DE19FF687900809550 /* FLKAutoLayoutPredicateList.m in Sources */,
@@ -1126,6 +1156,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -1170,6 +1201,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

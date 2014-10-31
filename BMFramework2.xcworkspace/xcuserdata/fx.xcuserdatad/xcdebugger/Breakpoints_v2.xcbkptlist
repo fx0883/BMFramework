@@ -169,13 +169,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PuzzleGame/Controller/AdmobManager.m"
-            timestampString = "436173558.288824"
+            filePath = "PuzzleGame/Common/ShareSDKManager.m"
+            timestampString = "436426102.843941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "-interstitial:didFailToReceiveAdWithError:"
+            startingLineNumber = "534"
+            endingLineNumber = "534"
+            landmarkName = "-noneUIShareAllButtonClickHandler:title:content:description:imagecontent:url:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuzzleGame/Common/ShareSDKManager.m"
+            timestampString = "436426102.843941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "540"
+            endingLineNumber = "540"
+            landmarkName = "-noneUIShareAllButtonClickHandler:title:content:description:imagecontent:url:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PuzzleGame/Common/ShareSDKManager.m"
+            timestampString = "436426102.843941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "539"
+            endingLineNumber = "539"
+            landmarkName = "-noneUIShareAllButtonClickHandler:title:content:description:imagecontent:url:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

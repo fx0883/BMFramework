@@ -23,4 +23,9 @@
 #import <ShareSDK/ShareSDK.h>
 #import "ShareSDKManager.h"
 
+#import "ASDepthModalViewController.h"
+#import "UIImage+Blur.h"
+
+#import "ShareGameView.h"
+
 

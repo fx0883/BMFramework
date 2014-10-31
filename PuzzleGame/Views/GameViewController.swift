@@ -16,7 +16,19 @@ class GameViewController: BaseViewController,GameViewDelegate {
     
     @IBOutlet weak var difficultyLabel: UILabel!
     
+    
     @IBOutlet weak var difficultySlider: UISlider!
+
+    
+//    let strTitle:NSString = "过关了"
+//    let strContent:NSString? = nil
+//    let strDescription:NSString = "愉快地游戏"
+//    let imageContent:UIImage? = nil
+//    let strUrl:NSString = "https://itunes.apple.com/us/app/puzzle-crazy/id921615471?l=zh&ls=1&mt=8"
+
+    var popupView:ShareGameView? = nil
+    var shareImage:UIImage? = nil
+
     
     @IBAction func difficultyChanged(sender: AnyObject) {
         
@@ -69,8 +81,57 @@ class GameViewController: BaseViewController,GameViewDelegate {
             
             //[[[UIAlertView alloc] initWithTitle:@"恭喜您" message:@"拼图成功" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
             
-            UIAlertView(title: "恭喜您", message: strMsg, delegate: self, cancelButtonTitle: "关闭").show()
+          //  UIAlertView(title: "恭喜您", message: strMsg, delegate: self, cancelButtonTitle: "关闭").show()
+            
+            
+            self.finishGameView(strMsg)
+            
+            
         }
+    }
+    
+    
+    func finishGameView(msg:NSString)
+    {
+        self.popupView!.msgContentLabel.text = msg;
+        self.popupView!.sharedImage = self.shareImage;
+        
+        
+        
+        var color:UIColor? = UIColor.grayColor()
+        let style:ASDepthModalOptions =  ASDepthModalOptions.AnimationGrow
+        var options:ASDepthModalOptions? = nil
+        
+        var colorConfigurationIndex:NSInteger
+        var styleConfigurationIndex:NSInteger
+//        NSInteger colorConfigurationIndex;
+//        NSInteger styleConfigurationIndex;
+//        
+//        colorConfigurationIndex = [self.colorTableView indexPathForSelectedRow].row;
+        colorConfigurationIndex = 1
+//        if(colorConfigurationIndex == 1)
+//        {
+//            UIImage *image;
+//            
+//            // This image comes from http://www.numero111.com/wp-content/uploads/2010/11/ist2_7360872-elegant-abstract-wallpaper-pattern-background-tiles-seamlessly.jpg
+//            image = [UIImage imageNamed:@"pattern1.jpg"];
+//            color = [UIColor colorWithPatternImage:image];
+//        }
+//        
+      options = style | ASDepthModalOptions.Blur | ASDepthModalOptions.TapOutsideInactive
+//        options = style | (self.blurSwitch.on?ASDepthModalOptionBlur:ASDepthModalOptionBlurNone) | (self.tapOutsideSwitch.on?ASDepthModalOptionTapOutsideToClose:ASDepthModalOptionTapOutsideInactive);
+//        
+//        [ASDepthModalViewController presentView:self.popupView
+//            backgroundColor:color
+//            options:options
+//            completionHandler:^{
+//            NSLog(@"Modal view closed.");
+//            }];
+        ASDepthModalViewController.presentView(self.popupView, backgroundColor: color, options: options!) { () -> Void in
+            println("Modal view closed.")
+        }
+        
+
     }
     
     init(imageInfo imageinfo: ImageInfo)
@@ -95,9 +156,9 @@ class GameViewController: BaseViewController,GameViewDelegate {
  
             path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + self.curImageInfo!.path
             
-            let image:UIImage = UIImage(contentsOfFile: path!)!
+            self.shareImage = UIImage(contentsOfFile: path!)!
             
-            gameview.setGameImage2(image.CGImage)
+            gameview.setGameImage2(self.shareImage!.CGImage)
             
             gameview.layer.borderColor = UIColor.whiteColor().CGColor
             gameview.layer.borderWidth = 1.0
@@ -125,6 +186,25 @@ class GameViewController: BaseViewController,GameViewDelegate {
         gameview.delegate = self
         
         self.navigationItem.title = self.getTitle()
+        
+//        [LotteryInvestigationView *lotteryInvestigationView=[[[NSBundle mainBundle] loadNibNamed:@"LotteryInvestigationView" owner:self options:nil] lastObject];
+        
+        self.popupView =  NSBundle.mainBundle().loadNibNamed("ShareGameView", owner: self, options: nil).last as? ShareGameView
+        
+//        popupView = ShareGameView(
+        self.popupView!.frame = CGRectMake(0, 0, 280, 200)
+        
+//        [LotteryInvestigationView *lotteryInvestigationView=[[[NSBundle mainBundle] loadNibNamed:@"LotteryInvestigationView" owner:self options:nil] lastObject];
+//        [lotteryInvestigationView setFrame:frame];
+//        [self addSubview:lotteryInvestigationView];
+        
+
+        self.popupView!.layer.cornerRadius = 12;
+        self.popupView!.layer.shadowOpacity = 0.7;
+        self.popupView!.layer.shadowOffset = CGSizeMake(6, 6);
+        self.popupView!.layer.shouldRasterize = true;
+        self.popupView!.layer.rasterizationScale = UIScreen.mainScreen().scale
+        
     }
     
 
