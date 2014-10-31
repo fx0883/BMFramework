@@ -67,11 +67,11 @@ class MainController: BaseViewController {
         let btnGift:UIButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
         let sharedGift:UIButton = UIButton(frame: CGRectMake(50, 0, 44, 44))
         
-        btnGift.setImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+        btnGift.setImage(UIImage(named: "gift"), forState: UIControlState.Normal)
         btnGift.addTarget(self, action: "btnGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
         rightView.addSubview(btnGift)
         
-        sharedGift.setImage(UIImage(named: "bclose"), forState: UIControlState.Normal)
+        sharedGift.setImage(UIImage(named: "share"), forState: UIControlState.Normal)
         sharedGift.addTarget(self, action: "sharedGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
         rightView.addSubview(sharedGift)
         
