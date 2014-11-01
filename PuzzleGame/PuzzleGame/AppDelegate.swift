@@ -40,6 +40,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func loadUIACPReminder()
+    {
+//        ACPReminder * localNotifications = [ACPReminder sharedManager];
+//        
+//        //Settings
+//        localNotifications.messages = @[@"Example 1", @"Example 2", @"Example 3", @"Example 4", @"Example 5"];
+//        localNotifications.timePeriods = @[@(1),@(10),@(15)]; //days
+//        localNotifications.appDomain = @"com.mydomain.appName";
+//        localNotifications.randomMessage = NO; //By default is NO (optional)
+//        localNotifications.testFlagInSeconds = YES; //By default is NO (optional) --> For testing purpose only!
+//        localNotifications.circularTimePeriod = YES; // By default is NO (optional)
+//        
+//        [localNotifications createLocalNotification];
+        let localNotifications:ACPReminder = ACPReminder.sharedManager()
+        
+        localNotifications.messages = ["Example 1", "Example 2", "Example 3", "Example 4", "Example 5"]
+        localNotifications.timePeriods = [(1),(2),(3)]
+        localNotifications.appDomain = "com.CrazyPuzzle.app2"
+        localNotifications.randomMessage = false //By default is NO (optional)
+        localNotifications.testFlagInSeconds = true //By default is NO (optional) --> For testing purpose only!
+        localNotifications.circularTimePeriod = true // By default is NO (optional)
+        //
+        //        [localNotifications createLocalNotification];
+        localNotifications.createLocalNotification()
+        
+    }
+    
     func loadData()
     {
         
@@ -216,6 +243,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        self.loadUIACPReminder()
         NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
     }
 
@@ -227,6 +255,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        
+//        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+//        [[ACPReminder sharedManager] checkIfLocalNotificationHasBeenTriggered];
+
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        ACPReminder.sharedManager().checkIfLocalNotificationHasBeenTriggered()
+        
     }
 
     func applicationWillTerminate(application: UIApplication) {

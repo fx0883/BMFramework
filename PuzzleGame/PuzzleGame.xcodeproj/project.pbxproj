@@ -40,6 +40,7 @@
 		E76591DB1A0485F1000B44B0 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E76591B61A0485F1000B44B0 /* AppiraterLocalizable.strings */; };
 		E76591DC1A0485F1000B44B0 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591B91A0485F1000B44B0 /* CHANGELOG.md */; };
 		E76591DD1A0485F1000B44B0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591CE1A0485F1000B44B0 /* README.md */; };
+		E76591E11A048778000B44B0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = E76591E01A048778000B44B0 /* ACPReminder.m */; };
 		E786A3791A01E88200EC0A94 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E786A3781A01E88200EC0A94 /* ImageInfo.m */; };
 		E78AF6FE19FFCB2600E4F18C /* AGViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */; };
 		E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22D61A035FA900CAF0FA /* ShareGameView.m */; };
@@ -229,6 +230,8 @@
 		E76591D61A0485F1000B44B0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/AppiraterLocalizable.strings; sourceTree = "<group>"; };
 		E76591D71A0485F1000B44B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
 		E76591D81A0485F1000B44B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
+		E76591DF1A048778000B44B0 /* ACPReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPReminder.h; sourceTree = "<group>"; };
+		E76591E01A048778000B44B0 /* ACPReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPReminder.m; sourceTree = "<group>"; };
 		E786A3771A01E88200EC0A94 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
 		E786A3781A01E88200EC0A94 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E78AF6FC19FFCB2600E4F18C /* AGViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGViewDelegate.h; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 		E711458819FF4C1E00809550 /* vender */ = {
 			isa = PBXGroup;
 			children = (
+				E76591DE1A048778000B44B0 /* ACPReminder */,
 				E76591B11A0485F1000B44B0 /* appirater */,
 				E79B22DE1A0366BB00CAF0FA /* ASDepthModal */,
 				E7C7495819FF98D700B24716 /* ShareSDK */,
@@ -552,6 +556,15 @@
 				E76591CE1A0485F1000B44B0 /* README.md */,
 			);
 			path = appirater;
+			sourceTree = "<group>";
+		};
+		E76591DE1A048778000B44B0 /* ACPReminder */ = {
+			isa = PBXGroup;
+			children = (
+				E76591DF1A048778000B44B0 /* ACPReminder.h */,
+				E76591E01A048778000B44B0 /* ACPReminder.m */,
+			);
+			path = ACPReminder;
 			sourceTree = "<group>";
 		};
 		E79B22DE1A0366BB00CAF0FA /* ASDepthModal */ = {
@@ -930,6 +943,7 @@
 				E79B22E31A0366BB00CAF0FA /* ASDepthModalViewController.m in Sources */,
 				E7C2EEA019FE64C6006BB38A /* BaseViewController.m in Sources */,
 				E71146C619FF916700809550 /* ShareSDKManager.m in Sources */,
+				E76591E11A048778000B44B0 /* ACPReminder.m in Sources */,
 				E7E30E8219E7CB0900DFB777 /* PuzzleImage.xcdatamodeld in Sources */,
 				E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */,
 				E79B22E41A0366BB00CAF0FA /* UIImage+Blur.m in Sources */,
