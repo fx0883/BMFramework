@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _ivSplash = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.png"]];
+    _ivSplash = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
     _ivSplash.contentMode = UIViewContentModeScaleAspectFit;
     _ivSplash.alpha = 0;
     [self.view addSubview:_ivSplash];
@@ -55,7 +55,7 @@
         
         
         UIStoryboard * storyBoard;
-        UIViewController *vc;
+//        UIViewController *vc;
         //获得UITabBarController
 //        tb = self.tabBarController;
 //        viewControllers =[[NSMutableArray alloc] initWithArray: tb.viewControllers];
