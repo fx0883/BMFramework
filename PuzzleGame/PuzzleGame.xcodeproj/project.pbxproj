@@ -86,6 +86,8 @@
 		E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7C7497C19FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle */; };
 		E7C7499519FF98D700B24716 /* ShareSDKFlatShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C7497D19FF98D700B24716 /* ShareSDKFlatShareViewUI.framework */; };
 		E7C7499619FF98D700B24716 /* ShareSDKShareActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C7497E19FF98D700B24716 /* ShareSDKShareActionSheet.framework */; };
+		E7D3799F1A05E68E00D97D9B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */; };
+		E7D379A01A05E69600D97D9B /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */; };
 		E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */; };
 		E7E30E5D19E7C9CF00DFB777 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5C19E7C9CF00DFB777 /* MainController.swift */; };
 		E7E30E6019E7C9CF00DFB777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E5E19E7C9CF00DFB777 /* Main.storyboard */; };
@@ -100,8 +102,6 @@
 		E7EED53519FCF16C003B27BA /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53219FCF16C003B27BA /* GameView.m */; };
 		E7EED53819FCF261003B27BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53619FCF261003B27BA /* GameViewController.swift */; };
 		E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EED53719FCF261003B27BA /* GameViewController.xib */; };
-		E7F48D6A19F6A90D00E57A5B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; };
-		E7F48D6F19F6AA7D00E57A5B /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +121,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E7F48D6F19F6AA7D00E57A5B /* BMCoreFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +288,7 @@
 		E7C7497C19FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKFlatShareViewUI.bundle; sourceTree = "<group>"; };
 		E7C7497D19FF98D700B24716 /* ShareSDKFlatShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKFlatShareViewUI.framework; sourceTree = "<group>"; };
 		E7C7497E19FF98D700B24716 /* ShareSDKShareActionSheet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKShareActionSheet.framework; sourceTree = "<group>"; };
+		E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 		E7E30E5519E7C9CE00DFB777 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E30E5919E7C9CF00DFB777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -314,7 +314,6 @@
 		E7EED53219FCF16C003B27BA /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		E7EED53619FCF261003B27BA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E7EED53719FCF261003B27BA /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
-		E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +321,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D3799F1A05E68E00D97D9B /* BMCoreFramework.framework in Frameworks */,
 				E7C2EEBE19FE669A006BB38A /* MessageUI.framework in Frameworks */,
 				E7C7498D19FF98D700B24716 /* TencentOpenAPI.framework in Frameworks */,
 				E71146C219FF8C1600809550 /* AddressBook.framework in Frameworks */,
@@ -362,7 +362,6 @@
 				E7C2EEB219FE666E006BB38A /* CoreFoundation.framework in Frameworks */,
 				E7C7498619FF98D700B24716 /* TencentWeiboConnection.framework in Frameworks */,
 				E7C7499619FF98D700B24716 /* ShareSDKShareActionSheet.framework in Frameworks */,
-				E7F48D6A19F6A90D00E57A5B /* BMCoreFramework.framework in Frameworks */,
 				E7C7497F19FF98D700B24716 /* CopyConnection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +679,7 @@
 		E7E30E4C19E7C9CE00DFB777 = {
 			isa = PBXGroup;
 			children = (
+				E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */,
 				E71146C119FF8C1600809550 /* AddressBook.framework */,
 				E71146BF19FF8C0D00809550 /* AssetsLibrary.framework */,
 				E71146BD19FF8C0300809550 /* CoreText.framework */,
@@ -701,7 +701,6 @@
 				E7C2EEB519FE667A006BB38A /* AdSupport.framework */,
 				E7C2EEB319FE6674006BB38A /* UIKit.framework */,
 				E7C2EEB119FE666E006BB38A /* CoreFoundation.framework */,
-				E7F48D6919F6A90D00E57A5B /* BMCoreFramework.framework */,
 				E7E30E8B19E7DFE000DFB777 /* CoreBundle.bundle */,
 				E7E30E7A19E7C9F300DFB777 /* Default-568h@2x.png */,
 				E7E30E5719E7C9CE00DFB777 /* PuzzleGame */,
@@ -889,6 +888,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D379A01A05E69600D97D9B /* BMCoreFramework.framework in Resources */,
 				E7C7498E19FF98D700B24716 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */,
