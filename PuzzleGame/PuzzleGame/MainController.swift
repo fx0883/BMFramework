@@ -120,7 +120,13 @@ class MainController: BaseViewController {
             let item:ImageCategory = imageCategoryitem as ImageCategory
             let imageCategoryId:String = item.id
             
-            let itemAry:NSArray = ImageInfo.MR_findAll()
+            let predicateImageList:NSPredicate = NSPredicate(format: "categoryid = %@",imageCategoryId)!
+            
+            let itemAry:NSArray = ImageInfo.MR_findAllWithPredicate(predicateImageList)
+            
+
+            
+//            let itemAry:NSArray = ImageInfo.MR_findAll()
             if(itemAry.count>0)
             {
                 let randomNumber:Int = self.randomEx(itemAry.count)

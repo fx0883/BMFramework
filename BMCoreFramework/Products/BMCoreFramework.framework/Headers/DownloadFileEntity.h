@@ -1,10 +1,9 @@
-//
-//  DownloadFileEntity.h
-//  BMUtilFramework
-//
-//  Created by fx on 14-8-26.
-//  Copyright (c) 2014年 bluemobi. All rights reserved.
-//
+/*!
+ @header DownloadFileEntity
+ @abstract DownloadFileEntity
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>

@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/AFAppAPIClient.h</key>
 		<data>
-		wE6zJQqFHKic3zshESfN5qAgd9Q=
+		ugb+JXEy5D7b8oZSgjh/ScKCw+A=
 		</data>
 		<key>Headers/AFAppDotNetAPIClient.h</key>
 		<data>
-		o2YxWOLM34fE5zcxOwBDESmt2+0=
+		Zj2qfLAGtGC6MSywHV+WItq7fSk=
+		</data>
+		<key>Headers/AFAppSoapClient.h</key>
+		<data>
+		9hXo2afqQvpOkCxPvj1JCE0FmvU=
 		</data>
 		<key>Headers/AFDownloadRequestOperation.h</key>
 		<data>
@@ -66,15 +70,15 @@
 		</data>
 		<key>Headers/BMAppManager.h</key>
 		<data>
-		34xC1+okp4nsctWp+H9U9pk2lcE=
+		k9Nkei+1xKV962E4A3xdeqZer4U=
 		</data>
 		<key>Headers/BMBaseAction.h</key>
 		<data>
-		5t9Iby8UdyloeDmp3Vc7OEG5m7s=
+		Wzj5Pp5fw16BWdEH3zZtXRrejuo=
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		5kUeCIUjLXnIZzG0Yq3yNeK1jSc=
+		w8qepaMZSL5JE71lutRKrBqrMAQ=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -94,7 +98,7 @@
 		</data>
 		<key>Headers/BMBaseViewController+AFNetworking.h</key>
 		<data>
-		cioRkiYo9gPobItMLZlvV4mAtq8=
+		D8jromVG2dyNnKMD2TJXX0TQfIo=
 		</data>
 		<key>Headers/BMBaseViewController.h</key>
 		<data>
@@ -102,7 +106,7 @@
 		</data>
 		<key>Headers/BMCmdDefine.h</key>
 		<data>
-		NFH8Dazn1hYMUw9/lKwnOHLZ/LY=
+		AsyKXAwVxQHRxxvBRKN7V4/EhZE=
 		</data>
 		<key>Headers/BMContext.h</key>
 		<data>
@@ -110,15 +114,15 @@
 		</data>
 		<key>Headers/BMControl.h</key>
 		<data>
-		ONdiZE53CP7Vm6NoZbmTMVQFtlw=
+		ZEuAf9130QGDH0kWlsRzeaduuh8=
 		</data>
 		<key>Headers/BMCoreFramework-Prefix.pch</key>
 		<data>
-		ErUMSE4RCsDue+vL+xEBtjFmbto=
+		yKwURCAfHdZYODn1CeX4c4I+erU=
 		</data>
 		<key>Headers/BMCoreFramework.h</key>
 		<data>
-		68+aIER5OILGQZL2npxRZ/PPA80=
+		GiyhHtAdVveVCPR6WNA9KiBa4Cg=
 		</data>
 		<key>Headers/BMDefine.h</key>
 		<data>
@@ -126,19 +130,19 @@
 		</data>
 		<key>Headers/BMDownloadFileInfo.h</key>
 		<data>
-		HBmv/5DJxV1Kk0+I23yMklQOww8=
+		BpNyGAEfqfmIuwWh61yyVjBvao0=
 		</data>
 		<key>Headers/BMDownloadManager.h</key>
 		<data>
-		FfgQdBNsk17f0CiAeb6zV8Yne1E=
+		Mz/kb6h1a4zT/ywo2T1nIRHl6Ik=
 		</data>
 		<key>Headers/BMSandbox.h</key>
 		<data>
-		lFDCZZlYZHqc9I66kVSsS7lg8hU=
+		FBH0ILUyEE//a2Wg2/rjBPyGkKA=
 		</data>
 		<key>Headers/BMSystemInfo.h</key>
 		<data>
-		QoyGdjCRuLVoDU/hM2a/LHXfk6s=
+		BaUseXK4By+nXOAq852Eo/b6G4o=
 		</data>
 		<key>Headers/BMUIApplication.h</key>
 		<data>
@@ -158,7 +162,7 @@
 		</data>
 		<key>Headers/DownloadFileEntity.h</key>
 		<data>
-		vhLLF+PUF1MkGegkxY+NtGlG/4w=
+		8+VhU7mCPHEpjU0AiuSek8H6t50=
 		</data>
 		<key>Headers/EDColor.h</key>
 		<data>
@@ -210,7 +214,7 @@
 		</data>
 		<key>Headers/MBProgressHUD+AFNetworking.h</key>
 		<data>
-		Ptp3me6XNjes4QJg0RDCejgtVRc=
+		SX+68I4WK14n7S7owClYfBZ6ckc=
 		</data>
 		<key>Headers/MBProgressHUD.h</key>
 		<data>
@@ -372,6 +376,10 @@
 		<data>
 		ZJ38xTGYtRsWTXTPhVdMOXNFhSg=
 		</data>
+		<key>Headers/SoapHelper.h</key>
+		<data>
+		Ob/4anOQfMrfZW0JE/7VMwAJGfE=
+		</data>
 		<key>Headers/UIActivityIndicatorView+AFNetworking.h</key>
 		<data>
 		rS/vxspxWxpjnJ3F8/au4SMP8TQ=
@@ -418,7 +426,7 @@
 		</data>
 		<key>Headers/UILabel+ContentSize.h</key>
 		<data>
-		8S2wQH+YhfGr0ZTYyO6W00MXE/0=
+		lBqBOTxj+LedHfn+rGiIErT7Hqc=
 		</data>
 		<key>Headers/UIProgressView+AFNetworking.h</key>
 		<data>
@@ -438,11 +446,15 @@
 		</data>
 		<key>Headers/UIView+Effect.h</key>
 		<data>
-		QTncufTfHl8RtVxJq15JGRzIH0s=
+		W7gmeiqFkWf0pzczsqZuDUud97M=
 		</data>
 		<key>Headers/UIWebView+AFNetworking.h</key>
 		<data>
 		1aiyIakkAlhw+lXiXY0aVJ3JozI=
+		</data>
+		<key>Headers/XMLDictionary.h</key>
+		<data>
+		tWSOK2poC7K3sOdTXLL6w4o0LlI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -450,7 +462,7 @@
 		</data>
 		<key>LICENSE</key>
 		<data>
-		ACny4WFZT2n092ayQ0LzNrJjOSs=
+		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -469,11 +481,15 @@
 	<dict>
 		<key>Headers/AFAppAPIClient.h</key>
 		<data>
-		wE6zJQqFHKic3zshESfN5qAgd9Q=
+		ugb+JXEy5D7b8oZSgjh/ScKCw+A=
 		</data>
 		<key>Headers/AFAppDotNetAPIClient.h</key>
 		<data>
-		o2YxWOLM34fE5zcxOwBDESmt2+0=
+		Zj2qfLAGtGC6MSywHV+WItq7fSk=
+		</data>
+		<key>Headers/AFAppSoapClient.h</key>
+		<data>
+		9hXo2afqQvpOkCxPvj1JCE0FmvU=
 		</data>
 		<key>Headers/AFDownloadRequestOperation.h</key>
 		<data>
@@ -529,15 +545,15 @@
 		</data>
 		<key>Headers/BMAppManager.h</key>
 		<data>
-		34xC1+okp4nsctWp+H9U9pk2lcE=
+		k9Nkei+1xKV962E4A3xdeqZer4U=
 		</data>
 		<key>Headers/BMBaseAction.h</key>
 		<data>
-		5t9Iby8UdyloeDmp3Vc7OEG5m7s=
+		Wzj5Pp5fw16BWdEH3zZtXRrejuo=
 		</data>
 		<key>Headers/BMBaseParam.h</key>
 		<data>
-		5kUeCIUjLXnIZzG0Yq3yNeK1jSc=
+		w8qepaMZSL5JE71lutRKrBqrMAQ=
 		</data>
 		<key>Headers/BMBaseTabBarController.h</key>
 		<data>
@@ -557,7 +573,7 @@
 		</data>
 		<key>Headers/BMBaseViewController+AFNetworking.h</key>
 		<data>
-		cioRkiYo9gPobItMLZlvV4mAtq8=
+		D8jromVG2dyNnKMD2TJXX0TQfIo=
 		</data>
 		<key>Headers/BMBaseViewController.h</key>
 		<data>
@@ -565,7 +581,7 @@
 		</data>
 		<key>Headers/BMCmdDefine.h</key>
 		<data>
-		NFH8Dazn1hYMUw9/lKwnOHLZ/LY=
+		AsyKXAwVxQHRxxvBRKN7V4/EhZE=
 		</data>
 		<key>Headers/BMContext.h</key>
 		<data>
@@ -573,15 +589,15 @@
 		</data>
 		<key>Headers/BMControl.h</key>
 		<data>
-		ONdiZE53CP7Vm6NoZbmTMVQFtlw=
+		ZEuAf9130QGDH0kWlsRzeaduuh8=
 		</data>
 		<key>Headers/BMCoreFramework-Prefix.pch</key>
 		<data>
-		ErUMSE4RCsDue+vL+xEBtjFmbto=
+		yKwURCAfHdZYODn1CeX4c4I+erU=
 		</data>
 		<key>Headers/BMCoreFramework.h</key>
 		<data>
-		68+aIER5OILGQZL2npxRZ/PPA80=
+		GiyhHtAdVveVCPR6WNA9KiBa4Cg=
 		</data>
 		<key>Headers/BMDefine.h</key>
 		<data>
@@ -589,19 +605,19 @@
 		</data>
 		<key>Headers/BMDownloadFileInfo.h</key>
 		<data>
-		HBmv/5DJxV1Kk0+I23yMklQOww8=
+		BpNyGAEfqfmIuwWh61yyVjBvao0=
 		</data>
 		<key>Headers/BMDownloadManager.h</key>
 		<data>
-		FfgQdBNsk17f0CiAeb6zV8Yne1E=
+		Mz/kb6h1a4zT/ywo2T1nIRHl6Ik=
 		</data>
 		<key>Headers/BMSandbox.h</key>
 		<data>
-		lFDCZZlYZHqc9I66kVSsS7lg8hU=
+		FBH0ILUyEE//a2Wg2/rjBPyGkKA=
 		</data>
 		<key>Headers/BMSystemInfo.h</key>
 		<data>
-		QoyGdjCRuLVoDU/hM2a/LHXfk6s=
+		BaUseXK4By+nXOAq852Eo/b6G4o=
 		</data>
 		<key>Headers/BMUIApplication.h</key>
 		<data>
@@ -621,7 +637,7 @@
 		</data>
 		<key>Headers/DownloadFileEntity.h</key>
 		<data>
-		vhLLF+PUF1MkGegkxY+NtGlG/4w=
+		8+VhU7mCPHEpjU0AiuSek8H6t50=
 		</data>
 		<key>Headers/EDColor.h</key>
 		<data>
@@ -673,7 +689,7 @@
 		</data>
 		<key>Headers/MBProgressHUD+AFNetworking.h</key>
 		<data>
-		Ptp3me6XNjes4QJg0RDCejgtVRc=
+		SX+68I4WK14n7S7owClYfBZ6ckc=
 		</data>
 		<key>Headers/MBProgressHUD.h</key>
 		<data>
@@ -835,6 +851,10 @@
 		<data>
 		ZJ38xTGYtRsWTXTPhVdMOXNFhSg=
 		</data>
+		<key>Headers/SoapHelper.h</key>
+		<data>
+		Ob/4anOQfMrfZW0JE/7VMwAJGfE=
+		</data>
 		<key>Headers/UIActivityIndicatorView+AFNetworking.h</key>
 		<data>
 		rS/vxspxWxpjnJ3F8/au4SMP8TQ=
@@ -881,7 +901,7 @@
 		</data>
 		<key>Headers/UILabel+ContentSize.h</key>
 		<data>
-		8S2wQH+YhfGr0ZTYyO6W00MXE/0=
+		lBqBOTxj+LedHfn+rGiIErT7Hqc=
 		</data>
 		<key>Headers/UIProgressView+AFNetworking.h</key>
 		<data>
@@ -901,15 +921,19 @@
 		</data>
 		<key>Headers/UIView+Effect.h</key>
 		<data>
-		QTncufTfHl8RtVxJq15JGRzIH0s=
+		W7gmeiqFkWf0pzczsqZuDUud97M=
 		</data>
 		<key>Headers/UIWebView+AFNetworking.h</key>
 		<data>
 		1aiyIakkAlhw+lXiXY0aVJ3JozI=
 		</data>
+		<key>Headers/XMLDictionary.h</key>
+		<data>
+		tWSOK2poC7K3sOdTXLL6w4o0LlI=
+		</data>
 		<key>LICENSE</key>
 		<data>
-		ACny4WFZT2n092ayQ0LzNrJjOSs=
+		oDpDMhzwM5FUMy9Rv9mE3VOF9lU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

@@ -1,7 +1,9 @@
-//#import "Bee_Precompile.h"
-//#import "Bee_Package.h"
-//#import "Bee_SystemConfig.h"
-//#import "Bee_SystemPackage.h"
+/*!
+ @header BMSystemInfo
+ @abstract BMSystemInfo
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
 
 #pragma mark -
 
@@ -39,33 +41,145 @@
 #define IS_SCREEN_35_INCH	(NO)
 
 #endif	// #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+/*!
+ @class
+ @abstract BMSystemInfo
+ */
+@interface BMSystemInfo : NSObject
 
-@interface BeeSystemInfo : NSObject
-
-AS_SINGLETON( BeeSystemInfo )
-
+AS_SINGLETON( BMSystemInfo )
+/*!
+ *  OSVersion
+ *
+ *  @return
+ */
 + (NSString *)OSVersion;
+/*!
+ *  appVersion
+ *
+ *  @return
+ */
 + (NSString *)appVersion;
+/*!
+ *  appIdentifier
+ *
+ *  @return
+ */
 + (NSString *)appIdentifier;
+/*!
+ *  appSchema
+ *
+ *  @return
+ */
 + (NSString *)appSchema;
+
+/*!
+ *  appSchema
+ *
+ *  @param name
+ *
+ *  @return
+ */
 + (NSString *)appSchema:(NSString *)name;
+
+/*!
+ *  deviceModel
+ *
+ *  @return
+ */
 + (NSString *)deviceModel;
+
+/*!
+ *  deviceUUID
+ *
+ *  @return
+ */
 + (NSString *)deviceUUID;
 
+/*!
+ *  isJailBroken
+ *
+ *  @return
+ */
 + (BOOL)isJailBroken		NS_AVAILABLE_IOS(4_0);
+
+/*!
+ *  jailBreaker
+ *
+ *  @return
+ */
 + (NSString *)jailBreaker	NS_AVAILABLE_IOS(4_0);
 
+/*!
+ *  isDevicePhone
+ *
+ *  @return
+ */
 + (BOOL)isDevicePhone;
+
+/*!
+ *  isDevicePad
+ *
+ *  @return
+ */
 + (BOOL)isDevicePad;
 
+/*!
+ *  requiresPhoneOS
+ *
+ *  @return
+ */
 + (BOOL)requiresPhoneOS;
 
+/*!
+ *  isPhone
+ *
+ *  @return
+ */
 + (BOOL)isPhone;
+
+/*!
+ *  isPhone35
+ *
+ *  @return
+ */
 + (BOOL)isPhone35;
+
+/*!
+ *  isPhoneRetina35
+ *
+ *  @return
+ */
 + (BOOL)isPhoneRetina35;
+
+/*!
+ *  isPhoneRetina4
+ *
+ *  @return
+ */
 + (BOOL)isPhoneRetina4;
+
+/*!
+ *  isPad
+ *
+ *  @return
+ */
 + (BOOL)isPad;
+
+/*!
+ *  isPadRetina
+ *
+ *  @return
+ */
 + (BOOL)isPadRetina;
+
+/*!
+ *  isScreenSize
+ *
+ *  @param size
+ *
+ *  @return
+ */
 + (BOOL)isScreenSize:(CGSize)size;
 
 @end

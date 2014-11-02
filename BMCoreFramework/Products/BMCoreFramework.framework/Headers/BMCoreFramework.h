@@ -51,4 +51,11 @@
 #import "AFAppDotNetAPIClient.h"
 #import "BMSandbox.h"
 #import "BMSystemInfo.h"
+#import "AFAppSoapClient.h"
+#import "XMLDictionary.h"
+#import "AFHTTPRequestOperation.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "SoapHelper.h"
+
+
 

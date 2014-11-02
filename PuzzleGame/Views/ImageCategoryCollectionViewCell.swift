@@ -26,29 +26,29 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
     func setimagecategory(imagecategory:ImageCategory)
     {
         _imagecategory = imagecategory
+        imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
+        titleLabel.text = "Hot"
+        footLabel.text = imagecategory.name
         var path:String?=nil
         if(imagecategory.imagepath == nil)
         {
-            path = "defultImageCategory"
+            path = "defultImageCategory.jpg"
+            imvMain.image = UIImage(named: path!)
+
         }
         else
         {
             path = (BMContext.sharedInstance().getContextDicForKey(COREBUNDLENAME) as String) + "/" + imagecategory.imagepath
 //             path = bundle1.pathForResource("img2", ofType: "png", inDirectory: "ImageCategory/卡通")! as String
+            imvMain.image = UIImage(contentsOfFile: path!)
             
         }
-        println("\(path)")
+
         
         
-       imvMain.image = UIImage(contentsOfFile: path!)
-        
-       // -(void)applyEffectRoundRectSilverBorder:(UIColor*) color
-        
-        imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
-              println("\(imvMain.image)")
-        
-        titleLabel.text = "Hot"
-        footLabel.text = imagecategory.name
-//        imvMain.image = UIImage(named: "ImageCategory/电影/img2.png", inBundle: bundle1, compatibleWithTraitCollection:   nil  )
+
+    
+
+
     }
 }

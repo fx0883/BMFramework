@@ -15,10 +15,19 @@
  */
 typedef void (^BaseBlock)(int,NSString*);
 
+
+/*!
+ *  定义参数类的block
+ *
+ *  @param int       错误代码 如果错误代码为 0 就是正确的
+ *  @param NSString 提示消息
+ *  @param id
+ */
 typedef void (^WithResultObjectBlock)(int,NSString*,id);
 
 /*!
- *  调用Action的传入参数
+ @class
+ @abstract 调用Action的传入参数
  */
 @interface BMBaseParam : NSObject
 

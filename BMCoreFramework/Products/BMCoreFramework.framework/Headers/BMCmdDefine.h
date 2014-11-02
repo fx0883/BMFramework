@@ -30,6 +30,17 @@
 #define DEFBASEURL3 @"BaseUrl3"
 
 /*!
+ *  soap服务器地址定义
+ */
+#define DEFBASESOAPURL @"BaseSoapUrl"
+
+
+/*!
+ *  soap服务器地址定义
+ */
+#define DEF_AULTWEBSERVICENAMESPACE @"WebServiceNameSpace"
+
+/*!
  *  是否显示TouchEventUI
  */
 #define DEFSHOWTOUCHEVENTUI @"ShowTouchEventUI"

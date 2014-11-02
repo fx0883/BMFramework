@@ -1,8 +1,13 @@
+/*!
+ @header BMControl
+ @abstract BMControl 主要控制器类
+ @author FS (作者信息)
+ @version 1.00 2014/10/12 Creation (此文档的版本信息)
+ */
+
 #import <Foundation/Foundation.h>
 
-/**
- *  调用Action的方式
- */
+
 typedef enum
 {
     INVOKEACTIONTYPE0,
@@ -12,17 +17,18 @@ typedef enum
 } INVOKEACTIONTYPE;
 
 
-/**
- *  @brief 主要控制器类
- */
+
+
+
 @interface BMControl : NSObject
-/**
+
+/*!
  *  @brief 单例宏的调用
  */
 AS_SINGLETON(BMControl)
 
 
-/**
+/*!
  *  @brief 调用Action的入口方法
  *
  *  @param dicparam dic封装参数
@@ -31,7 +37,7 @@ AS_SINGLETON(BMControl)
 
 @end
 
-/**
+/*!
  *  定义单例
  */
 #define SharedControl  ([BMControl sharedInstance])
