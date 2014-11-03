@@ -11,6 +11,7 @@ import UIKit
 class OriginalPicViewController: BaseViewController {
 
     @IBOutlet weak var originalView: UIImageView!
+    @IBOutlet weak var btnBack: UIButton!
     
     var curImageInfo:ImageInfo? = nil
     
@@ -62,6 +63,13 @@ class OriginalPicViewController: BaseViewController {
         })
     }
     
+//    override func viewWillAppear(animated: Bool) {
+//         var btn = self.btnBack
+//            let str:NSString = NSLocalizedString("back", comment: "")
+//            btn.setTitle(str, forState: .Normal);
+//    }
+    
+    
     func initView()
     {
         //            [gameView setGameImage:[[UIImage imageNamed:[Data nextInnerImg]] CGImage]];
@@ -78,6 +86,8 @@ class OriginalPicViewController: BaseViewController {
             originalView.layer.borderColor = UIColor.whiteColor().CGColor
             originalView.layer.borderWidth = 1.0
         }
+        
+        
         
 //        self.navigationItem.hidesBackButton = true
 //        

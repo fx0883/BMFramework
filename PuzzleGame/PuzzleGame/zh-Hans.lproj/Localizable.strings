@@ -16,6 +16,13 @@
 "stage_not_clear" = "这关还没有玩过哦！";
 "top_record_sec" = "最快%d秒";
 
+"close" = "关闭";
+"stage_clear" = "拼图成功,用时%d秒";
+"original_picture" = "原图";
+"you_did_it" = "过关了";
+"play_happyly" = "愉快地游戏";
+"back" = "返回";
+
 "人物" = "人物";
 "动漫" = "动漫";
 "动物" = "动物";

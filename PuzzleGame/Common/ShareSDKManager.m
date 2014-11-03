@@ -16,7 +16,7 @@
 #import "WXApi.h"
 
 #define SHARESDKAPPKEY @"4015d965c8c0"
-#define CONTENT @"很厉害的分享，一定要看哦 "
+//#define CONTENT @"很厉害的分享，一定要看哦 "
 #define STRURL @"https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/921615471"
 
 @implementation ShareSDKManager
@@ -532,7 +532,7 @@ DEF_SINGLETON(ShareSDKManager)
                                                                                               {
                                                                                                   NSLog(NSLocalizedString(@"TEXT_SHARE_SUC", @"分享成功"));
                                                                                                   
-                                                                                                         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"TEXT_SHARE_SUC", @"分享成功") message:NSLocalizedString(@"TEXT_SHARE_SUC", @"分享成功") delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil] show];
+                                                                                                         [[[UIAlertView alloc] initWithTitle:PGLocalString(@"TEXT_SHARE_SUC") message:PGLocalString(@"TEXT_SHARE_SUC") delegate:self cancelButtonTitle:PGLocalString(@"close") otherButtonTitles:nil, nil] show];
                                                                                                   
                                                                                               }
                                                                                               else if (state == SSPublishContentStateFail)

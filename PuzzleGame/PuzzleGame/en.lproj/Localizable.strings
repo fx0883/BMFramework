@@ -16,6 +16,13 @@
 "stage_not_clear" = "Try clearing this stage!";
 "top_record_sec" = "Record is %d Sec";
 
+"close" = "Close";
+"stage_clear" = "You did it using %d Sec";
+"original_picture" = "Orignal Picture";
+"you_did_it" = "Stage Clear";
+"play_happyly" = "Play Happyly";
+"back" = "Back";
+
 "人物" = "People";
 "动漫" = "Comics";
 "动物" = "Animals";

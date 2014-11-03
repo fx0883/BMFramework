@@ -65,7 +65,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
             //完成游戏时间
             var finishedGame:Int =  Int(NSDate.timeIntervalSinceReferenceDate() - self.gameBeginTime!)
             
-            var strMsg:NSString = NSString(format: "拼图成功,用时%d秒", finishedGame)
+            var strMsg:NSString = NSString(format: NSLocalizedString("stage_clear", comment: ""), finishedGame)
             if(self.curImageInfo?.fastesttime == nil)
             {
                 self.curImageInfo!.fastesttime = NSNumber(integer:finishedGame)
@@ -272,7 +272,7 @@ class GameViewController: BaseViewController,GameViewDelegate {
             breakBtnStatus=2;
 //            [breakBtn setTitle:@"停止" forState:UIControlStateNormal];
             
-            disorganizeButton.setTitle("原图", forState: UIControlState.Normal)
+            disorganizeButton.setTitle(NSLocalizedString("original_picture", comment: ""), forState: UIControlState.Normal)
             let  timeinterval = NSTimeInterval(self.difficultySlider.value/10)
             self.difficultySlider.enabled = false
             

@@ -64,7 +64,7 @@ class ImageListViewController: BaseViewController {
         mainCV.alwaysBounceVertical = true;
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "header-bg-big"), forBarMetrics: UIBarMetrics.Default)
         self.navigationItem.hidesBackButton = true
-        self.navigationItem.title = self.curImageCategory?.name
+        self.navigationItem.title = CommonUtil.localStringForImageCategory(self.curImageCategory?.name)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UIImage(named: "bclose")
         

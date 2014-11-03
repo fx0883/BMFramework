@@ -8,9 +8,9 @@
 
 #import "ShareGameView.h"
 
-#define STRTITLE  @"过关了"
+//#define STRTITLE  @"过关了"
 
-#define STRDESCRIPTION  @"愉快地游戏"
+//#define STRDESCRIPTION  @"愉快地游戏"
 
 #define STRURL @"https://itunes.apple.com/us/app/puzzle-crazy/id921615471?l=zh&ls=1&mt=8"
 #import "ShareSDKManager.h"
@@ -33,7 +33,7 @@
 //        ShareSDKManager.sharedInstance()noneUIShareAllButtonClickHandler(sender,title: STRTITLE, content: self.msgContentLabel.text, description: STRDESCRIPTION, imagecontent: self.sharedImage, url: STRURL)
     NSString *strShowContent = [NSString stringWithFormat:@"%@ %@",self.msgContentLabel.text,STRURL];
     
-    [[ShareSDKManager sharedInstance] noneUIShareAllButtonClickHandler:sender title:STRTITLE content:strShowContent description:STRDESCRIPTION imagecontent:self.sharedImage url:STRURL];
+    [[ShareSDKManager sharedInstance] noneUIShareAllButtonClickHandler:sender title:PGLocalString(@"you_did_it") content:strShowContent description:PGLocalString(@"play_happyly") imagecontent:self.sharedImage url:STRURL];
 }
 
 
