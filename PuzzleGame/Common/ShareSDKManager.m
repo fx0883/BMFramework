@@ -300,12 +300,12 @@ DEF_SINGLETON(ShareSDKManager)
     
     //创建分享内容
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"bg" ofType:@"png"];
-    id<ISSContent> publishContent = [ShareSDK content:@"这是一条很厉害的分享"
+    id<ISSContent> publishContent = [ShareSDK content:PGLocalString(@"this is an awesome sharing")
                                        defaultContent:@""
                                                 image:[ShareSDK imageWithPath:imagePath]
                                                 title:@"ShareSDK"
                                                   url:@"http://www.mob.com"
-                                          description:NSLocalizedString(@"TEXT_TEST_MSG", @"这是一条测试信息")
+                                          description:PGLocalString(@"TEXT_TEST_MSG")
                                             mediaType:SSPublishContentMediaTypeNews];
     
     //创建容器
@@ -345,7 +345,7 @@ DEF_SINGLETON(ShareSDKManager)
                                 
                                 if (state == SSPublishContentStateSuccess)
                                 {
-                                    NSLog(NSLocalizedString(@"TEXT_SHARE_SUC", @"分享成功"));
+                                    NSLog(PGLocalString(@"TEXT_SHARE_SUC"));
                                     
                                 }
                                 else if (state == SSPublishContentStateFail)

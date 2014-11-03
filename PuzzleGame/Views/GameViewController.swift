@@ -237,11 +237,11 @@ class GameViewController: BaseViewController,GameViewDelegate {
         var title:NSString = ""
         if(self.curImageInfo!.fastesttime==nil)
         {
-           title = "这关还没有玩过哦！"
+           title = NSLocalizedString("stage_not_clear", comment: "")
         }
         else
         {
-           title = NSString(format: "最快%d秒",self.curImageInfo!.fastesttime.integerValue)
+           title = NSString(format: NSLocalizedString("top_record_sec", comment: ""),self.curImageInfo!.fastesttime.integerValue)
         }
         
         

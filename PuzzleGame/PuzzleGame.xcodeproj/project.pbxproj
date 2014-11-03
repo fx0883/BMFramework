@@ -86,8 +86,6 @@
 		E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7C7497C19FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle */; };
 		E7C7499519FF98D700B24716 /* ShareSDKFlatShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C7497D19FF98D700B24716 /* ShareSDKFlatShareViewUI.framework */; };
 		E7C7499619FF98D700B24716 /* ShareSDKShareActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C7497E19FF98D700B24716 /* ShareSDKShareActionSheet.framework */; };
-		E7D3799F1A05E68E00D97D9B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */; };
-		E7D379A01A05E69600D97D9B /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */; };
 		E7E30E5B19E7C9CF00DFB777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */; };
 		E7E30E5D19E7C9CF00DFB777 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30E5C19E7C9CF00DFB777 /* MainController.swift */; };
 		E7E30E6019E7C9CF00DFB777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E30E5E19E7C9CF00DFB777 /* Main.storyboard */; };
@@ -102,6 +100,8 @@
 		E7EED53519FCF16C003B27BA /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53219FCF16C003B27BA /* GameView.m */; };
 		E7EED53819FCF261003B27BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EED53619FCF261003B27BA /* GameViewController.swift */; };
 		E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EED53719FCF261003B27BA /* GameViewController.xib */; };
+		F8384C9A1A0737D9008F69E0 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */; };
+		F8384C9D1A073A00008F69E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8384C9F1A073A00008F69E0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,7 +288,6 @@
 		E7C7497C19FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKFlatShareViewUI.bundle; sourceTree = "<group>"; };
 		E7C7497D19FF98D700B24716 /* ShareSDKFlatShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKFlatShareViewUI.framework; sourceTree = "<group>"; };
 		E7C7497E19FF98D700B24716 /* ShareSDKShareActionSheet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKShareActionSheet.framework; sourceTree = "<group>"; };
-		E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 		E7E30E5519E7C9CE00DFB777 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E30E5919E7C9CF00DFB777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E30E5A19E7C9CF00DFB777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -314,6 +313,9 @@
 		E7EED53219FCF16C003B27BA /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		E7EED53619FCF261003B27BA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E7EED53719FCF261003B27BA /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMCoreFramework.framework; sourceTree = "<group>"; };
+		F8384C9E1A073A00008F69E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8384CA01A073A04008F69E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,10 +323,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D3799F1A05E68E00D97D9B /* BMCoreFramework.framework in Frameworks */,
 				E7C2EEBE19FE669A006BB38A /* MessageUI.framework in Frameworks */,
 				E7C7498D19FF98D700B24716 /* TencentOpenAPI.framework in Frameworks */,
 				E71146C219FF8C1600809550 /* AddressBook.framework in Frameworks */,
+				F8384C9A1A0737D9008F69E0 /* BMCoreFramework.framework in Frameworks */,
 				E7C7498319FF98D700B24716 /* QZoneConnection.framework in Frameworks */,
 				E71146C019FF8C0D00809550 /* AssetsLibrary.framework in Frameworks */,
 				E71146BE19FF8C0300809550 /* CoreText.framework in Frameworks */,
@@ -679,7 +681,7 @@
 		E7E30E4C19E7C9CE00DFB777 = {
 			isa = PBXGroup;
 			children = (
-				E7D3799E1A05E68E00D97D9B /* BMCoreFramework.framework */,
+				F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */,
 				E71146C119FF8C1600809550 /* AddressBook.framework */,
 				E71146BF19FF8C0D00809550 /* AssetsLibrary.framework */,
 				E71146BD19FF8C0300809550 /* CoreText.framework */,
@@ -743,6 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				E7E30E5919E7C9CF00DFB777 /* Info.plist */,
+				F8384C9F1A073A00008F69E0 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -888,12 +891,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D379A01A05E69600D97D9B /* BMCoreFramework.framework in Resources */,
 				E7C7498E19FF98D700B24716 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				E7EED53919FCF261003B27BA /* GameViewController.xib in Resources */,
 				E7BE2C5B19F89C7B009225F1 /* ImageListCell.xib in Resources */,
 				E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */,
+				F8384C9D1A073A00008F69E0 /* Localizable.strings in Resources */,
 				E79B22DD1A0360CD00CAF0FA /* ShareGameView.xib in Resources */,
 				E7C7499019FF98D700B24716 /* WeiboSDK.bundle in Resources */,
 				E7E30E8C19E7DFE000DFB777 /* CoreBundle.bundle in Resources */,
@@ -1043,6 +1046,15 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		F8384C9F1A073A00008F69E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8384C9E1A073A00008F69E0 /* en */,
+				F8384CA01A073A04008F69E0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1145,6 +1157,7 @@
 					"$(PROJECT_DIR)/vender/ShareSDK/Extend/RenRenSDK",
 					"$(PROJECT_DIR)/vender/ShareSDK",
 					"$(PROJECT_DIR)/vender/ShareSDK/UI",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = PuzzleGame/PuzzleGamePrefixHeader.pch;
 				INFOPLIST_FILE = PuzzleGame/Info.plist;
@@ -1167,7 +1180,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s arm64";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1191,6 +1204,7 @@
 					"$(PROJECT_DIR)/vender/ShareSDK/Extend/RenRenSDK",
 					"$(PROJECT_DIR)/vender/ShareSDK",
 					"$(PROJECT_DIR)/vender/ShareSDK/UI",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = PuzzleGame/PuzzleGamePrefixHeader.pch;
 				INFOPLIST_FILE = PuzzleGame/Info.plist;
@@ -1212,7 +1226,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s arm64";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  PuzzleGame
+
+  Created by Dong Yiming on 11/3/14.
+  Copyright (c) 2014 FS. All rights reserved.
+*/
+"welcome"="加载中，请稍候...";
+"this is an awesome sharing" = "这是一条很厉害的分享";
+"TEXT_TEST_MSG" = "这是一条测试信息";
+"TEXT_SHARE_SUC" = "分享成功";
+"pull to refresh" = "下拉刷新...";
+"release to refresh" = "释放刷新...";
+"loading..." = "加载...";
+"last_updated" = "上次刷新时间: %@";
+"stage_not_clear" = "这关还没有玩过哦！";
+"top_record_sec" = "最快%d秒";

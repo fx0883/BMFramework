@@ -16,4 +16,6 @@
 #import <BMCoreFramework/BMCoreFramework.h>
 #import "UIImage+Blur.h"
 
+#define PGLocalString(key) NSLocalizedString((key), @"")
+
 #endif

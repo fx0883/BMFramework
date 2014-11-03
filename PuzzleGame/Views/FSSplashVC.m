@@ -38,7 +38,8 @@
     [mask alignToView:self.view];
     
     _label = [UILabel new];
-    _label.text = @"Loading, please wait...";
+    NSString *string = PGLocalString(@"welcome");
+    _label.text = string;
     _label.textColor = [UIColor whiteColor];
     _label.font = [UIFont systemFontOfSize:12.f];
     [self.view addSubview:_label];
