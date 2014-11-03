@@ -40,6 +40,8 @@
 		E76591DC1A0485F1000B44B0 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591B91A0485F1000B44B0 /* CHANGELOG.md */; };
 		E76591DD1A0485F1000B44B0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591CE1A0485F1000B44B0 /* README.md */; };
 		E76591E11A048778000B44B0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = E76591E01A048778000B44B0 /* ACPReminder.m */; };
+		E77065C71A07CE1E0099518B /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */; };
+		E77065C81A07CE1E0099518B /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E786A3791A01E88200EC0A94 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E786A3781A01E88200EC0A94 /* ImageInfo.m */; };
 		E78AF6FE19FFCB2600E4F18C /* AGViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */; };
 		E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22D61A035FA900CAF0FA /* ShareGameView.m */; };
@@ -121,6 +123,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E77065C81A07CE1E0099518B /* BMCoreFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +339,7 @@
 				E71146BC19FF8BFB00809550 /* MediaPlayer.framework in Frameworks */,
 				E71146BA19FF8BEE00809550 /* CoreLocation.framework in Frameworks */,
 				E71146B819FF8BE500809550 /* CoreMotion.framework in Frameworks */,
+				E77065C71A07CE1E0099518B /* BMCoreFramework.framework in Frameworks */,
 				E71146B619FF8BD600809550 /* libsqlite3.dylib in Frameworks */,
 				E7C7498919FF98D700B24716 /* AGCommon.framework in Frameworks */,
 				E71146B419FF8BCA00809550 /* libstdc++.dylib in Frameworks */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -7,8 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OriginalPicViewController" customModule="PuzzleGame" customModuleProvider="target">
             <connections>
-                <outlet property="backButton" destination="fkM-Fg-SYT" id="w6q-pF-gtb"/>
-                <outlet property="btnBack" destination="fkM-Fg-SYT" id="Ccc-8z-K3O"/>
+                <outlet property="backButton" destination="fkM-Fg-SYT" id="Rbc-wg-0lP"/>
                 <outlet property="originalView" destination="wgg-G4-lz8" id="fbs-OE-xTQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

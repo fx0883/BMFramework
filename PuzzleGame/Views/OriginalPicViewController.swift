@@ -11,7 +11,7 @@ import UIKit
 class OriginalPicViewController: BaseViewController {
 
     @IBOutlet weak var originalView: UIImageView!
-    @IBOutlet weak var btnBack: UIButton!
+//    @IBOutlet weak var btnBack: UIButton!
     
     var curImageInfo:ImageInfo? = nil
     
@@ -86,8 +86,8 @@ class OriginalPicViewController: BaseViewController {
             originalView.layer.borderColor = UIColor.whiteColor().CGColor
             originalView.layer.borderWidth = 1.0
         }
-        
-        
+        let str:NSString = NSLocalizedString("back", comment: "")
+        self.backButton.setTitle(str, forState: UIControlState.Normal)
         
 //        self.navigationItem.hidesBackButton = true
 //        
