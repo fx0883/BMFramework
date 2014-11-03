@@ -13,4 +13,6 @@
 
 +(void)giveMeRate;
 
++(NSString *)localStringForImageCategory:(NSString *)category;
+
 @end

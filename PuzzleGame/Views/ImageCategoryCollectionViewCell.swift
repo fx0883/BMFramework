@@ -28,7 +28,7 @@ class ImageCategoryCollectionViewCell: UICollectionViewCell {
         _imagecategory = imagecategory
         imvMain.applyEffectRoundRectSilverBorder(UIColor.whiteColor())
         titleLabel.text = "Hot"
-        footLabel.text = imagecategory.name
+        footLabel.text = CommonUtil.localStringForImageCategory(imagecategory.name)
         var path:String?=nil
         if(imagecategory.imagepath == nil)
         {

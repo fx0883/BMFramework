@@ -15,3 +15,12 @@
 "last_updated" = "Last Updated: %@";
 "stage_not_clear" = "Try clearing this stage!";
 "top_record_sec" = "Record is %d Sec";
+
+"人物" = "People";
+"动漫" = "Comics";
+"动物" = "Animals";
+"卡通" = "Cartoon";
+"家居" = "House";
+"建筑" = "Architecture";
+"文艺" = "Art";
+"风景" = "Landscape";
