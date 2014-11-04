@@ -54,11 +54,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        
 //        [localNotifications createLocalNotification];
         let localNotifications:ACPReminder = ACPReminder.sharedManager()
+        let strExample1:String =  NSLocalizedString("The difference between ordinary and extraordinary is that little extra.", comment: "")
+                let strExample2:String =  NSLocalizedString("People who cannot find time for recreation are obliged sooner or later to find time for illness.", comment: "")
+                let strExample3:String =  NSLocalizedString("It is better to have loved and lost than never to have loved at all.", comment: "")
+                let strExample4:String =  NSLocalizedString("It doesn't matter what others think of you. It only matters what you think of yourself.", comment: "")
+                let strExample5:String =  NSLocalizedString("Success, it is not the position where you are standing, but which direction you are going.", comment: "")
         
-        localNotifications.messages = ["Example 1", "Example 2", "Example 3", "Example 4", "Example 5"]
+        
+        localNotifications.messages = [strExample1, strExample2,strExample3, strExample4, strExample5]
         localNotifications.timePeriods = [(1),(2),(3)]
         localNotifications.appDomain = "com.CrazyPuzzle.app2"
-        localNotifications.randomMessage = false //By default is NO (optional)
+        localNotifications.randomMessage = true //By default is NO (optional)
         localNotifications.testFlagInSeconds = false //By default is NO (optional) --> For testing purpose only!
         localNotifications.circularTimePeriod = true // By default is NO (optional)
         //
