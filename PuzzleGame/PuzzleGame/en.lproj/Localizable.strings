@@ -13,13 +13,13 @@
 "release to refresh" = "Release to refresh...";
 "loading..." = "Loading...";
 "last_updated" = "Last Updated: %@";
-"stage_not_clear" = "Try clearing this stage!";
-"top_record_sec" = "Record is %d Sec";
+"stage_not_clear" = "Try fixing this picuture!";
+"top_record_sec" = "The record is %d Sec, Defeat it!";
 
 "close" = "Close";
-"stage_clear" = "You did it using %d Sec";
+"stage_clear" = "Congras! You did it in %d Sec!";
 "original_picture" = "Orignal Picture";
-"you_did_it" = "Stage Clear";
+"you_did_it" = "Peice of cake!";
 "play_happyly" = "Play Happyly";
 "back" = "Back";
 "difficulty" = "Difficulty:";
