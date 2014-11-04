@@ -22,6 +22,11 @@
 "you_did_it" = "过关了";
 "play_happyly" = "愉快地游戏";
 "back" = "返回";
+"difficulty" = "难度:";
+"start_play" = "开玩";
+
+"share_title" = "拼图游戏";
+"share_message" = "这个游戏玩得让人疯掉了 https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/921615471";
 
 "人物" = "人物";
 "动漫" = "动漫";

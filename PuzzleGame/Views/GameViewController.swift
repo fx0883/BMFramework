@@ -16,6 +16,8 @@ class GameViewController: BaseViewController,GameViewDelegate {
     
     @IBOutlet weak var difficultyLabel: UILabel!
     
+    @IBOutlet weak var lblDifficulty: UILabel!
+    @IBOutlet weak var btnStart: UIButton!
     
     @IBOutlet weak var difficultySlider: UISlider!
 
@@ -163,6 +165,12 @@ class GameViewController: BaseViewController,GameViewDelegate {
             gameview.layer.borderColor = UIColor.whiteColor().CGColor
             gameview.layer.borderWidth = 1.0
         }
+        
+        let str:NSString = NSLocalizedString("difficulty", comment: "")
+        lblDifficulty.text = str;
+        
+        let str1:NSString = NSLocalizedString("start_play", comment: "")
+        btnStart.setTitle(str1, forState: .Normal)
         
         
         self.navigationItem.hidesBackButton = true

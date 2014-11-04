@@ -22,6 +22,11 @@
 "you_did_it" = "Stage Clear";
 "play_happyly" = "Play Happyly";
 "back" = "Back";
+"difficulty" = "Difficulty:";
+"start_play" = "Go!";
+
+"share_title" = "Crazy Puzzle";
+"share_message" = "This game drives me crazy! https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/921615471";
 
 "人物" = "People";
 "动漫" = "Comics";

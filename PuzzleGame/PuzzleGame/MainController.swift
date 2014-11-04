@@ -22,9 +22,9 @@ class MainController: BaseViewController {
 //    imagecontent:(UIImage*)imagecontent
 //    url:(NSString*)strUrl
     
-    let strTitle:NSString = "拼图游戏"
-    let strContent:NSString = "这个游戏玩得让人疯掉了 https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/921615471"
-    let strDescription:NSString = "愉快地游戏"
+    let strTitle:NSString = NSLocalizedString("share_title", comment: "")
+    let strContent:NSString = NSLocalizedString("share_message", comment: "")
+    let strDescription:NSString = NSLocalizedString("play_happyly", comment: "")
     let imageContent:UIImage = UIImage(named: "logo")!
     let strUrl:NSString = "https://itunes.apple.com/us/app/puzzle-crazy/id921615471?l=zh&ls=1&mt=8"
     

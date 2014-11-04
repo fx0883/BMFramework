@@ -7,10 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="PuzzleGame" customModuleProvider="target">
             <connections>
+                <outlet property="btnStart" destination="svP-lB-OSo" id="Emm-of-JYZ"/>
                 <outlet property="difficultyLabel" destination="0Vy-Sx-M2I" id="p4i-YI-ScO"/>
                 <outlet property="difficultySlider" destination="Zdu-wL-Idg" id="ecS-fJ-KA0"/>
                 <outlet property="disorganizeButton" destination="svP-lB-OSo" id="dDM-wg-oUD"/>
                 <outlet property="gameview" destination="FZ1-wa-Kqd" id="hLl-c3-EEg"/>
+                <outlet property="lblDifficulty" destination="ELi-RQ-5tS" id="MeS-HY-YqJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
