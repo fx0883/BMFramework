@@ -90,15 +90,15 @@ DEF_SINGLETON(ShareSDKManager)
      连接Facebook应用以使用相关功能，此应用需要引用FacebookConnection.framework
      https://developers.facebook.com上注册应用，并将相关信息填写到以下字段
      **/
-    [ShareSDK connectFacebookWithAppKey:@"107704292745179"
-                              appSecret:@"38053202e1a5fe26c80c753071f0b573"];
+    [ShareSDK connectFacebookWithAppKey:@"394494994031413"
+                              appSecret:@"efd3dc84ae6002ccffb24a9832535562"];
     
     /**
      连接Twitter应用以使用相关功能，此应用需要引用TwitterConnection.framework
      https://dev.twitter.com上注册应用，并将相关信息填写到以下字段
      **/
-    [ShareSDK connectTwitterWithConsumerKey:@"mnTGqtXk0TYMXYTN7qUxg"
-                             consumerSecret:@"ROkFqr8c3m1HXqS3rm3TJ0WkAJuwBOSaWhPbZ9Ojuc"
+    [ShareSDK connectTwitterWithConsumerKey:@"bdx6q9WXCrPHBppjqOPU9cbQs"
+                             consumerSecret:@"svUCPrKN6t7Uh9IaweqFukRFnqQRrUPDZWCnHPPbtYKIMbvqSp"
                                 redirectUri:STRURL];
     
     /**
