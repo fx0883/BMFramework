@@ -603,6 +603,8 @@ DEF_SINGLETON(ShareSDKManager)
                                                                                             else if (state == SSPublishContentStateFail)
                                                                                             {
                                                                                                 NSLog(NSLocalizedString(@"TEXT_SHARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                                                                                
+                                                                                                NSLog(@"==========%@",error.errorDescription);
                                                                                             }
                                                                                         }];
                                                                     }];
