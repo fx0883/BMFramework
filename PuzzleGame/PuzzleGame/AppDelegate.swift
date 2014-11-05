@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        [MagicalRecord setLoggingLevel:MagicalRecordLoggingLevelVerbose];
 //        [MagicalRecord setupCoreDataStackWithStoreNamed:kRecipesStoreName];
         self.copyDefaultStoreIfNecessary()
-        MagicalRecord.setLoggingLevel(MagicalRecordLoggingLevel.Verbose)
+ //       MagicalRecord.setLoggingLevel(MagicalRecordLoggingLevel.Verbose)
         MagicalRecord.setupCoreDataStackWithStoreNamed(kPuzzleDBName)
         
         self.loadData()
@@ -275,6 +275,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    
+    
+//    (BOOL)application:(UIApplication *)application
+//    openURL:(NSURL *)url
+//    sourceApplication:(NSString *)sourceApplication
+//    annotation:(id)annotation
+//    {
+//    return [ShareSDK handleOpenURL:url
+//    sourceApplication:sourceApplication
+//    annotation:annotation
+//    wxDelegate:self];
+//    
+//    }
+    
+    
+//    func appl
     
     
 //    func giveMeRate()
