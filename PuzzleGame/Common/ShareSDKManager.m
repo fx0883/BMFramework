@@ -32,6 +32,11 @@ DEF_SINGLETON(ShareSDKManager)
 
 - (void)initializePlat
 {
+    
+//    //开启Facebook网页授权开关
+//    id<ISSFacebookApp> facebookApp =(id<ISSFacebookApp>)[ShareSDK getClientWithType:ShareTypeFacebook];
+//    [facebookApp setIsAllowWebAuthorize:YES];
+    
     /**
      连接新浪微博开放平台应用以使用相关功能，此应用需要引用SinaWeiboConnection.framework
      http://open.weibo.com上注册新浪微博开放平台应用，并将相关信息填写到以下字段
@@ -92,6 +97,9 @@ DEF_SINGLETON(ShareSDKManager)
      **/
     [ShareSDK connectFacebookWithAppKey:@"394494994031413"
                               appSecret:@"efd3dc84ae6002ccffb24a9832535562"];
+    
+//    [ShareSDK connectFacebookWithAppKey:@"1425853474304073"
+//                              appSecret:@"57b1f107fda2d3c6b5d421e6873d8fc7"];
     
     /**
      连接Twitter应用以使用相关功能，此应用需要引用TwitterConnection.framework

@@ -25,10 +25,6 @@
 		<dict>
 			<key>CFBundleURLName</key>
 			<string></string>
-		</dict>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb394494994031413</string>
