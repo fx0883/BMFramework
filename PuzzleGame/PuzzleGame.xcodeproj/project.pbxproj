@@ -41,9 +41,6 @@
 		E76591DD1A0485F1000B44B0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591CE1A0485F1000B44B0 /* README.md */; };
 		E76591E11A048778000B44B0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = E76591E01A048778000B44B0 /* ACPReminder.m */; };
 		E78465961A157914001492B7 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
-		E78465971A157918001492B7 /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
-		E78465981A157926001492B7 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
-		E78465991A157926001492B7 /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E786A3791A01E88200EC0A94 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E786A3781A01E88200EC0A94 /* ImageInfo.m */; };
 		E78AF6FE19FFCB2600E4F18C /* AGViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */; };
 		E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22D61A035FA900CAF0FA /* ShareGameView.m */; };
@@ -106,6 +103,7 @@
 		F836560F1A07B2EC00DC0B90 /* OriginalPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83656111A07B2EC00DC0B90 /* OriginalPicViewController.xib */; };
 		F83656141A07B3B000DC0B90 /* ShareGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83656161A07B3B000DC0B90 /* ShareGameView.xib */; };
 		F8384C9D1A073A00008F69E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8384C9F1A073A00008F69E0 /* Localizable.strings */; };
+		F857C39E1A15963700F8AAD3 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F857C39D1A15963700F8AAD3 /* BMCoreFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,7 +123,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E78465991A157926001492B7 /* BMCoreFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +232,7 @@
 		E76591D81A0485F1000B44B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
 		E76591DF1A048778000B44B0 /* ACPReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPReminder.h; sourceTree = "<group>"; };
 		E76591E01A048778000B44B0 /* ACPReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPReminder.m; sourceTree = "<group>"; };
-		E78465951A157914001492B7 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
+		E78465951A157914001492B7 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "/Users/dymx101/Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<absolute>"; };
 		E786A3771A01E88200EC0A94 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
 		E786A3781A01E88200EC0A94 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E78AF6FC19FFCB2600E4F18C /* AGViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGViewDelegate.h; sourceTree = "<group>"; };
@@ -325,6 +322,7 @@
 		F836561E1A07B43800DC0B90 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F8384C9E1A073A00008F69E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8384CA01A073A04008F69E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F857C39D1A15963700F8AAD3 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMCoreFramework.framework; sourceTree = "<group>"; };
 		F8DDE7AB1A07BA01004B2E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OriginalPicViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -343,7 +341,7 @@
 				E71146BC19FF8BFB00809550 /* MediaPlayer.framework in Frameworks */,
 				E71146BA19FF8BEE00809550 /* CoreLocation.framework in Frameworks */,
 				E71146B819FF8BE500809550 /* CoreMotion.framework in Frameworks */,
-				E78465981A157926001492B7 /* BMCoreFramework.framework in Frameworks */,
+				F857C39E1A15963700F8AAD3 /* BMCoreFramework.framework in Frameworks */,
 				E71146B619FF8BD600809550 /* libsqlite3.dylib in Frameworks */,
 				E7C7498919FF98D700B24716 /* AGCommon.framework in Frameworks */,
 				E71146B419FF8BCA00809550 /* libstdc++.dylib in Frameworks */,
@@ -692,7 +690,7 @@
 		E7E30E4C19E7C9CE00DFB777 = {
 			isa = PBXGroup;
 			children = (
-				E78465951A157914001492B7 /* BMCoreFramework.framework */,
+				F857C39D1A15963700F8AAD3 /* BMCoreFramework.framework */,
 				E71146C119FF8C1600809550 /* AddressBook.framework */,
 				E71146BF19FF8C0D00809550 /* AssetsLibrary.framework */,
 				E71146BD19FF8C0300809550 /* CoreText.framework */,
@@ -841,10 +839,11 @@
 				TargetAttributes = {
 					E7E30E5419E7C9CE00DFB777 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 24VV37C9GM;
+						DevelopmentTeam = Q338FB3789;
 					};
 					E7E30E6919E7C9CF00DFB777 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = Q338FB3789;
 						TestTargetID = E7E30E5419E7C9CE00DFB777;
 					};
 				};
@@ -904,7 +903,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78465971A157918001492B7 /* BMCoreFramework.framework in Resources */,
 				E7C7498E19FF98D700B24716 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				F82B2A861A08AF1400B17FAD /* InfoPlist.strings in Resources */,
 				E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */,
@@ -1226,11 +1224,11 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "90b07dcf-4ebf-4da5-ae33-f0549b9632e5";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -1272,10 +1270,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "90b07dcf-4ebf-4da5-ae33-f0549b9632e5";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 arm64 armv7s";
 			};
 			name = Release;
 		};
