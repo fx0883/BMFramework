@@ -93,6 +93,13 @@ DEF_SINGLETON(AdmobManager)
 {
     self.bIsBannerViewReady = YES;
     NSLog(@"adViewDidReceiveAd =========");
+    
+    
+   
+    
+
+    
+
 }
 
 /// Called when an ad request failed. Normally this is because no network connection was available
@@ -168,7 +175,12 @@ DEF_SINGLETON(AdmobManager)
         self.bIsFirstGADInterstitial = NO;
         [self startInterstitialView];
     }
+    else
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:KADMOBSTATECHANGE object: [NSNumber numberWithBool:YES]];
+    }
     NSLog(@"interstitialDidReceiveAd =========");
+
 }
 
 /// Called when an interstitial ad request completed without an interstitial to
@@ -222,6 +234,7 @@ DEF_SINGLETON(AdmobManager)
 {
     if (_adInterstitial.isReady) {
         [_adInterstitial presentFromRootViewController:viewController];
+        [[NSNotificationCenter defaultCenter] postNotificationName:KADMOBSTATECHANGE object: [NSNumber numberWithBool:NO]];
     }
 }
 

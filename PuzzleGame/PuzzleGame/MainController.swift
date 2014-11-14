@@ -14,7 +14,8 @@ class MainController: BaseViewController {
     @IBOutlet weak var bgImv: UIImageView!
     let kCollectionCell:String = "ImageCategoryCell"
     var imageCategoryAry:NSArray? = nil
-    
+    var sharedGift:UIButton? = nil
+    var btnGift:UIButton?=nil
     
 //    title:(NSString*)strTitle
 //    content:(NSString*)strContent
@@ -40,7 +41,23 @@ class MainController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+//    override func viewDidDisappear(animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        self.unRegisterNotification()
+//    }
+    
+ //   override func deinit()
+//    {
+//        
+//    }
+    
+    deinit
+    {
+        self.unRegisterNotification()
+    }
+    
+    
     func initView()
     {
 //        header-bg-big
@@ -64,19 +81,24 @@ class MainController: BaseViewController {
 //        UIView *rightView = UIView
         
         let rightView:UIView = UIView(frame: CGRectMake(0, 0, 100, 44))
-        let btnGift:UIButton = UIButton(frame: CGRectMake(0, 0, 44, 44))
-        let sharedGift:UIButton = UIButton(frame: CGRectMake(50, 0, 44, 44))
+        btnGift = UIButton(frame: CGRectMake(0, 0, 44, 44))
+        sharedGift = UIButton(frame: CGRectMake(50, 0, 44, 44))
         
-        btnGift.setImage(UIImage(named: "gift"), forState: UIControlState.Normal)
-        btnGift.addTarget(self, action: "btnGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
-        rightView.addSubview(btnGift)
+        btnGift!.setImage(UIImage(named: "gift"), forState: UIControlState.Normal)
+        btnGift!.addTarget(self, action: "btnGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        rightView.addSubview(btnGift!)
         
-        sharedGift.setImage(UIImage(named: "share"), forState: UIControlState.Normal)
-        sharedGift.addTarget(self, action: "sharedGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
-        rightView.addSubview(sharedGift)
+        sharedGift!.setImage(UIImage(named: "share"), forState: UIControlState.Normal)
+        sharedGift!.addTarget(self, action: "sharedGiftClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        rightView.addSubview(sharedGift!)
         
         let rItemRight:UIBarButtonItem = UIBarButtonItem(customView: rightView)
         self.navigationItem.rightBarButtonItem = rItemRight
+        
+        btnGift!.hidden = true
+        
+        //添加通知
+        self.registerNotification()
         
     }
     
@@ -102,10 +124,31 @@ class MainController: BaseViewController {
 //    self.navigationItem.leftBarButtonItem = lItemRight;
 //    }
     
-
+    func registerNotification()
+    {
+//        [[NSNotificationCenter defaultCenter] addObserver:selfselector:@selector(applicationWillResignActive:)name:UIApplicationWillResignActiveNotification object:application];
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "AdmobStateChangedFunc:", name: KADMOBSTATECHANGE, object: nil)
+        
+    }
+    
+    func unRegisterNotification()
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self, forKeyPath: KADMOBSTATECHANGE)
+        
+        
+    }
     
 
-
+    func AdmobStateChangedFunc(notification:NSNotification)
+    {
+        let isAdmobArrive:NSNumber = notification.object as NSNumber
+        let bIsAdmobArrive:Bool = isAdmobArrive.boolValue
+        
+        btnGift!.hidden = !bIsAdmobArrive
+        
+        
+    }
     
     
     func loadData()

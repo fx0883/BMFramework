@@ -69,11 +69,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         localNotifications.messages = [strExample1, strExample2,strExample3, strExample4, strExample5]
-        localNotifications.timePeriods = [(1),(2),(3)]
+        localNotifications.timePeriods = [(7),(10)]
         localNotifications.appDomain = "com.CrazyPuzzle.app2"
         localNotifications.randomMessage = true //By default is NO (optional)
         localNotifications.testFlagInSeconds = false //By default is NO (optional) --> For testing purpose only!
-        localNotifications.circularTimePeriod = true // By default is NO (optional)
+        localNotifications.circularTimePeriod = false // By default is NO (optional)
         //
         //        [localNotifications createLocalNotification];
         localNotifications.createLocalNotification()

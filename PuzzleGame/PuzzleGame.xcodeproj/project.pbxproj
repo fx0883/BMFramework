@@ -34,13 +34,16 @@
 		E75D6ED719E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75D6ED519E8C37100A1F6C9 /* ImageCategoryCollectionViewCell.xib */; };
 		E75D6EDB19E8FFD300A1F6C9 /* CommonalityFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDA19E8FFD300A1F6C9 /* CommonalityFunction.m */; };
 		E75D6EDE19E909B700A1F6C9 /* PuzzleContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D6EDD19E909B700A1F6C9 /* PuzzleContext.swift */; };
-		E760B0A01A09993E000DBEFB /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E760B09F1A09993E000DBEFB /* BMCoreFramework.framework */; };
 		E76591D91A0485F1000B44B0 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = E76591B31A0485F1000B44B0 /* Appirater.m */; };
 		E76591DA1A0485F1000B44B0 /* Appirater.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = E76591B41A0485F1000B44B0 /* Appirater.podspec.json */; };
 		E76591DB1A0485F1000B44B0 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E76591B61A0485F1000B44B0 /* AppiraterLocalizable.strings */; };
 		E76591DC1A0485F1000B44B0 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591B91A0485F1000B44B0 /* CHANGELOG.md */; };
 		E76591DD1A0485F1000B44B0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E76591CE1A0485F1000B44B0 /* README.md */; };
 		E76591E11A048778000B44B0 /* ACPReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = E76591E01A048778000B44B0 /* ACPReminder.m */; };
+		E78465961A157914001492B7 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
+		E78465971A157918001492B7 /* BMCoreFramework.framework in Resources */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
+		E78465981A157926001492B7 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; };
+		E78465991A157926001492B7 /* BMCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E78465951A157914001492B7 /* BMCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E786A3791A01E88200EC0A94 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E786A3781A01E88200EC0A94 /* ImageInfo.m */; };
 		E78AF6FE19FFCB2600E4F18C /* AGViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E78AF6FD19FFCB2600E4F18C /* AGViewDelegate.m */; };
 		E79B22D71A035FA900CAF0FA /* ShareGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B22D61A035FA900CAF0FA /* ShareGameView.m */; };
@@ -102,7 +105,6 @@
 		F836560A1A07B1B500DC0B90 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F836560C1A07B1B500DC0B90 /* GameViewController.xib */; };
 		F836560F1A07B2EC00DC0B90 /* OriginalPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83656111A07B2EC00DC0B90 /* OriginalPicViewController.xib */; };
 		F83656141A07B3B000DC0B90 /* ShareGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F83656161A07B3B000DC0B90 /* ShareGameView.xib */; };
-		F8384C9A1A0737D9008F69E0 /* BMCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */; };
 		F8384C9D1A073A00008F69E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8384C9F1A073A00008F69E0 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E78465991A157926001492B7 /* BMCoreFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +195,6 @@
 		E75D6ED919E8FFD300A1F6C9 /* CommonalityFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonalityFunction.h; sourceTree = "<group>"; };
 		E75D6EDA19E8FFD300A1F6C9 /* CommonalityFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonalityFunction.m; sourceTree = "<group>"; };
 		E75D6EDD19E909B700A1F6C9 /* PuzzleContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleContext.swift; sourceTree = "<group>"; };
-		E760B09F1A09993E000DBEFB /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = ../BMCoreFramework/Products/BMCoreFramework.framework; sourceTree = "<group>"; };
 		E76591B21A0485F1000B44B0 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		E76591B31A0485F1000B44B0 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		E76591B41A0485F1000B44B0 /* Appirater.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Appirater.podspec.json; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		E76591D81A0485F1000B44B0 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/AppiraterLocalizable.strings"; sourceTree = "<group>"; };
 		E76591DF1A048778000B44B0 /* ACPReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPReminder.h; sourceTree = "<group>"; };
 		E76591E01A048778000B44B0 /* ACPReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPReminder.m; sourceTree = "<group>"; };
+		E78465951A157914001492B7 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = "../../../../Library/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos/BMCoreFramework.framework"; sourceTree = "<group>"; };
 		E786A3771A01E88200EC0A94 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
 		E786A3781A01E88200EC0A94 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		E78AF6FC19FFCB2600E4F18C /* AGViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGViewDelegate.h; sourceTree = "<group>"; };
@@ -320,7 +323,6 @@
 		F83656181A07B3B400DC0B90 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ShareGameView.strings"; sourceTree = "<group>"; };
 		F836561C1A07B42D00DC0B90 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F836561E1A07B43800DC0B90 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		F8384C991A0737D9008F69E0 /* BMCoreFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMCoreFramework.framework; path = /Users/fx/work/MyCode/BMFramework/PuzzleGame/BMCoreFramework.framework; sourceTree = "<absolute>"; };
 		F8384C9E1A073A00008F69E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F8384CA01A073A04008F69E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F8DDE7AB1A07BA01004B2E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OriginalPicViewController.xib; sourceTree = "<group>"; };
@@ -331,17 +333,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78465961A157914001492B7 /* BMCoreFramework.framework in Frameworks */,
 				E7C2EEBE19FE669A006BB38A /* MessageUI.framework in Frameworks */,
 				E7C7498D19FF98D700B24716 /* TencentOpenAPI.framework in Frameworks */,
 				E71146C219FF8C1600809550 /* AddressBook.framework in Frameworks */,
-				F8384C9A1A0737D9008F69E0 /* BMCoreFramework.framework in Frameworks */,
 				E7C7498319FF98D700B24716 /* QZoneConnection.framework in Frameworks */,
 				E71146C019FF8C0D00809550 /* AssetsLibrary.framework in Frameworks */,
 				E71146BE19FF8C0300809550 /* CoreText.framework in Frameworks */,
 				E71146BC19FF8BFB00809550 /* MediaPlayer.framework in Frameworks */,
 				E71146BA19FF8BEE00809550 /* CoreLocation.framework in Frameworks */,
 				E71146B819FF8BE500809550 /* CoreMotion.framework in Frameworks */,
-				E760B0A01A09993E000DBEFB /* BMCoreFramework.framework in Frameworks */,
+				E78465981A157926001492B7 /* BMCoreFramework.framework in Frameworks */,
 				E71146B619FF8BD600809550 /* libsqlite3.dylib in Frameworks */,
 				E7C7498919FF98D700B24716 /* AGCommon.framework in Frameworks */,
 				E71146B419FF8BCA00809550 /* libstdc++.dylib in Frameworks */,
@@ -690,7 +692,7 @@
 		E7E30E4C19E7C9CE00DFB777 = {
 			isa = PBXGroup;
 			children = (
-				E760B09F1A09993E000DBEFB /* BMCoreFramework.framework */,
+				E78465951A157914001492B7 /* BMCoreFramework.framework */,
 				E71146C119FF8C1600809550 /* AddressBook.framework */,
 				E71146BF19FF8C0D00809550 /* AssetsLibrary.framework */,
 				E71146BD19FF8C0300809550 /* CoreText.framework */,
@@ -839,6 +841,7 @@
 				TargetAttributes = {
 					E7E30E5419E7C9CE00DFB777 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 24VV37C9GM;
 					};
 					E7E30E6919E7C9CF00DFB777 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -901,6 +904,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78465971A157918001492B7 /* BMCoreFramework.framework in Resources */,
 				E7C7498E19FF98D700B24716 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				F82B2A861A08AF1400B17FAD /* InfoPlist.strings in Resources */,
 				E7C7499419FF98D700B24716 /* ShareSDKFlatShareViewUI.bundle in Resources */,
@@ -1187,10 +1191,11 @@
 		E7E30E7519E7C9CF00DFB777 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos",
@@ -1225,17 +1230,18 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
 		E7E30E7619E7C9CF00DFB777 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BMFramework2-cdhpccbggyjxfwgtzgqtqfxzcsxq/Build/Products/Debug-iphoneos",
@@ -1269,7 +1275,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DataModel/PuzzleGame-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "arm64 armv7";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};

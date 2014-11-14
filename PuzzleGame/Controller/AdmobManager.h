@@ -13,6 +13,9 @@
 #import <StoreKit/StoreKit.h>
 #import "GADInterstitial.h"
 
+
+#define KADMOBSTATECHANGE @"kAdmobStateChange"
+
 @interface AdmobManager : NSObject<GADBannerViewDelegate,GADInterstitialDelegate>
 {
 
