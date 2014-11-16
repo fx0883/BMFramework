@@ -134,9 +134,8 @@ class MainController: BaseViewController {
     
     func unRegisterNotification()
     {
-        NSNotificationCenter.defaultCenter().removeObserver(self, forKeyPath: KADMOBSTATECHANGE)
-        
-        
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: KADMOBSTATECHANGE, object: nil)
+       // removeObserver(observer: AnyObject, name aName: String?, object anObject: AnyObject?)
     }
     
 

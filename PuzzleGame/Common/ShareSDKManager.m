@@ -10,7 +10,7 @@
 
 
 #import <ShareSDK/ShareSDK.h>
-#import "WeiboApi.h"
+//#import "WeiboApi.h"
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <TencentOpenAPI/TencentOAuth.h>
 #import "WXApi.h"
@@ -51,10 +51,10 @@ DEF_SINGLETON(ShareSDKManager)
      
      如果需要实现SSO，需要导入libWeiboSDK.a，并引入WBApi.h，将WBApi类型传入接口
      **/
-    [ShareSDK connectTencentWeiboWithAppKey:@"801548925"
-                                  appSecret:@"a5dd78c255e81395cd24c358651666f5"
-                                redirectUri:STRURL
-                                   wbApiCls:[WeiboApi class]];
+//    [ShareSDK connectTencentWeiboWithAppKey:@"801548925"
+//                                  appSecret:@"a5dd78c255e81395cd24c358651666f5"
+//                                redirectUri:STRURL
+//                                   wbApiCls:[WeiboApi class]];
     
     //连接短信分享
     [ShareSDK connectSMS];
@@ -853,7 +853,7 @@ DEF_SINGLETON(ShareSDKManager)
     //创建自定义分享列表
     NSArray *shareList = [ShareSDK customShareListWithType:
                           sinaItem,
-                          tencentItem,
+//                          tencentItem,
                           SHARE_TYPE_NUMBER(ShareTypeSMS),
                           qzoneItem,
                           SHARE_TYPE_NUMBER(ShareTypeWeixiSession),
